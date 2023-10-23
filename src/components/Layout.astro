@@ -1,0 +1,15 @@
+---
+import Head from "./organisms/Head.astro";
+---
+
+<html lang="cs">
+  <Head {...Astro.props} />
+  <body>
+    <header></header>
+    <main>
+      <slot />
+    </main>
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+---
+
+---
+
+<head>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta charset="utf-8" />
+
+  <title>{Astro.props.title}</title>
+
+  <meta name="robots" content="index, follow" />
+
+  <meta name="title" content={Astro.props.title} />
+  <meta name="description" content={Astro.props.description} />
+
+  <meta name="copyright" content="©Studentská unie utb, 2024" />
+  <meta name="author" content="Studentská unie utb" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={Astro.url.href} />
+  <meta property="og:site_name" content={Astro.props.title} />
+  <meta property="og:title" content={Astro.props.title} />
+  <meta property="og:description" content={Astro.props.description} />
+  <meta property="og:image" content={Astro.props.imageUrl} />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={Astro.url.href} />
+  <meta property="twitter:title" content={Astro.props.title} />
+  <meta property="twitter:description" content={Astro.props.description} />
+  <meta property="twitter:image" content={Astro.props.imageUrl} />
+</head>
