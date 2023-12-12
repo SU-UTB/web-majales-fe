@@ -1,0 +1,31 @@
+---
+import Layout from '../components/Layout.astro';
+import Container from '../components/atoms/Container.astro';
+
+const metaTags = {
+  title: 'Majáles',
+  description: 'TODO',
+  image: '/meta_image-404.jpg',
+};
+---
+
+<Layout {...metaTags}>
+  <section class="md:pt-16 pb-16 lg:pb-32 bg-gradient-to-b md:text-center">
+    <Container>
+      <div class="py-16 min-h-[70vh] flex justify-center items-center">
+        <div class="text-center">
+          <div class="flex-shrink-0 flex justify-center"></div>
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-8 sm:pt-10 lg:pt-12 font-extrabold tracking-wider leading-snug sm:leading-snug md:leading-snug lg:leading-snug"
+          >
+            Stránka nenalezena
+          </h1>
+          <p class="mt-2 text-base">Omlouváme se, ale vámi hledaná stránka nebyla nalezena.</p>
+          <a href="/" class="block mt-6 font-semibold text-lg transition duration-300"
+            >Zpět na domovskou stránku<span aria-hidden="true"> &rarr;</span></a
+          >
+        </div>
+      </div>
+    </Container>
+  </section>
+</Layout>
