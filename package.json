@@ -11,27 +11,27 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^3.0.4",
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.2",
-    "@headlessui/react": "^1.7.17",
+    "@astrojs/react": "^3.0.9",
+    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/tailwind": "^5.1.0",
+    "@headlessui/react": "^1.7.18",
     "@headlessui/tailwindcss": "^0.2.0",
-    "@types/react": "^18.2.33",
-    "@types/react-dom": "^18.2.14",
-    "astro": "^3.3.2",
+    "astro": "^3.6.4",
     "astro-robots-txt": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.5"
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.2.0",
-    "@typescript-eslint/parser": "^6.8.0",
-    "eslint": "^8.52.0",
+    "@faker-js/faker": "^8.4.0",
+    "@types/react": "^18.2.52",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-astro": "^0.29.1",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.0",
-    "prettier-plugin-tailwindcss": "^0.5.6"
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "prettier": "3.2.5",
+    "prettier-plugin-astro": "^0.12.3",
+    "prettier-plugin-tailwindcss": "^0.5.11"
   }
 }
