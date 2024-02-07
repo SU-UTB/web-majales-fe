@@ -8,24 +8,32 @@ const navItems: NavItemType[] = [
     linkTo: '/',
   },
   {
-    text: 'Domov',
-    linkTo: '/',
+    text: 'Line up a program',
+    linkTo: '/line-up-a-program',
   },
   {
-    text: 'Domov',
-    linkTo: '/',
+    text: 'Král a královna',
+    linkTo: '/kral-a-kralovna',
   },
   {
-    text: 'Domov',
-    linkTo: '/',
+    text: 'UBC',
+    linkTo: '/ubc',
   },
   {
-    text: 'Domov',
-    linkTo: '/',
+    text: 'Q&A',
+    linkTo: '/qna',
   },
   {
-    text: 'Domov',
-    linkTo: '/',
+    text: 'Partneři',
+    linkTo: '/partneri',
+  },
+  {
+    text: 'Média',
+    linkTo: '/media',
+  },
+  {
+    text: 'Kontakty',
+    linkTo: '/kontakty',
   },
 ];
 
