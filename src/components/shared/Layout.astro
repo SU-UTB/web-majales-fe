@@ -10,7 +10,7 @@ type Props = HeadProps;
 <html lang="cs">
   <Head {...Astro.props} />
   <body>
-    <Header />
+    <Header client:only />
     <main>
       <slot />
     </main>

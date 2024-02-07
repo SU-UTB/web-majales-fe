@@ -4,7 +4,7 @@ export type HeadProps = {
   image?: string;
 };
 
-export type NavItemType = {
+export type NavLinkType = {
   text: string;
   linkTo: string;
 };
