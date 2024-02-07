@@ -1,0 +1,19 @@
+---
+import type { HeadProps } from '../../AppTypes';
+import Footer from './Footer.astro';
+import Head from './Head.astro';
+import { Header } from './Header';
+
+type Props = HeadProps;
+---
+
+<html lang="cs">
+  <Head {...Astro.props} />
+  <body>
+    <Header client:only />
+    <main transition:animate="slide">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
