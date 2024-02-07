@@ -1,9 +1,8 @@
 ---
-interface Props {
-  title: string;
-  description: string;
-  image?: string;
-}
+import type { HeadProps } from '../../AppTypes';
+import { COPYRIGHT_TEXT } from '../../config/constants';
+
+type Props = HeadProps;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(Astro.props.image ?? '/meta-image.jpg', Astro.url);
@@ -20,7 +19,7 @@ const socialImageURL = new URL(Astro.props.image ?? '/meta-image.jpg', Astro.url
   <meta name="title" content={Astro.props.title} />
   <meta name="description" content={Astro.props.description} />
 
-  <meta name="copyright" content={`©Studentská unie utb 2022 - ${new Date().getFullYear()}`} />
+  <meta name="copyright" content={COPYRIGHT_TEXT} />
   <meta name="author" content="Studentská unie utb" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
