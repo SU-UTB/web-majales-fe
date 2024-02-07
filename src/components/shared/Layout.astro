@@ -11,7 +11,7 @@ type Props = HeadProps;
   <Head {...Astro.props} />
   <body>
     <Header client:only />
-    <main>
+    <main transition:animate="slide">
       <slot />
     </main>
     <Footer />
