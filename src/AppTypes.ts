@@ -3,3 +3,8 @@ export type HeadProps = {
   description: string;
   image?: string;
 };
+
+export type NavItemType = {
+  text: string;
+  linkTo: string;
+};
