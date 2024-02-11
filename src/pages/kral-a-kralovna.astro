@@ -1,4 +1,8 @@
 ---
+import { NewsSection } from '../components/home/NewsSection';
+import { AboutSection } from '../components/king-queen/AboutSection';
+import { CoronationSection } from '../components/king-queen/CoronationSection';
+import { WhyToRegisterSection } from '../components/king-queen/WhyToRegisterSection';
 import Layout from '../components/shared/Layout.astro';
 
 const metaTags = {
@@ -9,5 +13,8 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <h1>Kral a kralovna</h1>
+  <AboutSection />
+  <NewsSection />
+  <CoronationSection />
+  <WhyToRegisterSection />
 </Layout>
