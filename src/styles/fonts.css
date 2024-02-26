@@ -21,7 +21,7 @@
   src:
     local('Ladislav-Bold'),
     url('../assets/fonts/Ladislav-Bold.woff2') format('woff2');
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
 }
 
