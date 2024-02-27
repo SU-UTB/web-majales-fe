@@ -1,4 +1,10 @@
 ---
+import { AboutSection } from '../components/home/AboutSection';
+import { CountdownSection } from '../components/home/CountdownSection';
+import { LandingImage } from '../components/home/LandingImage';
+import { LinkSection } from '../components/home/LinkSection';
+import { NewsSection } from '../components/home/NewsSection';
+import { Video } from '../components/home/Video';
 import Layout from '../components/shared/Layout.astro';
 
 const metaTags = {
@@ -9,5 +15,10 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <h1>Domov</h1>
+  <LandingImage />
+  <Video />
+  <NewsSection />
+  <CountdownSection client:load />
+  <AboutSection />
+  <LinkSection />
 </Layout>
