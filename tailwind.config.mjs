@@ -13,6 +13,14 @@ export default {
       blue: '#4400FF',
       purple: '#EA92F4',
     },
+    fontSize: {
+      p: [
+        '18px',
+        {
+          fontWeight: 400,
+        },
+      ],
+    },
   },
   plugins: [require('@headlessui/tailwindcss')],
 };
