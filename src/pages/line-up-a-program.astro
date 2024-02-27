@@ -1,4 +1,9 @@
 ---
+import { AboutSection } from '../components/lineup/AboutSection';
+import { BandListSection } from '../components/lineup/BandListSection';
+import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
+import { MapSection } from '../components/lineup/MapSection';
+import { WinnerBandListSection } from '../components/lineup/WinnerBandListSection';
 import Layout from '../components/shared/Layout.astro';
 
 const metaTags = {
@@ -9,5 +14,9 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <h1>Lineup a program</h1>
+  <AboutSection />
+  <BandListSection />
+  <WinnerBandListSection />
+  <HarmonogramSection />
+  <MapSection />
 </Layout>
