@@ -1,3 +1,3 @@
 export const Map = () => {
-  return <div>MapSection</div>;
+  return <div className="bg-purple rounded-2xl"></div>;
 };

@@ -1,10 +1,11 @@
+import video from '../../assets/videos/majales-2022.mp4';
 import { Container } from '../shared/Container';
 
 export const BaseInfoSection = () => {
   return (
     <section id="zakladni-informae" className="bg-purple">
       <Container>
-        <div className="flex flex-wrap gap-8 xl:gap-12 w-full justify-center items-center py-8 xl:py-16 xl:text-p-big">
+        <div className="flex flex-wrap gap-8 xl:gap-12 w-full justify-between py-8 xl:py-16 xl:text-p-big">
           <div className="w-[492px] space-y-2">
             <p>
               Vstup <span className="font-semibold">ZDARMA</span> pro všechny
@@ -15,7 +16,8 @@ export const BaseInfoSection = () => {
             <p>Král a Královna & Princ a Princezna Majálesu</p>
             <p>To a mnohem víc na Majálesu UTB!</p>
           </div>
-          <video src="" width={685} height={377} className="bg-beige rounded-2xl text-blue">
+          <video width={685} height={380} className="bg-beige rounded-2xl text-blue" autoPlay muted controls>
+            <source src={video} type="video/mp4" />
             video z roku 2022
           </video>
         </div>

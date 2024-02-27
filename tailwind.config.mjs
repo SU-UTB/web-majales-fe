@@ -20,6 +20,12 @@ export default {
           fontWeight: 600,
         },
       ],
+      'h2-reversed': [
+        '38px',
+        {
+          fontWeight: 700,
+        },
+      ],
       p: [
         '24px',
         {

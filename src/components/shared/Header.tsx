@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <motion.header className="w-full bg-transparent mx-auto">
       <nav className="relative z-10 bg-blue text-white">
-        <div className="max-w-screen-2xl flex flex-col items-center xl:flex-row xl:justify-between xl:p-4 mx-auto">
+        <div className="max-w-screen-xl flex flex-col items-center xl:flex-row xl:justify-between xl:p-4 mx-auto">
           <div className="hidden xl:block">
             <NavLogo />
           </div>
