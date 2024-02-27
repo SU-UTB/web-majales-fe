@@ -1,4 +1,6 @@
 ---
+import { BaseInfoSection } from '../components/main/BaseInfoSection';
+import { LandingSection } from '../components/main/LandingSection';
 import Layout from '../components/shared/Layout.astro';
 
 const metaTags = {
@@ -9,5 +11,6 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <h1>Domov</h1>
+  <LandingSection />
+  <BaseInfoSection />
 </Layout>

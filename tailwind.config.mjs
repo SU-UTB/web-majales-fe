@@ -14,8 +14,20 @@ export default {
       purple: '#EA92F4',
     },
     fontSize: {
+      h2: [
+        '38px',
+        {
+          fontWeight: 600,
+        },
+      ],
       p: [
-        '18px',
+        '24px',
+        {
+          fontWeight: 400,
+        },
+      ],
+      'p-big': [
+        '28px',
         {
           fontWeight: 400,
         },
