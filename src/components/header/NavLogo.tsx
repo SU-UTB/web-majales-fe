@@ -1,4 +1,4 @@
-import logo from '../../assets/img/logo-temp.svg';
+import logo from '../../assets/img/logo-icon.svg';
 
 export const NavLogo = () => {
   return (
