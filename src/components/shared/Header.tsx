@@ -38,8 +38,8 @@ export const Header = () => {
           )}
           <ul className="hidden xl:flex items-center space-x-8">
             {navItems.map((navItem) => (
-              <li>
-                <NavLink key={navItem.text} {...navItem} />
+              <li key={navItem.text}>
+                <NavLink {...navItem} />
               </li>
             ))}
           </ul>

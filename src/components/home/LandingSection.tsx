@@ -10,10 +10,15 @@ export const LandingSection = () => {
     <section id="landing" className="py-12 xl:py-20">
       <Container>
         <div className="relative mx-auto max-w-max">
-          <img src={majalesHeadline} alt={`${MAJALES_TITLE} - ${MAJALES_DATE}`} width={700} height={230} />
+          <img
+            src={majalesHeadline}
+            alt={`${MAJALES_TITLE} - ${MAJALES_DATE.format('D. M. YYYY')}`}
+            width={700}
+            height={230}
+          />
           <div className="absolute z-10 top-[80%]">
             <HeadlineBubble fillColor="#4400FF" rotationValue={10}>
-              {MAJALES_DATE}
+              {MAJALES_DATE.format('D. M. YYYY')}
             </HeadlineBubble>
           </div>
         </div>

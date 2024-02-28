@@ -38,6 +38,12 @@ export default {
           fontWeight: 400,
         },
       ],
+      countdown: [
+        '48px',
+        {
+          fontWeight: 500,
+        },
+      ],
     },
   },
   plugins: [require('@headlessui/tailwindcss')],
