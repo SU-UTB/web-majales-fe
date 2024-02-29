@@ -26,6 +26,12 @@ export default {
           fontWeight: 700,
         },
       ],
+      'h2-reversed-mobile': [
+        '28px',
+        {
+          fontWeight: 700,
+        },
+      ],
       p: [
         '24px',
         {

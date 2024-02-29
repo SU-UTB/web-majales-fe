@@ -5,7 +5,7 @@ export const BaseInfoSection = () => {
     <section id="zakladni-informae" className="bg-purple">
       <Container>
         <div className="flex flex-wrap gap-8 xl:gap-12 w-full justify-between py-8 xl:py-16 xl:text-p-big items-center">
-          <div className="w-[492px] space-y-2">
+          <div className="w-full max-w-[492px] space-y-2">
             <p>
               Vstup <span className="font-semibold">ZDARMA</span> pro všechny
             </p>
@@ -22,7 +22,7 @@ export const BaseInfoSection = () => {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            className="bg-beige rounded-2xl"
+            className="bg-beige rounded-2xl mx-auto"
           />
         </div>
       </Container>

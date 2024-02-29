@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type HeadProps = {
   title: string;
   description: string;
@@ -7,4 +9,10 @@ export type HeadProps = {
 export type NavLinkType = {
   text: string;
   linkTo: string;
+};
+
+export type UsefulLinkType = {
+  linkTo: string;
+  headline: string;
+  children: ReactNode;
 };

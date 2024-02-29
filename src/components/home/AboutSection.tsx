@@ -7,10 +7,10 @@ export const AboutSection = () => {
     <section id="co-je-majales" className="py-8 xl:py-16">
       <Container>
         <HeadlineBubble width={400}>
-          <h2 className="font-normal text-[38px] text-beige text-center">
+          <h2 className="font-normal text-p md:text-[38px] text-beige text-center">
             Co je
             <br />
-            <span className="text-h2-reversed">Majales UTB?</span>
+            <span className="text-h2-reversed-mobile md:text-h2-reversed">Majales UTB?</span>
           </h2>
         </HeadlineBubble>
         <div className="py-8 space-y-4 max-w-[600px]">
