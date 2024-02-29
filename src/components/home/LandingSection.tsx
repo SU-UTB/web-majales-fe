@@ -18,7 +18,7 @@ export const LandingSection = () => {
           />
           <div className="absolute z-10 top-[80%]">
             <HeadlineBubble fillColor="#4400FF" rotationValue={10}>
-              {MAJALES_DATE.format('D. M. YYYY')}
+              <h2 className="text-h2 text-beige">{MAJALES_DATE.format('D. M. YYYY')}</h2>
             </HeadlineBubble>
           </div>
         </div>

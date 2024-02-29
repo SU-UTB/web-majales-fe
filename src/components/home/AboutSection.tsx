@@ -1,15 +1,18 @@
 import { Container } from '../shared/Container';
+import { HeadlineBubble } from '../shared/HeadlineBubble';
 import { Map } from './Map';
 
 export const AboutSection = () => {
   return (
-    <section id="co-je-majales">
+    <section id="co-je-majales" className="py-8 xl:py-16">
       <Container>
-        <h2 className="text-h2">
-          Co je
-          <br />
-          <span className="text-h2-reversed">majales UTB</span>
-        </h2>
+        <HeadlineBubble width={400}>
+          <h2 className="font-normal text-[38px] text-beige text-center">
+            Co je
+            <br />
+            <span className="text-h2-reversed">Majales UTB?</span>
+          </h2>
+        </HeadlineBubble>
         <div className="py-8 space-y-4 max-w-[600px]">
           <p>
             Jedná se o studenty pořádaný multižánrový open-air festival s nabitým programempro všechny věkové kategorie!
