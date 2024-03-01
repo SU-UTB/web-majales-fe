@@ -16,3 +16,9 @@ export type UsefulLinkType = {
   headline: string;
   children: ReactNode;
 };
+
+export type SvgProps = {
+  width: number;
+  height?: number;
+  fill?: string;
+};

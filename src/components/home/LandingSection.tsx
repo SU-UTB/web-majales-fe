@@ -10,7 +10,7 @@ export const LandingSection = () => {
     <section id="landing" className="py-12 xl:py-20">
       <Container>
         <div className="relative mx-auto max-w-max">
-          <MajalesHeadline />
+          <MajalesHeadline width={706} />
           <div className="absolute z-10 top-[80%]">
             <HeadlineBubble fillColor="#4400FF" rotationValue={10}>
               <h2 className="text-h2 text-beige">{MAJALES_DATE.format('D. M. YYYY')}</h2>

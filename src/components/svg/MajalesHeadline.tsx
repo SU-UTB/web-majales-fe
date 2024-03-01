@@ -1,6 +1,15 @@
-export const MajalesHeadline = () => {
+import type { SvgProps } from '../../AppTypes';
+
+export const MajalesHeadline = ({ width }: SvgProps) => {
   return (
-    <svg width="706" height="230" viewBox="0 0 706 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="w-full"
+      width={width}
+      height="100%"
+      viewBox="0 0 706 230"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M45.6919 71.7864C30.241 71.7864 20.4484 81.789 20.4484 100.069V169.245H0V99.4187C0 71.7971 16.1008 54.178 43.5181 54.178C57.0083 54.178 72.4591 59.8344 80.2911 75.2804C88.1231 59.8344 103.574 54.178 117.064 54.178C144.481 54.178 160.582 71.7971 160.582 99.4187V169.245H140.134V100.069C140.134 81.7997 130.341 71.7864 114.89 71.7864C99.4395 71.7864 90.5207 81.789 90.5207 100.069V169.245H70.0723V100.069C70.0723 81.7997 61.1534 71.7864 45.7025 71.7864H45.6919Z"
         fill="#EF5A23"
