@@ -24,3 +24,9 @@ export type SvgProps = {
 };
 
 export type Colors = 'white' | 'black' | 'beige' | 'orange' | 'blue' | 'purple';
+
+export type ContactType = {
+  position: string;
+  name: string;
+  email: string;
+};
