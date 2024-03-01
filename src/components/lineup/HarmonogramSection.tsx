@@ -1,3 +1,9 @@
+import { SectionContainer } from '../shared/SectionContainer';
+
 export const HarmonogramSection = () => {
-  return <section>HarmonogramSection</section>;
+  return (
+    <SectionContainer id="harmonogram">
+      <h2 className="text-h2-reversed text-orange">Harmonogram</h2>
+    </SectionContainer>
+  );
 };
