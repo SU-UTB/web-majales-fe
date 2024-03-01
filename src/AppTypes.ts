@@ -22,3 +22,5 @@ export type SvgProps = {
   height?: number;
   fill?: string;
 };
+
+export type Colors = 'white' | 'black' | 'beige' | 'orange' | 'blue' | 'purple';
