@@ -1,10 +1,10 @@
 ---
 import { AboutSection } from '../components/home/AboutSection';
+import { BaseInfoSection } from '../components/home/BaseInfoSection';
 import { CountdownSection } from '../components/home/CountdownSection';
-import { LandingImage } from '../components/home/LandingImage';
+import { LandingSection } from '../components/home/LandingSection';
 import { LinkSection } from '../components/home/LinkSection';
 import { NewsSection } from '../components/home/NewsSection';
-import { Video } from '../components/home/Video';
 import Layout from '../components/shared/Layout.astro';
 
 const metaTags = {
@@ -15,8 +15,8 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <LandingImage />
-  <Video />
+  <LandingSection />
+  <BaseInfoSection />
   <NewsSection />
   <CountdownSection client:load />
   <AboutSection />

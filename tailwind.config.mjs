@@ -13,6 +13,44 @@ export default {
       blue: '#4400FF',
       purple: '#EA92F4',
     },
+    fontSize: {
+      h2: [
+        '38px',
+        {
+          fontWeight: 600,
+        },
+      ],
+      'h2-reversed': [
+        '38px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      'h2-reversed-mobile': [
+        '28px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      p: [
+        '24px',
+        {
+          fontWeight: 400,
+        },
+      ],
+      'p-big': [
+        '28px',
+        {
+          fontWeight: 400,
+        },
+      ],
+      countdown: [
+        '48px',
+        {
+          fontWeight: 500,
+        },
+      ],
+    },
   },
   plugins: [require('@headlessui/tailwindcss')],
 };
