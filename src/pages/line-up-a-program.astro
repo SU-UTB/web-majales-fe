@@ -5,6 +5,7 @@ import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
 import { MapSection } from '../components/lineup/MapSection';
 import { WinnerBandListSection } from '../components/lineup/WinnerBandListSection';
 import Layout from '../components/shared/Layout.astro';
+import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
 
 const metaTags = {
   title: 'Majáles',
@@ -14,6 +15,9 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
+  <section>
+    <MajalesHeadlineDateLanding />
+  </section>
   <AboutSection />
   <BandListSection />
   <WinnerBandListSection />
