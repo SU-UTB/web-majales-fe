@@ -2,6 +2,7 @@
 import { ContactSection } from '../components/partners/ContactSection';
 import { PartnerSection } from '../components/partners/PartnerSection';
 import Layout from '../components/shared/Layout.astro';
+import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
 
 const metaTags = {
   title: 'Majáles',
@@ -11,6 +12,7 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
+  <MajalesHeadlineDateLanding />
   <ContactSection />
   <PartnerSection />
 </Layout>

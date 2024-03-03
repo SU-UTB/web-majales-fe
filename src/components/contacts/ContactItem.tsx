@@ -1,9 +1,13 @@
-import type { ContactType } from '../../AppTypes';
+import type { Colors, ContactType } from '../../AppTypes';
 
-export const ContactItem = ({ position, name, email }: ContactType) => {
+type Props = ContactType & {
+  textColor?: Colors;
+};
+
+export const ContactItem = ({ position, name, email, textColor = 'orange' }: Props) => {
   return (
     <div>
-      <h3 className="text-orange font-semibold">{position}</h3>
+      <h3 className={`text-${textColor} font-semibold`}>{position}</h3>
       <p className="uppercase">{name}</p>
       <a href={`mailto:${email}`}>{email}</a>
     </div>
