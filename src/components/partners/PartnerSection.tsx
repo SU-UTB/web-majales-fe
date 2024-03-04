@@ -2,7 +2,7 @@ import { SectionContainer } from '../shared/SectionContainer';
 import { PartnerList } from './PartnerList';
 import { SinglePartnerItem } from './SinglePartnerItem';
 
-import utbLogo from '../../assets/img/loga/utb-logo.jpg?url';
+import utbLogo from '../../assets/img/loga/utb.png?url';
 
 export const PartnerSection = () => {
   return (
