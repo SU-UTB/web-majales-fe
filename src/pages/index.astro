@@ -2,9 +2,9 @@
 import { AboutSection } from '../components/home/AboutSection';
 import { BaseInfoSection } from '../components/home/BaseInfoSection';
 import { CountdownSection } from '../components/home/CountdownSection';
+import { InstagramNewsSection } from '../components/home/InstagramNewsSection';
 import { LandingSection } from '../components/home/LandingSection';
 import { LinkSection } from '../components/home/LinkSection';
-import { NewsSection } from '../components/home/NewsSection';
 import Layout from '../components/shared/Layout.astro';
 
 const metaTags = {
@@ -17,8 +17,9 @@ const metaTags = {
 <Layout {...metaTags}>
   <LandingSection />
   <BaseInfoSection />
-  <NewsSection />
+  <InstagramNewsSection />
   <CountdownSection client:load />
   <AboutSection />
   <LinkSection />
 </Layout>
+../components/home/InstagramNewsSection

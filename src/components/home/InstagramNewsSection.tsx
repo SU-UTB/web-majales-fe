@@ -1,6 +1,6 @@
 import { SectionContainer } from '../shared/SectionContainer';
 
-export const NewsSection = () => {
+export const InstagramNewsSection = () => {
   return (
     <SectionContainer id="novinky">
       <h2 className="text-blue text-h2-reversed">Novinky</h2>

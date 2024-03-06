@@ -1,9 +1,9 @@
 ---
-import { NewsSection } from '../components/home/NewsSection';
 import { AboutSection } from '../components/king-queen/AboutSection';
-import { CoronationSection } from '../components/king-queen/CoronationSection';
-import { WhyToRegisterSection } from '../components/king-queen/WhyToRegisterSection';
+import { HowItWorksSection } from '../components/king-queen/HowItWorksSection';
+import { NewsSection } from '../components/king-queen/NewsSection';
 import Layout from '../components/shared/Layout.astro';
+import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
 
 const metaTags = {
   title: 'Majáles',
@@ -13,8 +13,10 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <AboutSection />
-  <NewsSection />
-  <CoronationSection />
-  <WhyToRegisterSection />
+  <MajalesHeadlineDateLanding />
+  <div>
+    <AboutSection />
+    <NewsSection />
+  </div>
+  <HowItWorksSection />
 </Layout>
