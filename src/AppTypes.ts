@@ -30,3 +30,8 @@ export type ContactType = {
   name: string;
   email: string;
 };
+
+export type QuestionType = {
+  question: string;
+  answer: ReactNode;
+};
