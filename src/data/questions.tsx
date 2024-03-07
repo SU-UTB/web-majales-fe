@@ -25,7 +25,7 @@ export const questions: QuestionType[] = [
         <a
           href="https://drive.google.com/file/d/1tRZokCPlcyfR8DeEA5XFdgAIOoiOx2Uh/view?usp=sharing"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer external"
           className="underline"
         >
           návštěvním&nbsp;řádu
