@@ -1,7 +1,7 @@
 ---
 import Layout from '../components/shared/Layout.astro';
+import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
 import { AboutSection } from '../components/ubc/AboutSection';
-import { MoreInformation } from '../components/ubc/MoreInformation';
 
 const metaTags = {
   title: 'Majáles',
@@ -11,6 +11,6 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
+  <MajalesHeadlineDateLanding />
   <AboutSection />
-  <MoreInformation />
 </Layout>

@@ -1,3 +1,5 @@
+import { SectionContainer } from '../shared/SectionContainer';
+
 export const MoreInformation = () => {
-  return <div>MoreInformation</div>;
+  return <SectionContainer id="vic-informaci">MoreInformation</SectionContainer>;
 };
