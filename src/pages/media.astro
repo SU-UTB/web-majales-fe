@@ -1,6 +1,8 @@
 ---
 import { AboutSection } from '../components/media/AboutSection';
+import { GetOurLogoSection } from '../components/media/GetOurLogoSection';
 import Layout from '../components/shared/Layout.astro';
+import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
 
 const metaTags = {
   title: 'Majáles',
@@ -10,5 +12,7 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
+  <MajalesHeadlineDateLanding />
   <AboutSection />
+  <GetOurLogoSection />
 </Layout>
