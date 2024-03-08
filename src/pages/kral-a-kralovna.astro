@@ -1,0 +1,22 @@
+---
+import { AboutSection } from '../components/king-queen/AboutSection';
+import { HowItWorksSection } from '../components/king-queen/HowItWorksSection';
+import { NewsSection } from '../components/king-queen/NewsSection';
+import Layout from '../components/shared/Layout.astro';
+import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
+
+const metaTags = {
+  title: 'Majáles',
+  description: 'TODO',
+  image: '/meta_image.jpg',
+};
+---
+
+<Layout {...metaTags}>
+  <MajalesHeadlineDateLanding />
+  <div>
+    <AboutSection />
+    <NewsSection />
+  </div>
+  <HowItWorksSection />
+</Layout>

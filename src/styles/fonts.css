@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Ladislav';
+  src:
+    local('Ladislav-Regular'),
+    url('../assets/fonts/Ladislav.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ladislav';
+  src:
+    local('Ladislav-SemiBold'),
+    url('../assets/fonts/LadislavSemiBold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ladislav';
+  src:
+    local('Ladislav-Bold'),
+    url('../assets/fonts/Ladislav-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ladislav';
+  src:
+    local('Ladislav-Reversed-Bold'),
+    url('../assets/fonts/LadislavReversed-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}

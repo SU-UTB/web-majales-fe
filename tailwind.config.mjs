@@ -2,25 +2,54 @@
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
-    extend: {
-      colors: {
-        primary: {
-          default: '#ee7711',
-          50: '#fff9ed',
-          100: '#fef2d6',
-          200: '#fce1ac',
-          300: '#faca77',
-          400: '#f7a840',
-          500: '#f58e1a',
-          550: '#f28316',
-          600: '#ee7711',
-          650: '#D66811',
-          700: '#be5810',
-          800: '#974415',
-          900: '#7a3a14',
-          950: '#421c08',
+    fontFamily: {
+      sans: ['Ladislav'],
+    },
+    colors: {
+      white: '#FFFFFF',
+      black: '#000000',
+      beige: '#FFFCD9',
+      orange: '#EF5A23',
+      blue: '#4400FF',
+      purple: '#EA92F4',
+    },
+    fontSize: {
+      h2: [
+        '38px',
+        {
+          fontWeight: 600,
         },
-      },
+      ],
+      'h2-reversed': [
+        '38px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      'h2-reversed-mobile': [
+        '28px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      p: [
+        '24px',
+        {
+          fontWeight: 400,
+        },
+      ],
+      'p-big': [
+        '28px',
+        {
+          fontWeight: 400,
+        },
+      ],
+      countdown: [
+        '48px',
+        {
+          fontWeight: 500,
+        },
+      ],
     },
   },
   plugins: [require('@headlessui/tailwindcss')],

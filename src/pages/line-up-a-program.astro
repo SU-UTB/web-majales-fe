@@ -1,0 +1,26 @@
+---
+import { AboutSection } from '../components/lineup/AboutSection';
+import { BandListSection } from '../components/lineup/BandListSection';
+import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
+import { MapSection } from '../components/lineup/MapSection';
+import { WinnerBandListSection } from '../components/lineup/WinnerBandListSection';
+import Layout from '../components/shared/Layout.astro';
+import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
+
+const metaTags = {
+  title: 'Majáles',
+  description: 'TODO',
+  image: '/meta_image.jpg',
+};
+---
+
+<Layout {...metaTags}>
+  <section>
+    <MajalesHeadlineDateLanding />
+  </section>
+  <AboutSection />
+  <BandListSection />
+  <WinnerBandListSection />
+  <HarmonogramSection />
+  <MapSection />
+</Layout>

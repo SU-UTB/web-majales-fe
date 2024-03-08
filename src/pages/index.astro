@@ -1,5 +1,11 @@
 ---
-import Layout from '../components/Layout.astro';
+import { AboutSection } from '../components/home/AboutSection';
+import { BaseInfoSection } from '../components/home/BaseInfoSection';
+import { CountdownSection } from '../components/home/CountdownSection';
+import { InstagramNewsSection } from '../components/home/InstagramNewsSection';
+import { LandingSection } from '../components/home/LandingSection';
+import { LinkSection } from '../components/home/LinkSection';
+import Layout from '../components/shared/Layout.astro';
 
 const metaTags = {
   title: 'Majáles',
@@ -9,5 +15,10 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <h1>Hello world!</h1>
+  <LandingSection />
+  <BaseInfoSection />
+  <InstagramNewsSection />
+  <CountdownSection client:load />
+  <AboutSection />
+  <LinkSection />
 </Layout>

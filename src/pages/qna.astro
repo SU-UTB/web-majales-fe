@@ -1,0 +1,18 @@
+---
+import { QuestionListSection } from '../components/qna/QuestionListSection';
+import Layout from '../components/shared/Layout.astro';
+import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
+
+const metaTags = {
+  title: 'Majáles',
+  description: 'TODO',
+  image: '/meta_image.jpg',
+};
+---
+
+<Layout {...metaTags}>
+  <div>
+    <MajalesHeadlineDateLanding />
+    <QuestionListSection />
+  </div>
+</Layout>
