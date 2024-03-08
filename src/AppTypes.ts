@@ -35,3 +35,8 @@ export type QuestionType = {
   question: string;
   answer: ReactNode;
 };
+
+export type PartnerType = {
+  img: string;
+  alt: string;
+};
