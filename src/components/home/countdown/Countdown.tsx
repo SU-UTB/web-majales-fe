@@ -20,7 +20,7 @@ export const Countdown = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 gap-8 md:gap-14 lg:gap-20 xl:gap-32">
+    <div className="grid grid-cols-3 gap-8 md:gap-14 lg:gap-20 xl:gap-32 mx-auto md:mx-0">
       <CountdownValue text="měsíce" value={months} />
       <CountdownValue text="dny" value={days} />
       <CountdownValue text="hodiny" value={hours} />
