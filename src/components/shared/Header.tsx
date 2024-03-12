@@ -22,7 +22,7 @@ export const Header = () => {
           {isOpen && (
             <AnimatePresence>
               <motion.ul
-                className="flex flex-col items-center justify-center gap-y-6 xl:hidden absolute w-full h-[100svh] bg-blue"
+                className="flex flex-col items-center justify-center gap-y-6 xl:hidden absolute w-full h-[100svh] bg-blue z-10"
                 variants={mobNavItemVariants}
                 initial="hidden"
                 animate="visible"
