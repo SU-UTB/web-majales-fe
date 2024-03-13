@@ -40,3 +40,14 @@ export type PartnerType = {
   img: string;
   alt: string;
 };
+
+export type FooterSocialType = {
+  link: string;
+  icon: ReactNode;
+};
+
+export type FooterItemType = {
+  logo: string;
+  logoName: string;
+  socials: FooterSocialType[];
+};
