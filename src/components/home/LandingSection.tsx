@@ -7,7 +7,14 @@ import { MajalesHeadline } from '../svg/MajalesHeadline';
 
 export const LandingSection = () => {
   return (
-    <section id="landing" className="pt-12 pb-32 xl:py-20">
+    <section
+      id="landing"
+      className="pt-12 pb-32 xl:py-20 bg-contain bg-no-repeat"
+      style={{
+        backgroundImage: "url('/assets/img/landing-left.webp'), url('/assets/img/landing-right.webp')",
+        backgroundPosition: 'left, right',
+      }}
+    >
       <Container>
         <div className="relative flex justify-center">
           <MajalesHeadline width={706} />

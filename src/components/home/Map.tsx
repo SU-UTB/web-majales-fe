@@ -8,6 +8,7 @@ export const Map = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         className="rounded-2xl"
+        title="Kde nás najdete - mapa"
       />
     </div>
   );
