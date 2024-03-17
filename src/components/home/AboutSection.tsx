@@ -1,10 +1,18 @@
 import { HeadlineBubble } from '../shared/HeadlineBubble';
 import { SectionContainer } from '../shared/SectionContainer';
 import { Map } from './Map';
+import { UsefulLinkList } from './UsefulLinkList';
 
 export const AboutSection = () => {
   return (
-    <SectionContainer id="co-je-majales">
+    <SectionContainer
+      id="co-je-majales"
+      style={{
+        backgroundImage: "url('/assets/img/about-left.webp'), url('/assets/img/about-right.webp')",
+        backgroundPosition: 'top left, 100% 40%',
+        backgroundSize: '700px',
+      }}
+    >
       <HeadlineBubble width={400}>
         <h2 className="font-normal text-p md:text-[38px] text-beige text-center">
           Co je
@@ -28,6 +36,7 @@ export const AboutSection = () => {
         <p>Zní to dobře, co? Těšíme se na vás už 3. května v parku před Baťovou vilou.</p>
       </div>
       <Map />
+      <UsefulLinkList />
     </SectionContainer>
   );
 };
