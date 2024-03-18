@@ -12,6 +12,7 @@ export default {
       orange: '#EF5A23',
       blue: '#4400FF',
       purple: '#EA92F4',
+      transparent: 'transparent',
     },
     fontSize: {
       h2: [

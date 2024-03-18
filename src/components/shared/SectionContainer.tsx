@@ -9,7 +9,7 @@ type Props = {
   style?: CSSProperties;
 };
 
-export const SectionContainer = ({ id, children, bgColor = 'beige', style }: Props) => {
+export const SectionContainer = ({ id, children, bgColor = 'transparent', style }: Props) => {
   return (
     <section id={id} className={`py-8 lg:py-16 bg-${bgColor} bg-no-repeat bg-contain`} style={style}>
       <Container>{children}</Container>

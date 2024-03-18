@@ -2,7 +2,13 @@ import { SectionContainer } from '../shared/SectionContainer';
 
 export const HowItWorksSection = () => {
   return (
-    <SectionContainer id="jak-to-funguje">
+    <SectionContainer
+      id="jak-to-funguje"
+      style={{
+        backgroundImage: "url('/assets/img/news-right.webp')",
+        backgroundPosition: 'right',
+      }}
+    >
       <div className="space-y-8 max-w-2xl">
         <div>
           <h2 className="text-h2 text-orange">Kdo se může stát Princem a Princeznou?</h2>
