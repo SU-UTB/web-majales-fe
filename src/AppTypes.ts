@@ -51,3 +51,11 @@ export type FooterItemType = {
   logoName: string;
   socials: FooterSocialType[];
 };
+
+export type IGFeedType = {
+  id: string;
+  media_type: string;
+  media_url: string;
+  permalink: string;
+  timestamp: string;
+};
