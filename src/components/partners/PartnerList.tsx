@@ -8,7 +8,7 @@ export const PartnerList = () => {
   return (
     <div className="space-y-8">
       <h4 className="text-blue text-h2 text-center">Partneři</h4>
-      <div className="rounded-2xl bg-white p-4 flex flex-col items-center gap-8">
+      <div className="rounded-2xl bg-white p-8 flex flex-col items-center gap-8">
         <div className="space-y-16 flex flex-col items-center">
           <div className="flex flex-wrap justify-between items-center">
             <SinglePartnerItem img={mestoLogo} alt="logo město Zlín" />
