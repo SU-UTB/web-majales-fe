@@ -41,15 +41,17 @@ export type PartnerType = {
   alt: string;
 };
 
-export type FooterSocialType = {
+export type ExternalLinkType = {
   link: string;
-  icon: ReactNode;
+  text?: string;
+  icon?: ReactNode;
+  className?: string;
 };
 
 export type FooterItemType = {
   logo: string;
   logoName: string;
-  socials: FooterSocialType[];
+  socials: ExternalLinkType[];
 };
 
 export type IGFeedType = {
