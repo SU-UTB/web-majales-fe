@@ -13,16 +13,16 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
+  <MajalesHeadlineDateLanding />
   <div class="relative">
-    <MajalesHeadlineDateLanding rightBg={null} />
     <AboutSection />
+    <GetOurLogoSection />
     <Image
       src="/assets/img/kral-kralovna-right.webp"
       alt="Kral a Kralovna pozadi"
       width={750}
       height={1350}
-      class="absolute right-0 top-1/2 -translate-y-1/2 select-none h-4/5 w-max"
+      class="absolute right-0 top-1/2 -translate-y-1/2 select-none w-[200px] hidden lg:block"
     />
   </div>
-  <GetOurLogoSection />
 </Layout>

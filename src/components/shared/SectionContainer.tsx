@@ -12,11 +12,7 @@ type Props = {
 
 export const SectionContainer = ({ id, children, bgColor = 'transparent', style, className }: Props) => {
   return (
-    <section
-      id={id}
-      className={`py-8 lg:py-16 bg-${bgColor} bg-no-repeat bg-contain ${className ? className : ''}`}
-      style={style}
-    >
+    <section id={id} className={`py-8 lg:py-16 bg-${bgColor} bg-no-repeat bg-contain ${className}`} style={style}>
       <Container>{children}</Container>
     </section>
   );

@@ -7,9 +7,8 @@ export const AboutSection = () => {
   return (
     <SectionContainer
       id="co-je-majales"
+      className="lg:bg-[url('/assets/img/about-left.webp'),_url('/assets/img/about-right.webp')] bg-[position:top_left,_100%_40%]"
       style={{
-        backgroundImage: "url('/assets/img/about-left.webp'), url('/assets/img/about-right.webp')",
-        backgroundPosition: 'top left, 100% 40%',
         backgroundSize: '700px',
       }}
     >
@@ -20,7 +19,7 @@ export const AboutSection = () => {
           <span className="text-h2-reversed-mobile md:text-h2-reversed">Majales UTB?</span>
         </h2>
       </HeadlineBubble>
-      <div className="py-8 space-y-4 max-w-[600px]">
+      <div className="p-8 space-y-4 max-w-[600px] bg-beige rounded-xl">
         <p>
           Jedná se o studenty pořádaný multižánrový open-air festival s nabitým programempro všechny věkové kategorie!
         </p>

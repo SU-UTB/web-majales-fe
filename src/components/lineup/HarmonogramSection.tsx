@@ -4,9 +4,8 @@ export const HarmonogramSection = () => {
   return (
     <SectionContainer
       id="harmonogram"
+      className="lg:bg-[url('/assets/img/harmonogram-right.webp')] bg-[position:right]"
       style={{
-        backgroundImage: "url('/assets/img/harmonogram-right.webp')",
-        backgroundPosition: 'right',
         // TODO: remove once we have the content
         minHeight: '80vh',
       }}

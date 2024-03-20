@@ -11,7 +11,7 @@ type Props = HeadProps;
 
 <html lang="cs">
   <Head {...Astro.props} />
-  <body class="text-p bg-beige">
+  <body class="text-p-mobile lg:text-p bg-beige">
     <Header client:only />
     <main transition:animate="slide">
       <slot />
