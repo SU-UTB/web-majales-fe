@@ -1,10 +1,13 @@
 ---
+import { fetchInstagramFeed } from '../api/fetchInstagramFeed';
 import { AboutSection } from '../components/home/AboutSection';
 import { BaseInfoSection } from '../components/home/BaseInfoSection';
 import { CountdownSection } from '../components/home/CountdownSection';
 import { InstagramNewsSection } from '../components/home/InstagramNewsSection';
 import { LandingSection } from '../components/home/LandingSection';
 import { LinkSection } from '../components/home/LinkSection';
+import { getInstragramPhotoFeed } from '../utils';
+
 import Layout from '../components/shared/Layout.astro';
 
 const metaTags = {
@@ -12,12 +15,16 @@ const metaTags = {
   description: 'TODO',
   image: '/meta_image.jpg',
 };
+
+const { data } = await fetchInstagramFeed();
+
+const igFeed = getInstragramPhotoFeed(data);
 ---
 
 <Layout {...metaTags}>
   <LandingSection />
   <BaseInfoSection />
-  <InstagramNewsSection />
+  <InstagramNewsSection client:visible igFeed={igFeed} />
   <CountdownSection client:load />
   <AboutSection />
   <LinkSection />
