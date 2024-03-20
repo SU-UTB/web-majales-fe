@@ -1,4 +1,5 @@
 ---
+import Image from 'astro/components/Image.astro';
 import { AboutSection } from '../components/media/AboutSection';
 import { GetOurLogoSection } from '../components/media/GetOurLogoSection';
 import Layout from '../components/shared/Layout.astro';
@@ -13,6 +14,15 @@ const metaTags = {
 
 <Layout {...metaTags}>
   <MajalesHeadlineDateLanding />
-  <AboutSection />
-  <GetOurLogoSection />
+  <div class="relative">
+    <AboutSection />
+    <GetOurLogoSection />
+    <Image
+      src="/assets/img/kral-kralovna-right.webp"
+      alt="Kral a Kralovna pozadi"
+      width={750}
+      height={1350}
+      class="absolute right-0 top-1/2 -translate-y-1/2 select-none w-[200px] hidden lg:block"
+    />
+  </div>
 </Layout>

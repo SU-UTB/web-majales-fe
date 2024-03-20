@@ -12,6 +12,7 @@ export default {
       orange: '#EF5A23',
       blue: '#4400FF',
       purple: '#EA92F4',
+      transparent: 'transparent',
     },
     fontSize: {
       h2: [
@@ -21,7 +22,7 @@ export default {
         },
       ],
       'h2-mobile': [
-        '32px',
+        '28px',
         {
           fontWeight: 600,
         },
@@ -33,7 +34,7 @@ export default {
         },
       ],
       'h2-reversed-mobile': [
-        '28px',
+        '26px',
         {
           fontWeight: 700,
         },
@@ -44,8 +45,14 @@ export default {
           fontWeight: 400,
         },
       ],
+      'p-mobile': [
+        '20px',
+        {
+          fontWeight: 400,
+        },
+      ],
       'p-big': [
-        '28px',
+        '26px',
         {
           fontWeight: 400,
         },
@@ -58,5 +65,6 @@ export default {
       ],
     },
   },
+
   plugins: [require('@headlessui/tailwindcss')],
 };

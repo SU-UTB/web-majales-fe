@@ -5,7 +5,6 @@ import { BaseInfoSection } from '../components/home/BaseInfoSection';
 import { CountdownSection } from '../components/home/CountdownSection';
 import { InstagramNewsSection } from '../components/home/InstagramNewsSection';
 import { LandingSection } from '../components/home/LandingSection';
-import { LinkSection } from '../components/home/LinkSection';
 import { getInstragramPhotoFeed } from '../utils';
 
 import Layout from '../components/shared/Layout.astro';
@@ -27,5 +26,4 @@ const igFeed = getInstragramPhotoFeed(data);
   <InstagramNewsSection client:visible igFeed={igFeed} />
   <CountdownSection client:load />
   <AboutSection />
-  <LinkSection />
 </Layout>

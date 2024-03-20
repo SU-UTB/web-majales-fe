@@ -7,7 +7,7 @@ type Props = {
 
 export const InstagramNewsSection = ({ igFeed }: Props) => {
   return (
-    <SectionContainer id="novinky">
+    <SectionContainer id="novinky" className="bg-[url('/assets/img/news-right.webp')] bg-[position:right]">
       <h2 className="text-blue text-h2-reversed">Novinky</h2>
       <div className="flex flex-wrap gap-6 py-8 justify-center">
         {igFeed.slice(0, 8).map(({ id, media_url, permalink }) => (
