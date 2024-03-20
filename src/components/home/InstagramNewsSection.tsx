@@ -11,9 +11,9 @@ export const InstagramNewsSection = ({ igFeed }: Props) => {
       <h2 className="text-blue text-h2-reversed">Novinky</h2>
       <div className="flex flex-wrap gap-6 py-8 justify-center">
         {igFeed.slice(0, 8).map(({ id, media_url, permalink }) => (
-          <a className="size-[200px] lg:size-[250px]" key={id} href={permalink} target="_blank">
+          <a className="size-[200px] lg:size-[250px] group overflow-hidden" key={id} href={permalink} target="_blank">
             <img
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform"
               width={200}
               height={200}
               src={media_url}
