@@ -1,6 +1,11 @@
+import type { IGFeedType } from '../../AppTypes';
 import { SectionContainer } from '../shared/SectionContainer';
 
-export const InstagramNewsSection = () => {
+type Props = {
+  igFeed: IGFeedType[];
+};
+
+export const InstagramNewsSection = ({ igFeed }: Props) => {
   return (
     <SectionContainer
       id="novinky"
@@ -10,20 +15,20 @@ export const InstagramNewsSection = () => {
       }}
     >
       <h2 className="text-blue text-h2-reversed">Novinky</h2>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex labore, beatae veritatis adipisci vitae similique.
-      Suscipit distinctio id amet? Mollitia eveniet autem harum soluta adipisci officiis dignissimos rerum, nam
-      doloremque possimus minus iste cupiditate aliquam, quia porro magni maiores beatae reprehenderit exercitationem,
-      modi sapiente eligendi neque ea? Blanditiis eligendi dolores, sit illo voluptas perspiciatis amet laborum!
-      Repellendus maxime nostrum aspernatur quasi amet odit recusandae. Nulla, aperiam? Quaerat magni dolor doloremque
-      consequuntur rerum molestiae culpa commodi adipisci possimus aspernatur cum pariatur obcaecati sunt itaque fugit
-      necessitatibus beatae alias enim, illum ipsam consequatur et assumenda. Iure, ullam maiores ratione architecto
-      fuga eveniet, voluptas ipsam voluptate quisquam laboriosam sint alias reiciendis quae. Libero esse suscipit,
-      sapiente impedit molestias alias minima sunt deserunt. Modi, est velit minima, quia ea sint, nostrum delectus
-      repellat omnis possimus vitae provident neque magni sunt totam autem ab inventore sit maiores voluptatibus quos!
-      Repellendus, obcaecati fugiat amet aliquam impedit nam dicta corporis ea quisquam natus quaerat autem eveniet iste
-      qui! Tenetur delectus sequi aliquid voluptatibus eaque tempore animi rerum veritatis suscipit nihil. Ipsum
-      consequuntur numquam quidem, velit deserunt aspernatur vero blanditiis cum ipsam consectetur odit consequatur
-      animi quasi. Voluptatum atque nostrum commodi unde dolore sapiente, rerum possimus. Culpa, asperiores!
+      <div className="flex flex-wrap gap-6 py-8 justify-center">
+        {igFeed.slice(0, 8).map(({ id, media_url, permalink }) => (
+          <a className="size-[200px] lg:size-[250px] group overflow-hidden" key={id} href={permalink} target="_blank">
+            <img
+              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform"
+              width={200}
+              height={200}
+              src={media_url}
+              alt="Instagram feed"
+              loading="lazy"
+            />
+          </a>
+        ))}
+      </div>
     </SectionContainer>
   );
 };
