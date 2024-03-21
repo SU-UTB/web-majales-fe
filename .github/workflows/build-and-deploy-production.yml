@@ -1,0 +1,36 @@
+name: Build and deploy to production on main push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    env:
+      INSTAGRAM_API_LONG_LIVED_TOKEN: ${{ secrets.INSTAGRAM_API_LONG_LIVED_TOKEN }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Node.js 20 and dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build project
+        run: npm ci && npm run build
+
+      - name: SFTP uploader
+        uses: wangyucode/sftp-upload-action@v2.0.2
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          compress: false
+          localDir: dist/
+          remoteDir: www/
