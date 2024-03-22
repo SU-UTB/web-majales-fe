@@ -25,7 +25,7 @@ export const AboutSection = () => {
         alt="UBC kapela"
         width={800}
         height={400}
-        className="2xl:absolute static right-6 2xl:-bottom-[20%] 2xl:translate-y-[20%] max-w-[600px] z-10 mt-8"
+        className="2xl:absolute static right-6 2xl:-bottom-[20%] 2xl:translate-y-[20%] w-full max-w-[600px] z-10 mt-8"
       />
     </SectionContainer>
   );
