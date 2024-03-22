@@ -8,3 +8,14 @@ export const MAJALES_HEADLINE_DATE_LANDING_LEFT_BG = '/assets/img/majales-headin
 export const MAJALES_HEADLINE_DATE_LANDING_RIGHT_BG = '/assets/img/majales-heading-right.webp';
 export const MAJALES_HEADLINE_DATE_LANDING_LEFT_BG_MOB = '/assets/img/majales-heading-mob-left.webp';
 export const MAJALES_HEADLINE_DATE_LANDING_RIGHT_BG_MOB = '/assets/img/majales-heading-mob-right.webp';
+
+export const APP_ROUTES = {
+  HOME: '/',
+  LINE_UP: '/line-up-a-program',
+  KING_AND_QUEEN: '/kral-a-kralovna',
+  UBC: '/ubc',
+  QNA: '/qna',
+  PARTNERS: '/partneri',
+  MEDIA: '/media',
+  CONTACTS: '/kontakty',
+};

@@ -63,6 +63,12 @@ export default {
           fontWeight: 500,
         },
       ],
+      'useful-link': [
+        '28px',
+        {
+          fontWeight: 600,
+        },
+      ],
     },
   },
 
