@@ -9,7 +9,7 @@ type Props = {
 
 export const HeadlineBubble = ({ fillColor = '#EF5A23', rotationValue = 0, width = 320, children }: Props) => {
   return (
-    <div className="relative max-w-[240px] md:max-w-max" style={{ transform: `rotate(${rotationValue}deg)` }}>
+    <div className="relative max-w-[240px] md:max-w-max z-0" style={{ transform: `rotate(${rotationValue}deg)` }}>
       <svg
         width="100%"
         height="100%"
