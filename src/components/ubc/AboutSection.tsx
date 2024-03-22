@@ -3,19 +3,19 @@ import { SectionContainer } from '../shared/SectionContainer';
 export const AboutSection = () => {
   return (
     <SectionContainer id="ubc" bgColor="orange">
-      <h1 className="text-beige text-h2">UBC – UniBandContest 2024</h1>
+      <h1 className="text-beige text-h2">UBC – UniBand Contest 2024</h1>
       <div className="text-beige space-y-4 max-w-screen-md">
         <p>
-          Máte kapelu a chcete si zahrát na velkých pódiích? UniBand Contest je soutěž právě pro vás! Zapoj se do tohoto
-          celorepublikového souboje. Získej titul vítěze a status nejlepší studentské kapely v Česku.
+          Máte kapelu a&nbsp;chcete si zahrát na velkých pódiích? UniBand Contest je soutěž právě pro vás! Zapoj se do
+          tohoto celorepublikového souboje. Získej titul vítěze a&nbsp;status nejlepší studentské kapely v&nbsp;Česku.
         </p>
         <div>
-          <h2 className="text-h2">Informace o UniBand Contestu</h2>
+          <h2 className="text-h2">Informace o&nbsp;UniBand Contestu</h2>
           <p>
             Hlavním cílem soutěže je nabídnout studentským kapelám prostor ukázat svůj talent široké veřejnosti.
-            Účastníci soutěž poté mohou rozvíjet svůj hudební potenciál a získat zkušenosti, které jim mohou pomoci v
-            uměleckém růstu. Kapely se utkají v několika kolech, kde změří své dovednosti a ti nejúspěšnější se dostanou
-            „z malého klubu, až na velký festival.“
+            Účastníci soutěž poté mohou rozvíjet svůj hudební potenciál a&nbsp;získat zkušenosti, které jim mohou pomoci
+            v&nbsp;uměleckém růstu. Kapely se utkají v&nbsp;několika kolech, kde změří své dovednosti a&nbsp;ti
+            nejúspěšnější se dostanou „z&nbsp;malého klubu, až na velký festival.“
           </p>
         </div>
       </div>
