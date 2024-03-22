@@ -1,37 +1,40 @@
 import type { NavLinkType } from '../AppTypes';
+import { APP_ROUTES } from '../config/constants';
+
+const { HOME, LINE_UP, KING_AND_QUEEN, UBC, QNA, PARTNERS, MEDIA, CONTACTS } = APP_ROUTES;
 
 export const navItems: NavLinkType[] = [
   {
     text: 'Domov',
-    linkTo: '/',
+    linkTo: HOME,
   },
   {
     text: 'Line up a program',
-    linkTo: '/line-up-a-program',
+    linkTo: LINE_UP,
   },
   {
     text: 'Král a královna',
-    linkTo: '/kral-a-kralovna',
+    linkTo: KING_AND_QUEEN,
   },
   {
     text: 'UBC',
-    linkTo: '/ubc',
+    linkTo: UBC,
   },
   {
     text: 'Q&A',
-    linkTo: '/qna',
+    linkTo: QNA,
   },
   {
     text: 'Partneři',
-    linkTo: '/partneri',
+    linkTo: PARTNERS,
   },
   {
     text: 'Média',
-    linkTo: '/media',
+    linkTo: MEDIA,
   },
   {
     text: 'Kontakty',
-    linkTo: '/kontakty',
+    linkTo: CONTACTS,
   },
 ];
 

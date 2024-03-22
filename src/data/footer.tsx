@@ -16,7 +16,7 @@ export const footerItems: FooterItemType[] = [
       },
       {
         icon: <FbIcon />,
-        link: 'https://www.facebook.com/events/949984270087841',
+        link: 'https://www.facebook.com/MajalesUTB',
       },
       {
         icon: <LinkedInIcon />,
