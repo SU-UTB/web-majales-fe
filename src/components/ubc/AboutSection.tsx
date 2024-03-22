@@ -1,8 +1,9 @@
+import ubcImg from '../../assets/img/ubc-img.jpg?url';
 import { SectionContainer } from '../shared/SectionContainer';
 
 export const AboutSection = () => {
   return (
-    <SectionContainer id="ubc" bgColor="orange">
+    <SectionContainer id="ubc" bgColor="orange" className="">
       <h1 className="text-beige text-h2">UBC – UniBand Contest 2024</h1>
       <div className="text-beige space-y-4 max-w-screen-md">
         <p>
@@ -19,6 +20,13 @@ export const AboutSection = () => {
           </p>
         </div>
       </div>
+      <img
+        src={ubcImg}
+        alt="UBC kapela"
+        width={800}
+        height={400}
+        className="2xl:absolute static right-6 2xl:-bottom-[20%] 2xl:translate-y-[20%] max-w-[600px] z-10 mt-8"
+      />
     </SectionContainer>
   );
 };
