@@ -21,18 +21,19 @@ export const AboutSection = () => {
       </HeadlineBubble>
       <div className="p-8 space-y-4 max-w-[600px] bg-beige rounded-xl">
         <p>
-          Jedná se o studenty pořádaný multižánrový open-air festival s nabitým programempro všechny věkové kategorie!
+          Jedná se o&nbsp;studenty pořádaný multižánrový open-air festival s&nbsp;nabitým programem pro všechny věkové
+          kategorie!
         </p>
         <p>
-          Těšit se můžete na dvě stage plné živé hudby, Chill-out zónu, Food zónu anadupaný doprovodný program, ať už
-          přímo v den D nebo i v týdnech předsamotnou akcí.
+          Těšit se můžete na dvě stage plné živé hudby, Chill-out zónu, Food zónu a&nbsp;nadupaný doprovodný program, ať
+          už přímo v&nbsp;den&nbsp;D&nbsp;nebo i&nbsp;v&nbsp;týdnech před samotnou akcí.
         </p>
         <p>
-          Projděte se s námi centrem Zlína v prvomájovém průvodu, zapojte se do soutěžekapel UNIBAND CONTEST, díky které
-          si zahrajete na studentských Majálesech v Brně, Ostravě a ve Zlíně nebo si třeba v den Majálesu vybojujte
-          královský titul.
+          Projděte se s&nbsp;námi centrem Zlína v&nbsp;prvomájovém průvodu, zapojte se do soutěžekapel UNIBAND CONTEST,
+          díky které si zahrajete na studentských Majálesech v&nbsp;Brně, Ostravě a&nbsp;ve Zlíně nebo si třeba
+          v&nbsp;den Majálesu vybojujte královský titul.
         </p>
-        <p>Zní to dobře, co? Těšíme se na vás už 3. května v parku před Baťovou vilou.</p>
+        <p>Zní to dobře, co? Těšíme se na vás už 3. května v&nbsp;parku před Baťovou vilou.</p>
       </div>
       <Map />
       <UsefulLinkList />
