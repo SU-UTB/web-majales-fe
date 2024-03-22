@@ -10,12 +10,12 @@ export const Header = () => {
 
   return (
     <motion.header className="w-full bg-transparent mx-auto">
-      <nav className="relative z-10 bg-blue text-white">
+      <nav className="relative z-20 bg-blue text-white">
         <div className="max-w-screen-xl flex flex-col items-center xl:flex-row xl:justify-between xl:py-4 mx-auto">
           <div className="hidden xl:block">
             <NavLogo />
           </div>
-          <div className="z-20 w-full flex justify-between items-center p-4 xl:hidden">
+          <div className="z-30 w-full flex justify-between items-center p-4 xl:hidden">
             <NavLogo />
             <Hamburger rounded toggled={isOpen} toggle={setIsOpen} />
           </div>
