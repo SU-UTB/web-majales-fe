@@ -11,7 +11,7 @@ export const Countdown = () => {
     const currDate = new Date();
 
     const hourDiff = MAJALES_DATE.diff(currDate, 'hour');
-    const remainingDays = Math.floor(hourDiff / 24);
+    const remainingDays = Math.floor((hourDiff % (24 * 30)) / 24);
     const remainingHours = hourDiff % 24;
 
     setMonths(MAJALES_DATE.diff(currDate, 'month'));
