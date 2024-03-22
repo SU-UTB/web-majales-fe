@@ -1,4 +1,4 @@
-import ubcImg from '../../assets/img/ubc-img.jpg?url';
+import ubcImg from '../../assets/img/ubc-img.webp?url';
 import { SectionContainer } from '../shared/SectionContainer';
 
 export const AboutSection = () => {
