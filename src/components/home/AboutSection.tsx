@@ -16,7 +16,7 @@ export const AboutSection = () => {
         <h2 className="font-normal text-p md:text-[38px] text-beige text-center">
           Co je
           <br />
-          <span className="text-h2-reversed-mobile md:text-h2-reversed">Majales UTB?</span>
+          <span className="text-h2-reversed-mobile md:text-h2-reversed">Majáles UTB?</span>
         </h2>
       </HeadlineBubble>
       <div className="p-8 space-y-4 max-w-[600px] bg-beige rounded-xl">
