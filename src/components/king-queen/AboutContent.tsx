@@ -2,7 +2,7 @@ export const AboutContent = () => {
   return (
     <div className="space-y-8 max-w-2xl">
       <div>
-        <h1 className="text-h2-reversed text-blue">Král a Královna Majálesu</h1>
+        <h1 className="text-h2-reversed text-blue">Meatfly Král a Královna Majálesu</h1>
         <p>
           Chcete zažít nezapomenutelný zážitek, soutěžit v unikátních disciplínách a získat titul Král a Královna
           Majálesu UTB? Pak neváhejte a společně se svým parťákem sepřihlaste do naší jedinečné soutěže.
