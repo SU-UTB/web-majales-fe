@@ -6,10 +6,10 @@ export const ContactSection = () => {
     <SectionContainer id="kontakty" bgColor="blue">
       <div className="text-beige space-y-8">
         <div className="space-y-4">
-          <h1 className="text-h2-reversed text-beige">Máte zájem o partnerství?</h1>
+          <h1 className="text-h2-reversed text-beige">Máte zájem o&nbsp;partnerství?</h1>
           <p>
-            Poděkování patří také našim skvělým partnerům, kteří Majáles UTB podporují.Pokud chcete být partnerem i vy,
-            kontaktujte nás.
+            Poděkování patří také našim skvělým partnerům, kteří Majáles UTB podporují. Pokud chcete být partnerem
+            i&nbsp;vy, kontaktujte nás.
           </p>
         </div>
         <ContactItem
