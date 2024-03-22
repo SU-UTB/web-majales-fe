@@ -13,7 +13,7 @@ export type NavLinkType = {
 
 export type UsefulLinkType = {
   linkTo: string;
-  headline: string;
+  headline: ReactNode;
   children: ReactNode;
 };
 
