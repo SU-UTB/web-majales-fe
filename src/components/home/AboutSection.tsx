@@ -3,7 +3,7 @@ import { SectionContainer } from '../shared/SectionContainer';
 import { Map } from './Map';
 import { UsefulLinkList } from './UsefulLinkList';
 
-import majalesAboutImg from '../../assets/img/majales-about.webp';
+import majalesAboutImg from '../../assets/img/majales-about.webp?url';
 
 export const AboutSection = () => {
   return (
@@ -21,7 +21,7 @@ export const AboutSection = () => {
           <span className="text-h2-reversed-mobile md:text-h2-reversed">Majáles UTB?</span>
         </h2>
       </HeadlineBubble>
-      <div className="flex flex-wrap items-center gap-8 justify-between">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:place-items-center gap-8">
         <div className="lg:p-8 space-y-4 max-w-[600px] bg-beige rounded-xl">
           <p>
             Jedná se o&nbsp;studenty pořádaný multižánrový open-air festival s&nbsp;nabitým programem pro všechny věkové
@@ -39,7 +39,7 @@ export const AboutSection = () => {
           <p>Zní to dobře, co? Těšíme se na vás už 3. května v&nbsp;parku před Baťovou vilou.</p>
         </div>
         <img
-          src={majalesAboutImg.src}
+          src={majalesAboutImg}
           alt="Majáles ilustrační foto"
           width={1245}
           height={830}
