@@ -13,7 +13,7 @@ export type NavLinkType = {
 
 export type UsefulLinkType = {
   linkTo: string;
-  headline: string;
+  headline: ReactNode;
   children: ReactNode;
 };
 
@@ -23,7 +23,7 @@ export type SvgProps = {
   fill?: string;
 };
 
-export type Colors = 'white' | 'black' | 'beige' | 'orange' | 'blue' | 'purple';
+export type Colors = 'white' | 'black' | 'beige' | 'orange' | 'blue' | 'purple' | 'transparent';
 
 export type ContactType = {
   position: string;
@@ -39,4 +39,25 @@ export type QuestionType = {
 export type PartnerType = {
   img: string;
   alt: string;
+};
+
+export type ExternalLinkType = {
+  link: string;
+  text?: string;
+  icon?: ReactNode;
+  className?: string;
+};
+
+export type FooterItemType = {
+  logo: string;
+  logoName: string;
+  socials: ExternalLinkType[];
+};
+
+export type IGFeedType = {
+  id: string;
+  media_type: string;
+  media_url: string;
+  permalink: string;
+  timestamp: string;
 };
