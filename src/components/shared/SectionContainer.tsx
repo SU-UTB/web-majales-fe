@@ -15,7 +15,7 @@ export const SectionContainer = ({ id, children, bgColor = 'beige', className, s
   return (
     <section
       id={id}
-      className={`py-8 lg:py-16 bg-no-repeat bg-contain ${className && className}`}
+      className={`py-8 lg:py-16 bg-no-repeat bg-contain relative ${className && className}`}
       style={{ backgroundColor: colorHexMap[bgColor], ...style }}
     >
       <Container>{children}</Container>

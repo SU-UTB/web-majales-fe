@@ -7,8 +7,8 @@ export const MoreInformation = () => {
     <SectionContainer id="vic-informaci">
       <div className="space-y-8 max-w-screen-md">
         <MoreInfoPart title="Jak se zúčastnit?">
-          <p>Pro účast v soutěži stačí splnit několik jednoduchých podmínek.</p>
-          <ol className="list-decimal list-inside">
+          <p>Pro účast v&nbsp;soutěži stačí splnit několik jednoduchých podmínek.</p>
+          <ol className="list-decimal list-outside pl-4">
             <li>Kapela musí mít alespoň jednoho člena, který je studentem.</li>
             <li>
               Kapela musí hrát vlastní autorskou tvorbu. Nehledáme žádné covery nebo podobné interpretace – hledáme
@@ -18,7 +18,7 @@ export const MoreInformation = () => {
           </ol>
           <p>
             Splňujete všechny podmínky? Tak už se zbývá jen přihlásit. Pro letošní ročník již registrace skončili
-            a&nbsp;a mezi nimi se skrývá i letošní vítěz, ale nezapomeň sledovat UniBand Contest, ať nepropásneš
+            a&nbsp; mezi nimi se skrývá i&nbsp;letošní vítěz, ale nezapomeň sledovat UniBand Contest, ať nepropásneš
             registrace pro rok 2025. Více informací na&nbsp;webu&nbsp;
             <ExternalLink link="https://unibandcontest.cz/" text="unibandcontest.cz" className="underline" />.
           </p>

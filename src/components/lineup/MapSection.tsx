@@ -1,6 +1,6 @@
 import { SectionContainer } from '../shared/SectionContainer';
 
-import mapaArealu from '../../assets/img/mapa-arealu.jpg?url';
+import mapaArealu from '../../assets/img/mapa-arealu.webp?url';
 
 export const MapSection = () => {
   return (
