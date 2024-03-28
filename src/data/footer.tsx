@@ -1,6 +1,6 @@
 import type { FooterItemType } from '../AppTypes';
-import utbLogo from '../assets/img/loga/utb.png?url';
 import majalesLogo from '../assets/img/majales-footer.webp?url';
+import utbLogo from '../assets/img/partners/utb.png?url';
 import suLogo from '../assets/img/su-footer.webp?url';
 import { FbIcon, IgIcon, LinkedInIcon, WebIcon } from '../components/shared/Icons';
 import { MAJALES_TITLE } from '../config/constants';

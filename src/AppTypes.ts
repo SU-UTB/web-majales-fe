@@ -61,3 +61,8 @@ export type IGFeedType = {
   permalink: string;
   timestamp: string;
 };
+
+export type BandType = {
+  img: string;
+  title: string;
+};
