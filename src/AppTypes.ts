@@ -65,4 +65,5 @@ export type IGFeedType = {
 export type BandType = {
   img: string;
   title: string;
+  link?: string;
 };

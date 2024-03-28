@@ -18,3 +18,5 @@ export const APP_ROUTES = {
   MEDIA: '/media',
   CONTACTS: '/kontakty',
 };
+
+export const CAN_SHOW_BANDS = true;
