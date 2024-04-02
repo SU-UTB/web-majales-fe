@@ -2,11 +2,11 @@ import { SectionContainer } from '../shared/SectionContainer';
 import { PartnerList } from './PartnerList';
 import { SinglePartnerItem } from './SinglePartnerItem';
 
-import hitradioLogo from '../../assets/img/loga/hitradio.png?url';
-import postaBezHranicLogo from '../../assets/img/loga/pbh.png?url';
-import suLogo from '../../assets/img/loga/su.png?url';
-import trinityLogo from '../../assets/img/loga/trinity.jpg?url';
-import utbLogo from '../../assets/img/loga/utb.png?url';
+import hitradioLogo from '../../assets/img/partners/hitradio.png?url';
+import postaBezHranicLogo from '../../assets/img/partners/pbh.png?url';
+import suLogo from '../../assets/img/partners/su.png?url';
+import trinityLogo from '../../assets/img/partners/trinity.jpg?url';
+import utbLogo from '../../assets/img/partners/utb.png?url';
 import { MainPartnerList } from './MainPartnerList';
 
 export const PartnerSection = () => {

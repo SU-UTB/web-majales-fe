@@ -1,5 +1,5 @@
-import krajLogo from '../../assets/img/loga/kraj.png?url';
-import mestoLogo from '../../assets/img/loga/zlin.png?url';
+import krajLogo from '../../assets/img/partners/kraj.png?url';
+import mestoLogo from '../../assets/img/partners/zlin.png?url';
 import { partners } from '../../data/partners';
 import { SinglePartnerItem } from './SinglePartnerItem';
 
