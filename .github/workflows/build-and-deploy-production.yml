@@ -1,9 +1,11 @@
-name: Build and deploy to production on main push
+name: Build and deploy to production on main push or redeploy every 3 days
 
 on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 0 */3 * *'
 
 jobs:
   web-deploy:
