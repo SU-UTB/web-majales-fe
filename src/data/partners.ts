@@ -14,6 +14,7 @@ import moraviaContainersLogo from '../assets/img/partners/moravia-containers.png
 import ntbLogo from '../assets/img/partners/ntb.png?url';
 import teplarnaLogo from '../assets/img/partners/teplarna.png?url';
 import vincentkaLogo from '../assets/img/partners/vincentka.png?url';
+import vivaLogo from '../assets/img/partners/viva-kovarna.png?url';
 import vpaLogo from '../assets/img/partners/vpa.png?url';
 
 export const mainPartners: PartnerType[] = [
@@ -65,6 +66,11 @@ export const partners: PartnerType[] = [
     alt: 'Kodiak logo',
     link: 'https://kodiak.cz/',
   },
+  {
+    img: vivaLogo,
+    alt: 'Viva kovárna logo',
+    link: "https://www.viva.cz/"
+  }
   {
     img: teplarnaLogo,
     alt: 'Teplárna Otrokovice a.s. logo',
