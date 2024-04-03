@@ -20,14 +20,17 @@ export const mainPartners: PartnerType[] = [
   {
     img: geniczechLogo,
     alt: 'Geniczech-M logo',
+    link: 'https://www.geniczech.cz/',
   },
   {
     img: kpmgLogo,
     alt: 'KPMG logo',
+    link: 'https://kpmg.com/cz/cs/home.html',
   },
   {
     img: vpaLogo,
     alt: 'Vše pro akci logo',
+    link: 'https://vseproakci.cz/',
   },
 ];
 
@@ -35,61 +38,61 @@ export const partners: PartnerType[] = [
   {
     img: meatflyLogo,
     alt: 'Meatfly logo',
+    link: 'https://www.meatfly.cz/',
   },
   {
     img: vincentkaLogo,
     alt: 'Vincentka logo',
+    link: 'https://www.vincentka.cz/',
   },
   {
     img: montixLogo,
     alt: 'Montix logo',
+    link: 'https://www.montix.cz/',
   },
-  // {
-  //   img: vaskyLogo,
-  //   alt: 'Vasky logo',
-  // },
-  // {
-  //   img: creamLogo,
-  //   alt: 'Cream logo',
-  // },
   {
     img: KFCLogo,
     alt: 'KFC logo',
+    link: 'https://kfc.cz/',
   },
   {
     img: matchballLogo,
     alt: 'Matchball logo',
+    link: 'http://mball.cz/',
   },
   {
     img: kodiakLogo,
     alt: 'Kodiak logo',
+    link: 'https://kodiak.cz/',
   },
-  // {
-  //   img: VivaLogo,
-  //   alt: 'Viva logo',
-  // },
   {
     img: teplarnaLogo,
-    alt: 'Teplarna logo',
+    alt: 'Teplárna Otrokovice a.s. logo',
+    link: 'https://www.tot.cz/',
   },
   {
     img: moraviaContainersLogo,
     alt: 'MoraviaContainers logo',
+    link: 'https://moraviacontainers.com/cz/',
   },
   {
     img: dimerLogo,
     alt: 'Dimer logo',
+    link: 'https://www.dimer.cz/',
   },
   {
     img: bumerangLogo,
     alt: 'Bumerang logo',
+    link: 'https://bumerang.film/',
   },
   {
     img: ntbLogo,
     alt: 'Nadace Tomáše Bati logo',
+    link: 'https://www.nadacetomasebati.cz/',
   },
   {
     img: cistyFestivalLogo,
     alt: 'Čistý festival logo',
+    link: 'https://www.cistyfestival.cz/',
   },
 ];
