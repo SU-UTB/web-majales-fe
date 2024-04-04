@@ -15,13 +15,28 @@ export const PartnerSection = () => {
       <div className="space-y-12 lg:gap-y-16 flex flex-col items-center">
         <h2 className="text-h2-reversed text-orange">Partneři podporující studentský Majáles UTB</h2>
         <div className="flex flex-wrap justify-center gap-x-20 gap-y-8">
-          <SinglePartnerItem headline="Pořadatel" img={suLogo} alt="SU logo" />
-          <SinglePartnerItem headline="Spolupořadatel" img={utbLogo} alt="UTB logo" />
+          <SinglePartnerItem headline="Pořadatel" img={suLogo} alt="SU logo" link="https://su.utb.cz/" />
+          <SinglePartnerItem headline="Spolupořadatel" img={utbLogo} alt="UTB logo" link="https://www.utb.cz/" />
         </div>
-        <SinglePartnerItem headline="Generální partner" img={trinityLogo} alt="Trinity logo" />
+        <SinglePartnerItem
+          headline="Generální partner"
+          img={trinityLogo}
+          alt="Trinity logo"
+          link="https://www.trinitybank.cz/"
+        />
         <div className="flex flex-wrap items-center gap-16 lg:gap-20">
-          <SinglePartnerItem headline="Mediální partner" img={hitradioLogo} alt="Hitradio logo" />
-          <SinglePartnerItem headline="Logistický partner" img={postaBezHranicLogo} alt="Pošta bez hranic logo" />
+          <SinglePartnerItem
+            headline="Mediální partner"
+            img={hitradioLogo}
+            alt="Hitradio logo"
+            link="https://hitradio.cz/"
+          />
+          <SinglePartnerItem
+            headline="Logistický partner"
+            img={postaBezHranicLogo}
+            alt="Pošta bez hranic logo"
+            link="https://www.postabezhranic.cz/"
+          />
         </div>
         <MainPartnerList />
         <PartnerList />

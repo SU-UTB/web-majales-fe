@@ -39,6 +39,7 @@ export type QuestionType = {
 export type PartnerType = {
   img: string;
   alt: string;
+  link: string;
 };
 
 export type ExternalLinkType = {
