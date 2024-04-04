@@ -29,7 +29,7 @@ export const PartnerSection = () => {
             headline="Mediální partner"
             img={hitradioLogo}
             alt="Hitradio logo"
-            link="https://www.trinitybank.cz/"
+            link="https://hitradio.cz/"
           />
           <SinglePartnerItem
             headline="Logistický partner"
