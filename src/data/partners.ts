@@ -69,8 +69,8 @@ export const partners: PartnerType[] = [
   {
     img: vivaLogo,
     alt: 'Viva kovárna logo',
-    link: "https://www.viva.cz/"
-  }
+    link: 'https://www.viva.cz/',
+  },
   {
     img: teplarnaLogo,
     alt: 'Teplárna Otrokovice a.s. logo',
