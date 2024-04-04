@@ -39,6 +39,7 @@ export type QuestionType = {
 export type PartnerType = {
   img: string;
   alt: string;
+  link: string;
 };
 
 export type ExternalLinkType = {
@@ -60,4 +61,10 @@ export type IGFeedType = {
   media_url: string;
   permalink: string;
   timestamp: string;
+};
+
+export type BandType = {
+  img: string;
+  title: string;
+  link?: string;
 };
