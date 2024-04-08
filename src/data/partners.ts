@@ -21,7 +21,7 @@ export const mainPartners: PartnerType[] = [
   {
     img: geniczechLogo,
     alt: 'Geniczech-M logo',
-    link: 'https://www.geniczech.cz/',
+    link: 'https://www.budstrojar.cz/',
   },
   {
     img: kpmgLogo,
@@ -100,5 +100,35 @@ export const partners: PartnerType[] = [
     img: cistyFestivalLogo,
     alt: 'Čistý festival logo',
     link: 'https://www.cistyfestival.cz/',
+  },
+  {
+    img: '',
+    alt: 'Rentor logo',
+    link: 'https://www.rentor.cz/',
+  },
+  {
+    img: '',
+    alt: 'Vitar logo',
+    link: 'https://www.vitar.cz/',
+  },
+  {
+    img: '',
+    alt: 'Zlín Film Festival logo',
+    link: 'https://www.zlinfest.cz/',
+  },
+  {
+    img: '',
+    alt: 'Vest logo',
+    link: 'https://vestzlin.cz/',
+  },
+  {
+    img: '',
+    alt: 'NextBike logo',
+    link: 'https://www.nextbikeczech.com/',
+  },
+  {
+    img: '',
+    alt: 'Amem logo',
+    link: 'https://www.amem.cz/',
   },
 ];
