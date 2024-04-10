@@ -2,7 +2,7 @@ import { SectionContainer } from '../shared/SectionContainer';
 import { PartnerList } from './PartnerList';
 import { SinglePartnerItem } from './SinglePartnerItem';
 
-import hitradioLogo from '../../assets/img/partners/hitradio.png?url';
+import hitradioLogo from '../../assets/img/partners/hitradio-zlin.png?url';
 import postaBezHranicLogo from '../../assets/img/partners/pbh.png?url';
 import suLogo from '../../assets/img/partners/su.png?url';
 import trinityLogo from '../../assets/img/partners/trinity.jpg?url';
@@ -29,7 +29,7 @@ export const PartnerSection = () => {
             headline="Mediální partner"
             img={hitradioLogo}
             alt="Hitradio logo"
-            link="https://hitradio.cz/"
+            link="https://hitradiozlin.cz/"
           />
           <SinglePartnerItem
             headline="Logistický partner"
