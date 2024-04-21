@@ -1,12 +1,14 @@
 import type { BandType } from '../AppTypes';
 
-import annetXAndBobodyListen from '../assets/img/bands/annet-x-and-bobody-listen.jpg?url';
-import fallAndFell from '../assets/img/bands/fall-and-fell.jpg?url';
-import hospodskyBordel from '../assets/img/bands/hospodsky-bordel.jpg?url';
-import nsfw from '../assets/img/bands/nsfw.jpg?url';
-import qocna from '../assets/img/bands/qocna.jpg?url';
-import rez from '../assets/img/bands/rez.jpg?url';
-import zociVoci from '../assets/img/bands/zoci-voci.jpg?url';
+import annetXAndBobodyListen from '../assets/img/bands/annetx-nobody.webp?url';
+import fallAndFell from '../assets/img/bands/fall-fell.webp?url';
+import hospodskyBordel from '../assets/img/bands/hospodsky-bordel.webp?url';
+import nsf from '../assets/img/bands/nsf.webp?url';
+import qocna from '../assets/img/bands/quocna.webp?url';
+import restWich1 from '../assets/img/bands/rest-wich-1.webp?url';
+import restWich from '../assets/img/bands/rest-wich.webp?url';
+import rez from '../assets/img/bands/rez.webp?url';
+import zociVoci from '../assets/img/bands/zoci-voci.webp?url';
 
 export const bands: BandType[] = [
   {
@@ -25,7 +27,7 @@ export const bands: BandType[] = [
     link: '',
   },
   {
-    img: nsfw,
+    img: nsf,
     title: 'N.S.F.W.',
     link: '',
   },
@@ -42,6 +44,16 @@ export const bands: BandType[] = [
   {
     img: zociVoci,
     title: 'Zoči Voči',
+    link: '',
+  },
+  {
+    img: restWich,
+    title: 'Rest a Wich',
+    link: '',
+  },
+  {
+    img: restWich1,
+    title: 'Rest a Wich',
     link: '',
   },
 ];
