@@ -70,6 +70,11 @@ export default {
         },
       ],
     },
+    extend: {
+      screens: {
+        xs: '480px',
+      },
+    },
   },
 
   plugins: [require('@headlessui/tailwindcss')],
