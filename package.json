@@ -19,6 +19,7 @@
     "astro": "^3.6.4",
     "astro-robots-txt": "^1.0.0",
     "axios": "^1.6.8",
+    "clsx": "^2.1.0",
     "dayjs": "^1.11.10",
     "firebase": "^10.8.0",
     "firebase-tools": "^13.1.0",

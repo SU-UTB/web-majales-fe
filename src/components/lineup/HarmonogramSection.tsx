@@ -1,17 +1,18 @@
+import { partyStage, utbTrinityStage } from '../../data/harmonogram';
 import { SectionContainer } from '../shared/SectionContainer';
+import { HarmonogramGroup } from './harmonogram/HarmonogramGroup';
 
 export const HarmonogramSection = () => {
   return (
     <SectionContainer
       id="harmonogram"
       className="lg:bg-[url('/assets/img/harmonogram-right.webp')] bg-[position:right]"
-      style={{
-        // TODO: remove once we have the content
-        minHeight: '80vh',
-      }}
     >
-      <h2 className="text-h2-reversed text-orange">Harmonogram</h2>
-      <p>Harmonogram akce bude zveřejněn brzy</p>
+      <h2 className="text-h2-reversed text-orange mb-8">Harmonogram</h2>
+      <div className="bg-blue py-4 px-8 lg:px-20 lg:py-10 max-w-max space-y-10">
+        <HarmonogramGroup title="UTB a Trinity bank stage" harmonogramItems={utbTrinityStage} />
+        <HarmonogramGroup title="Párty stage" harmonogramItems={partyStage} />
+      </div>
     </SectionContainer>
   );
 };
