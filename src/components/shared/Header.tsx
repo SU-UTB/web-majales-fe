@@ -9,7 +9,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.header className="w-full bg-transparent mx-auto">
+    <header className="w-full bg-transparent mx-auto sticky top-0 left-0 z-10">
       <nav className="relative z-20 bg-blue text-white">
         <div className="max-w-screen-xl flex flex-col items-center xl:flex-row xl:justify-between xl:py-4 mx-auto">
           <div className="hidden xl:block">
@@ -45,6 +45,6 @@ export const Header = () => {
           </ul>
         </div>
       </nav>
-    </motion.header>
+    </header>
   );
 };
