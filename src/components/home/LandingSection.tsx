@@ -16,7 +16,7 @@ export const LandingSection = () => {
           <MajalesHeadline width={706} />
           <div className="absolute z-10 top-[120%] md:top-[80%] left-0 md:left-[10%]">
             <HeadlineBubble fillColor="#4400FF" rotationValue={10}>
-              <h2 className="text-h2-mobile md:text-h2 text-beige">{MAJALES_DATE.format('D. M. YYYY')}</h2>
+              <h2 className="text-h2-mobile md:text-h2 text-beige">{MAJALES_DATE.toLocaleDateString('cs-CZ')}</h2>
             </HeadlineBubble>
           </div>
         </div>
