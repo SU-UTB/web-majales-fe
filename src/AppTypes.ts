@@ -68,3 +68,9 @@ export type BandType = {
   title: string;
   link?: string;
 };
+
+export type CountdownDateValueType = {
+  months: number;
+  days: number;
+  hours: number;
+};
