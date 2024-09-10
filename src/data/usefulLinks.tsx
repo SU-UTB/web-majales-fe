@@ -39,12 +39,12 @@ export const usefulLinks: UsefulLinkType[] = [
       </>
     ),
   },
-  {
-    linkTo: PARTNERS,
-    headline: 'Partneři',
-    children:
-      'Poděkování patří také našim skvělým partnerům, kteří Majáles UTB podporují. Pokud chcete být partnerem i vy, kontaktujte nás.',
-  },
+  // {
+  //   linkTo: PARTNERS,
+  //   headline: 'Partneři',
+  //   children:
+  //     'Poděkování patří také našim skvělým partnerům, kteří Majáles UTB podporují. Pokud chcete být partnerem i vy, kontaktujte nás.',
+  // },
   {
     linkTo: MEDIA,
     headline: 'Média',
