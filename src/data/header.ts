@@ -24,18 +24,18 @@ export const navItems: NavLinkType[] = [
     text: 'Q&A',
     linkTo: QNA,
   },
-  {
-    text: 'Partneři',
-    linkTo: PARTNERS,
-  },
+  // {
+  //   text: 'Partneři',
+  //   linkTo: PARTNERS,
+  // },
   {
     text: 'Média',
     linkTo: MEDIA,
   },
-  {
-    text: 'Kontakty',
-    linkTo: CONTACTS,
-  },
+  // {
+  //   text: 'Kontakty',
+  //   linkTo: CONTACTS,
+  // },
 ];
 
 export const mobNavItemVariants = {

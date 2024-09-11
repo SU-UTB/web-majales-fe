@@ -9,10 +9,16 @@ export const AboutSection = () => {
       <div className="max-w-[800px] space-y-4">
         {CAN_SHOW_BANDS ? (
           <>
-            <p>Zajímá vás, kdo vystoupí na letošním Majálesu UTB 2024?</p>
+            <p>Měli byste zájem vystoupit, jakožto interpret Majálesu UTB 2025?</p>
             <p>
-              Na dvou stagích zazáří interprety různých žánrů, a to od rocku přes pop až po rap.
-              <br />A proto se letos můžete těšit na:
+              Dejte nám vědět na našich sociálních sítích:{' '}
+              <strong>
+                <a href="https://www.facebook.com/studentskaunieutb">Facebook</a>
+              </strong>{' '}
+              &nbsp;nebo&nbsp;&nbsp;
+              <strong>
+                <a href="https://www.instagram.com/studentskaunieutb/">Instagram</a>
+              </strong>
             </p>
           </>
         ) : (

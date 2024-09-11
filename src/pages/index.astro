@@ -1,11 +1,8 @@
 ---
-import { fetchInstagramFeed } from '../api/fetchInstagramFeed';
 import { AboutSection } from '../components/home/AboutSection';
 import { BaseInfoSection } from '../components/home/BaseInfoSection';
-import { CountdownSection } from '../components/home/CountdownSection';
-import { InstagramNewsSection } from '../components/home/InstagramNewsSection';
 import { LandingSection } from '../components/home/LandingSection';
-import { calculateRemainingTime, getInstragramPhotoFeed } from '../utils';
+import { calculateRemainingTime } from '../utils';
 
 import Layout from '../components/shared/Layout.astro';
 import { MAJALES_DATE } from '../config/constants';
@@ -16,9 +13,9 @@ const metaTags = {
   image: '/meta_image.jpg',
 };
 
-const { data } = await fetchInstagramFeed();
+// const { data } = await fetchInstagramFeed();
 
-const igFeed = getInstragramPhotoFeed(data);
+// const igFeed = getInstragramPhotoFeed(data);
 
 const remainingDate = calculateRemainingTime(MAJALES_DATE);
 ---
@@ -26,7 +23,7 @@ const remainingDate = calculateRemainingTime(MAJALES_DATE);
 <Layout {...metaTags}>
   <LandingSection />
   <BaseInfoSection />
-  <InstagramNewsSection client:visible igFeed={igFeed} />
-  <CountdownSection {...remainingDate} />
+  <!-- <InstagramNewsSection client:visible igFeed={igFeed} /> -->
+  <!-- <CountdownSection {...remainingDate} /> -->
   <AboutSection />
 </Layout>
