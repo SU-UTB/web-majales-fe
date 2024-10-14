@@ -20,16 +20,16 @@ export const contacts: ContactType[] = [
     phone: '+420 775 673 216',
   },
   {
+    position: 'Sales',
+    name: 'JANKA NIEPELOVÁ',
+    email: 'niepelova@sutb.cz',
+    phone: '+421 918 424 947',
+  },
+  {
     position: 'Media relations',
     name: 'MARTINA MATULÍKOVÁ',
     email: 'matulikova@sutb.cz',
     phone: '+420 730 930 139',
-  },
-  {
-    position: 'Sales',
-    name: 'JANKA NIEPELOVÁ',
-    email: '@sutb.cz',
-    phone: '+421 918 424 947',
   },
   {
     position: 'Produkce',
@@ -38,15 +38,15 @@ export const contacts: ContactType[] = [
     phone: '+420 776 459 859',
   },
   {
-    position: 'Kapely',
-    name: 'DAVID ŠTÍCHA',
-    email: 'sticha@sutb.cz',
-    phone: '+420 775 520 010',
-  },
-  {
     position: 'Art director',
     name: 'ERIK RIEČIČIAR',
     email: 'rieciciar@sutb.cz',
     phone: '+420 773 834 430',
+  },
+  {
+    position: 'Kapely',
+    name: 'DAVID ŠTÍCHA',
+    email: 'sticha@sutb.cz',
+    phone: '+420 775 520 010',
   },
 ];
