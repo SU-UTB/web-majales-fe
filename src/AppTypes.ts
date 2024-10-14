@@ -29,6 +29,7 @@ export type ContactType = {
   position: string;
   name: string;
   email: string;
+  phone: string;
 };
 
 export type QuestionType = {
