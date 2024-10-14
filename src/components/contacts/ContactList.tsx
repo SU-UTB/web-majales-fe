@@ -16,7 +16,7 @@ export const ContactList = () => {
       <OrganizerItem />
       <div className="py-4 md:py-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 md:gap-y-12">
         {contacts.map((contact) => (
-          <ContactItem {...contact} />
+          <ContactItem {...contact} key={contact.email} />
         ))}
       </div>
     </SectionContainer>
