@@ -30,6 +30,7 @@ export type ContactType = {
   name: string;
   email: string;
   phone: string;
+  photo: string;
 };
 
 export type QuestionType = {

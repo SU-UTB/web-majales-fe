@@ -71,6 +71,10 @@ export default {
       ],
     },
     extend: {
+      scale: {
+        175: '1.75',
+        200: '2.00',
+      },
       screens: {
         xs: '480px',
       },
