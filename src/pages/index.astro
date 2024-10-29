@@ -1,11 +1,11 @@
 ---
 import { AboutSection } from '../components/home/AboutSection';
 import { BaseInfoSection } from '../components/home/BaseInfoSection';
+import { CountdownSection } from '../components/home/CountdownSection';
 import { LandingSection } from '../components/home/LandingSection';
-import { calculateRemainingTime } from '../utils';
-
 import Layout from '../components/shared/Layout.astro';
 import { MAJALES_DATE } from '../config/constants';
+import { calculateRemainingTime } from '../utils';
 
 const metaTags = {
   title: 'Majáles',
@@ -17,13 +17,17 @@ const metaTags = {
 
 // const igFeed = getInstragramPhotoFeed(data);
 
+console.log(MAJALES_DATE)
+
 const remainingDate = calculateRemainingTime(MAJALES_DATE);
+
+console.log(remainingDate)
 ---
 
 <Layout {...metaTags}>
   <LandingSection />
   <BaseInfoSection />
   <!-- <InstagramNewsSection client:visible igFeed={igFeed} /> -->
-  <!-- <CountdownSection {...remainingDate} /> -->
+  <CountdownSection {...remainingDate} />
   <AboutSection />
 </Layout>
