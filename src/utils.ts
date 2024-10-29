@@ -20,7 +20,8 @@ export const colorHexMap: Record<Colors, string> = {
 export const calculateRemainingTime = (targetDate: Date): CountdownDateValueType => {
   const currentDate = new Date();
 
-  const difference = targetDate.getMilliseconds() - currentDate.getMilliseconds();
+  // Use getTime() for the full timestamp in milliseconds
+  const difference = targetDate.getTime() - currentDate.getTime();
 
   let remainingMonths = Math.floor(difference / (1000 * 60 * 60 * 24 * 30));
   let remainingDays = Math.floor((difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
