@@ -13,21 +13,14 @@ const metaTags = {
   image: '/meta_image.jpg',
 };
 
-// const { data } = await fetchInstagramFeed();
-
-// const igFeed = getInstragramPhotoFeed(data);
-
-console.log(MAJALES_DATE)
-
 const remainingDate = calculateRemainingTime(MAJALES_DATE);
 
-console.log(remainingDate)
 ---
 
 <Layout {...metaTags}>
   <LandingSection />
   <BaseInfoSection />
   <!-- <InstagramNewsSection client:visible igFeed={igFeed} /> -->
-  <CountdownSection {...remainingDate} />
+  <CountdownSection/>
   <AboutSection />
 </Layout>
