@@ -16,10 +16,10 @@ export const navItems: NavLinkType[] = [
     text: 'Král a královna',
     linkTo: KING_AND_QUEEN,
   },
-  {
-    text: 'UBC',
-    linkTo: UBC,
-  },
+  // {
+  //   text: 'UBC',
+  //   linkTo: UBC,
+  // },
   {
     text: 'Q&A',
     linkTo: QNA,

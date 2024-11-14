@@ -12,21 +12,15 @@ export const usefulLinks: UsefulLinkType[] = [
   },
   {
     linkTo: KING_AND_QUEEN,
-    headline: (
-      <>
-        Král a královna
-        <br />
-        Princ a princezna
-      </>
-    ),
+    headline: <>Král a královna</>,
     children:
       'Zúčastněte se soutěže o tituly Majálesových královských párů a nechte se unést unikátními soutěžními disciplínami.',
   },
-  {
-    linkTo: UBC,
-    headline: 'UBC',
-    children: 'Soutěž UniBand Contest otevírá dveře studentským kapelám k vystoupení na velkých festivalech.',
-  },
+  // {
+  //   linkTo: UBC,
+  //   headline: 'UBC',
+  //   children: 'Soutěž UniBand Contest otevírá dveře studentským kapelám k vystoupení na velkých festivalech.',
+  // },
   {
     linkTo: QNA,
     headline: 'Q&A',

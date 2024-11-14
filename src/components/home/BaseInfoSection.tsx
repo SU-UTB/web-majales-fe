@@ -11,7 +11,7 @@ export const BaseInfoSection = () => {
           <p>2 stage s 8 interprety </p>
           <p>Food & Chill-out zóna</p>
           <p>Doprovodný program</p>
-          <p>Král a Královna & Princ a Princezna Majálesu</p>
+          <p>Král a Královna Majálesu</p>
           <p>To a mnohem víc na Majálesu UTB!</p>
         </div>
         <iframe
