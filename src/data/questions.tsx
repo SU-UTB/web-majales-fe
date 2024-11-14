@@ -4,7 +4,7 @@ export const questions: QuestionType[] = [
   {
     question: 'Kde a za kolik koupím vstupenku?',
     answer:
-      'Je naší mnohaletou tradicí, že na Majáles UTB je vstup ZDARMA. Proto vstupenku kupovat nemusíte a ani se nepotřebujete předem registrovat. Stačí přijít 3. 5. 2024 do parku před Baťovou vilou.',
+      'Je naší mnohaletou tradicí, že na Majáles UTB je vstup ZDARMA. Proto vstupenku kupovat nemusíte a ani se nepotřebujete předem registrovat. Stačí přijít 2. 5. 2025 do parku před Baťovou vilou.',
   },
   {
     question: 'Je v areálu bankomat?',
