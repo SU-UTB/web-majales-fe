@@ -17,7 +17,7 @@ export const AboutContent = () => {
       </div>
       <div>
         <h2 className="text-h2">Kde a kdy se akce koná?</h2>
-        <p>Akce se uskuteční 3. 5. 2024 v rámci Majálesu UTB v areálu festivalu.</p>
+        <p>Akce se uskuteční 2. 5. 2025 v rámci Majálesu UTB v areálu festivalu.</p>
       </div>
     </div>
   );

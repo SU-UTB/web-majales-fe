@@ -1,8 +1,6 @@
 import { MAJALES_DATE } from '../../config/constants';
-
 import { Container } from '../shared/Container';
 import { HeadlineBubble } from '../shared/HeadlineBubble';
-
 import { MajalesHeadline } from '../svg/MajalesHeadline';
 
 export const LandingSection = () => {

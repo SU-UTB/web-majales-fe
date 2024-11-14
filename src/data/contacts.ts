@@ -1,7 +1,7 @@
 import type { ContactType } from '../AppTypes';
 import BetyPhoto from '../assets/img/contacts/bety.jpg?url';
-import DefaultPhoto from '../assets/img/contacts/default.jpg?url';
 import ErikPhoto from '../assets/img/contacts/erik.jpg?url';
+import JankaPhoto from '../assets/img/contacts/janka.jpg?url';
 import JstPhoto from '../assets/img/contacts/jst.jpg?url';
 import KlarkaPhoto from '../assets/img/contacts/klarka.jpg?url';
 import LukyPhoto from '../assets/img/contacts/luky.jpg?url';
@@ -35,7 +35,7 @@ export const contacts: ContactType[] = [
     name: 'JANKA NIEPELOVÁ',
     email: 'niepelova@sutb.cz',
     phone: '+421 918 424 947',
-    photo: DefaultPhoto,
+    photo: JankaPhoto,
   },
   {
     position: 'Media relations',
