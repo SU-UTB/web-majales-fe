@@ -1,7 +1,7 @@
 import type { NavLinkType } from '../AppTypes';
 import { APP_ROUTES } from '../config/constants';
 
-const { HOME, LINE_UP, KING_AND_QUEEN, UBC, QNA, PARTNERS, MEDIA, CONTACTS } = APP_ROUTES;
+const { HOME, LINE_UP, KING_AND_QUEEN, UBC, QNA, PARTNERS, MEDIA, CONTACTS, GALERIE } = APP_ROUTES;
 
 export const navItems: NavLinkType[] = [
   {
@@ -11,6 +11,10 @@ export const navItems: NavLinkType[] = [
   {
     text: 'Line up a program',
     linkTo: LINE_UP,
+  },
+  {
+    text: 'Galerie',
+    linkTo: GALERIE,
   },
   {
     text: 'Král a královna',

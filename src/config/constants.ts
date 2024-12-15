@@ -9,6 +9,7 @@ export const MAJALES_HEADLINE_DATE_LANDING_RIGHT_BG = '/assets/img/majales-headi
 export const APP_ROUTES = {
   HOME: '/',
   LINE_UP: '/line-up-a-program',
+  GALERIE: '/galerie',
   KING_AND_QUEEN: '/kral-a-kralovna',
   UBC: '/ubc',
   QNA: '/qna',
