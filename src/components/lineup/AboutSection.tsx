@@ -4,7 +4,7 @@ import { SectionContainer } from '../shared/SectionContainer';
 
 export const AboutSection = () => {
   return (
-    <SectionContainer id="lineup" bgColor="purple">
+    <SectionContainer id="lineup" bgColor="lightpink">
       <h2 className="text-h2">Line up</h2>
       <div className="max-w-[800px] space-y-4">
         {CAN_SHOW_BANDS ? (

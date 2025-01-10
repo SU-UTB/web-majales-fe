@@ -4,7 +4,7 @@ type Props = ContactType & {
   textColor?: Colors;
 };
 
-export const ContactItem = ({ position, name, email, phone, photo, textColor = 'orange' }: Props) => {
+export const ContactItem = ({ position, name, email, phone, photo, textColor = 'pink' }: Props) => {
   return (
     <div className="flex flex-col">
       <h3 className={`text-${textColor} font-semibold`}>{position}</h3>

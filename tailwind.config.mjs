@@ -8,10 +8,11 @@ export default {
     colors: {
       white: '#FFFFFF',
       black: '#000000',
-      beige: '#FFFCD9',
-      orange: '#EF5A23',
-      blue: '#4400FF',
-      purple: '#EA92F4',
+      beige: '#FEE3EC',
+      pink: '#E7548A',
+      lightpink: '#F49183',
+      blue: '#6459FD',
+      darkDarkBlue: '#1F2041',
       transparent: 'transparent',
     },
     fontSize: {

@@ -2,7 +2,7 @@ import { SectionContainer } from '../shared/SectionContainer';
 
 export const BaseInfoSection = () => {
   return (
-    <SectionContainer id="zakladni-informae" bgColor="purple">
+    <SectionContainer id="zakladni-informae" bgColor="lightpink">
       <div className="flex flex-wrap gap-8 xl:gap-12 w-full lg:justify-between py-8 xl:py-16 xl:text-p-big items-center justify-center">
         <div className="w-full max-w-[685px] lg:max-w-max space-y-2 text-p-big">
           <p>
