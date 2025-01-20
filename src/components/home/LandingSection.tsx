@@ -27,29 +27,29 @@ export const LandingSection = () => {
       {/* TOP RIGHT */}
       <div className="absolute top-0 right-0">
         <div className="relative">
-          <ArrowLeftBottom className="h-10 md:h-24" />
-          <WhiteTriangle className="absolute top-10 md:top-24 h-10 md:h-24" />
+          <ArrowLeftBottom className="h-12 md:h-24" />
+          <WhiteTriangle className="absolute top-12 md:top-24 h-12 md:h-24" />
         </div>
       </div>
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0">
         <div className="relative">
-          <CheckerRectangle className="h-10 md:h-24" />
-          <OrangeTriangle className="absolute left-[-2.5rem] md:left-[-6rem] bottom-0 h-10 md:h-24" />
+          <CheckerRectangle className="h-12 md:h-24" />
+          <OrangeTriangle className="absolute -left-12 md:-left-24 bottom-0 h-12 md:h-24" />
         </div>
       </div>
       {/* BOTTOM LEFT */}
       <div className="absolute bottom-0 left-0">
         <div className="relative">
-          <CheckerSquare className="absolute bottom-0 h-10 md:h-24" />
-          <SquareWithCircle className="absolute bottom-10 md:bottom-24 h-10 md:h-24" />
-          <CheckerTriangleTransparent className="absolute bottom-20 md:bottom-48 h-10 md:h-24" />
-          <PurpleRectangle className="absolute bottom-0 md:bottom-0 left-10 md:left-24 h-10 w-36 md:h-24 md:w-80">
+          <CheckerSquare className="absolute bottom-0 h-12 md:h-24" />
+          <SquareWithCircle className="absolute bottom-12 md:bottom-24 h-12 md:h-24" />
+          <CheckerTriangleTransparent className="absolute bottom-24 md:bottom-48 h-12 md:h-24" />
+          <PurpleRectangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 w-40 md:w-72  overflow-hidden">
             <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
               {MAJALES_DATE.toLocaleDateString('cs-CZ')}
             </h2>
           </PurpleRectangle>
-          <PinkTriangle className="absolute bottom-0 md:bottom-0 left-[11.4rem] md:left-[26rem] h-10 md:h-24" />
+          <PinkTriangle className="absolute bottom-0 md:bottom-0 left-48 md:left-96 h-12 md:h-24" />
         </div>
       </div>
     </section>

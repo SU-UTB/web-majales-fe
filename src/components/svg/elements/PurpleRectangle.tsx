@@ -2,11 +2,11 @@ export const PurpleRectangle = ({ className, children }: { className?: string, c
   return (
     <div className={`${className}`}>
       <svg
-        viewBox="0 0 417 131"
+        viewBox="0 0 393 131"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="417" height="131" fill="#6459FD" />
+        <rect width="393" height="131" fill="#6459FD" />
       </svg>
       {children && (
         <div className="absolute inset-0 flex justify-center items-center">
