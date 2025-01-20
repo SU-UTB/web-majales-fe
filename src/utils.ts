@@ -10,8 +10,8 @@ export const getInstragramPhotoFeed = (feed: IGFeedType[]) =>
 export const colorHexMap: Record<Colors, string> = {
   white: '#FFFFFF',
   black: '#000000',
-  beige: '#FEE3EC',
-  pink: '#F24C00',
+  beige: '#FFE2DE',
+  pink: '#E7548A',
   lightpink: '#F49183',
   blue: '#6459FD',
   darkDarkBlue: '#1F2041',
