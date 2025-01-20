@@ -8,7 +8,7 @@ export default {
     colors: {
       white: '#FFFFFF',
       black: '#000000',
-      beige: '#FEE3EC',
+      beige: '#FFE2DE',
       pink: '#E7548A',
       lightpink: '#F49183',
       blue: '#6459FD',
