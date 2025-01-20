@@ -40,6 +40,18 @@ export default {
           fontWeight: 700,
         },
       ],
+      'h3-reversed': [
+        '30px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      'h3-reversed-mobile': [
+        '18px',
+        {
+          fontWeight: 700,
+        },
+      ],
       p: [
         '24px',
         {
@@ -79,6 +91,13 @@ export default {
       screens: {
         xs: '480px',
       },
+      spacing: {
+        92: '23rem',
+        108: '27rem',
+        120: '30rem',
+        144: '36rem',
+        202: '50.5rem',
+      }
     },
   },
 

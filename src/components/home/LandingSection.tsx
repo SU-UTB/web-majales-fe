@@ -2,7 +2,7 @@ import { MAJALES_DATE } from '../../config/constants';
 import { Container } from '../shared/Container';
 import { MajalesHeadline } from '../svg/MajalesHeadline';
 
-import { ArrowLeftBottom } from '../svg/elements/ArrowLeftBottom';
+import { ArrowLeftBottom } from '../svg/elements/ArrowLeftBottomPink';
 import { CheckerRectangle } from '../svg/elements/CheckerRectangle';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
@@ -44,7 +44,7 @@ export const LandingSection = () => {
           <CheckerSquare className="absolute bottom-0 h-12 md:h-24" />
           <SquareWithCircle className="absolute bottom-12 md:bottom-24 h-12 md:h-24" />
           <CheckerTriangleTransparent className="absolute bottom-24 md:bottom-48 h-12 md:h-24" />
-          <PurpleRectangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 w-40 md:w-72  overflow-hidden">
+          <PurpleRectangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 w-36 md:w-72  overflow-hidden">
             <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
               {MAJALES_DATE.toLocaleDateString('cs-CZ')}
             </h2>

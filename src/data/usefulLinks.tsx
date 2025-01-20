@@ -1,7 +1,7 @@
 import type { UsefulLinkType } from '../AppTypes';
 import { APP_ROUTES } from '../config/constants';
 
-const { LINE_UP, KING_AND_QUEEN, UBC, QNA, PARTNERS, MEDIA } = APP_ROUTES;
+const { LINE_UP, KING_AND_QUEEN, UBC, QNA, CONTACTS, PARTNERS, MEDIA } = APP_ROUTES;
 
 export const usefulLinks: UsefulLinkType[] = [
   {
@@ -24,6 +24,18 @@ export const usefulLinks: UsefulLinkType[] = [
   {
     linkTo: QNA,
     headline: 'Q&A',
+    children: (
+      <>
+        Máte otázky ohledně Majálesu?
+        <br />
+        <br />
+        Připravili jsme si pro vás odpovědi na ty nejčastější. Pokud máte jakoukoli jinou, neváhejte nám napsat.
+      </>
+    ),
+  },
+  {
+    linkTo: CONTACTS,
+    headline: 'Kontakty',
     children: (
       <>
         Máte otázky ohledně Majálesu?

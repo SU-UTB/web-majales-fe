@@ -1,21 +1,9 @@
-import { MAJALES_DATE } from '../../config/constants';
-import { Container } from '../shared/Container';
-import { MajalesHeadline } from '../svg/MajalesHeadline';
-
-import { ArrowLeftBottom } from '../svg/elements/ArrowLeftBottom';
-import { CheckerRectangle } from '../svg/elements/CheckerRectangle';
-import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
-import { OrangeTriangle } from '../svg/elements/OrangeTriangle';
-import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
-import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
-import { PinkTriangle } from '../svg/elements/PinkTriangle';
-
-
-import { CheckerSquare } from '../svg/elements/CheckerSquare';
+import { ArrowRightBottomOrange } from '../svg/elements/ArrowRightBottomOrange';
 import { BlueTriangle } from '../svg/elements/BlueTriangle';
-import { ArrowRightBottom } from '../svg/elements/ArrowRightBottom';
-import { PurpleRectangle } from '../svg/elements/PurpleRectangle';
+import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { HalfTransparentRedTriangle2X } from '../svg/elements/HalfTransparentRedTriangle2X';
+import { PurpleRectangle } from '../svg/elements/PurpleRectangle';
+import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
 
 export const WhatIsMajalesSection = () => {
   return (
@@ -45,15 +33,15 @@ export const WhatIsMajalesSection = () => {
         {/* TOP LEFT */}
         <div className="absolute top-0 left-0">
             <div className="relative">
-            <ArrowRightBottom className="h-12 md:h-24" />
+            <ArrowRightBottomOrange className="h-12 md:h-24" />
             <CheckerSquare className="absolute top-12 md:top-24 h-12 md:h-24" />
             <BlueTriangle className="absolute top-24 md:top-48 h-12 md:h-24" />
-            <PurpleRectangle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 w-52 md:w-72 overflow-y-hidden">
+            <PurpleRectangle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 w-52 md:w-96 overflow-y-hidden">
                 <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
                 Co je Majáles UTB?
                 </h2>
             </PurpleRectangle>
-            <WhiteTriangle className="absolute top-0 md:top-0 left-64 md:left-96 h-12 md:h-24 -rotate-90" />
+            <WhiteTriangle className="absolute top-0 md:top-0 left-64 md:left-120 h-12 md:h-24 -rotate-90" />
             </div>
         </div>
         {/* BOTTOM RIGHT */}

@@ -12,7 +12,7 @@ export const BaseInfoSection = () => {
           <p>Food & Chill-out zóna</p>
           <p>Doprovodný program</p>
           <p>Král a Královna Majálesu</p>
-          <p className="text-h2-reversed-mobile md:text-h2-reversed">To a mnohem víc na Majálesu UTB!</p>
+          <p className="text-h2-reversed-mobile md:text-h3-reversed">To a mnohem víc na Majálesu UTB!</p>
         </div>
         <iframe
           width="685"
