@@ -4,7 +4,7 @@ export const BaseInfoSection = () => {
   return (
     <SectionContainer id="zakladni-informae" bgColor="lightpink">
       <div className="flex flex-wrap gap-8 xl:gap-12 w-full lg:justify-between py-8 xl:py-16 xl:text-p-big items-center justify-center">
-        <div className="w-full max-w-[685px] lg:max-w-max space-y-2 text-p-big">
+        <div className="w-full max-w-[685px] lg:max-w-max space-y-2 text-p-big text-white">
           <p>
             Vstup <span className="font-semibold">ZDARMA</span> pro všechny
           </p>
@@ -12,7 +12,7 @@ export const BaseInfoSection = () => {
           <p>Food & Chill-out zóna</p>
           <p>Doprovodný program</p>
           <p>Král a Královna Majálesu</p>
-          <p>To a mnohem víc na Majálesu UTB!</p>
+          <p className="text-h2-reversed-mobile md:text-h2-reversed">To a mnohem víc na Majálesu UTB!</p>
         </div>
         <iframe
           width="685"
