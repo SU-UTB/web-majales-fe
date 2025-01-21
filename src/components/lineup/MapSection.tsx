@@ -1,7 +1,7 @@
 import { SectionContainer } from '../shared/SectionContainer';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
-import { Triangle } from '../svg/elements/hero/Triangle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
+import { Triangle } from '../svg/elements/Triangle';
 
 import { MajalesAreaMap } from '../svg/MajalesAreaMap';
 

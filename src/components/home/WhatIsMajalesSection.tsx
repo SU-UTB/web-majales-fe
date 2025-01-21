@@ -1,9 +1,8 @@
-import { ArrowRightBottomOrange } from '../svg/elements/ArrowRightBottomOrange';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { HalfTransparentRedTriangle2X } from '../svg/elements/HalfTransparentRedTriangle2X';
-import { Triangle } from '../svg/elements/hero/Triangle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
+import { Triangle } from '../svg/elements/Triangle';
 
 export const WhatIsMajalesSection = () => {
   return (

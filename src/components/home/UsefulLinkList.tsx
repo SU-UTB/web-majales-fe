@@ -1,8 +1,7 @@
 import { usefulLinks } from '../../data/usefulLinks';
-import { ArrowRightBottomOrangeLight } from '../svg/elements/ArrowRightBottomOrangeLight';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
-import { Triangle } from '../svg/elements/hero/Triangle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
+import { Triangle } from '../svg/elements/Triangle';
 import { LinkCard } from './usefulLinks/LinkCard';
 
 export const UsefulLinkList = () => {

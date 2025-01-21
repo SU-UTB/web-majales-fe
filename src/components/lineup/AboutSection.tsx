@@ -1,10 +1,7 @@
-import { CAN_SHOW_BANDS, MAJALES_DATE } from '../../config/constants';
+import { CAN_SHOW_BANDS } from '../../config/constants';
 import { ExternalLink } from '../shared/ExternalLink';
 import { SectionContainer } from '../shared/SectionContainer';
 import { BigTriangle } from '../svg/elements/BigTriangle';
-import { CheckerSquare } from '../svg/elements/CheckerSquare';
-import { DateRectangle } from '../svg/elements/hero/DateRectangle';
-import { Triangle } from '../svg/elements/hero/Triangle';
 
 export const AboutSection = () => {
   return (

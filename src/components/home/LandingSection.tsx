@@ -2,14 +2,13 @@ import { MAJALES_DATE } from '../../config/constants';
 import { Container } from '../shared/Container';
 import { MajalesHeadline } from '../svg/MajalesHeadline';
 
-import { ArrowLeftBottomPink } from '../svg/elements/ArrowLeftBottomPink';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { CheckerRectangleLandscape } from '../svg/elements/CheckerRectangleLandscape';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
 import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
-import { Triangle } from '../svg/elements/hero/Triangle';
+import { Triangle } from '../svg/elements/Triangle';
 
 export const LandingSection = () => {
   return (

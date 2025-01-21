@@ -1,9 +1,9 @@
 import { MAJALES_DATE } from "../../config/constants";
+import { AsteriskSquare } from "../svg/elements/AsteriskSquare";
 import { CheckerRectangleLandscape } from "../svg/elements/CheckerRectangleLandscape";
 import { CheckerSquare } from "../svg/elements/CheckerSquare";
-import { AsteriskSquare } from "../svg/elements/hero/AsteriskSquare";
-import { DateRectangle } from "../svg/elements/hero/DateRectangle";
-import { Triangle } from "../svg/elements/hero/Triangle";
+import { DateRectangle } from "../svg/elements/DateRectangle";
+import { Triangle } from "../svg/elements/Triangle";
 import { MajalesHeadline } from "../svg/MajalesHeadline";
 import { SectionContainer } from "./SectionContainer";
 

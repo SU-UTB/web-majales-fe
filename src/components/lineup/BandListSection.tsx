@@ -4,7 +4,7 @@ import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { BigTriangle } from '../svg/elements/BigTriangle';
 import { CheckerRectanglePortrait } from '../svg/elements/CheckerRectanglePortrait';
-import { Triangle } from '../svg/elements/hero/Triangle';
+import { Triangle } from '../svg/elements/Triangle';
 import { BandListItem } from './bandlist/BandListItem';
 
 export const BandListSection = () => {

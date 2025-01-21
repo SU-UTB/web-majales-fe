@@ -1,10 +1,10 @@
 import { partyStage, utbTrinityStage } from '../../data/harmonogram';
 import { SectionContainer } from '../shared/SectionContainer';
+import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { HalfTransparentRedTriangle2X } from '../svg/elements/HalfTransparentRedTriangle2X';
-import { AsteriskSquare } from '../svg/elements/hero/AsteriskSquare';
-import { Triangle } from '../svg/elements/hero/Triangle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
+import { Triangle } from '../svg/elements/Triangle';
 import { HarmonogramGroup } from './harmonogram/HarmonogramGroup';
 
 export const HarmonogramSection = () => {
