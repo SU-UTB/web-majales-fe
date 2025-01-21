@@ -3,7 +3,6 @@ import { Container } from '../shared/Container';
 import { MajalesHeadline } from '../svg/MajalesHeadline';
 
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
-import { CheckerRectangleLandscape } from '../svg/elements/CheckerRectangleLandscape';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
 import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
@@ -17,7 +16,7 @@ export const LandingSection = () => {
       className="pt-12 pb-20 md:pb-32 xl:py-20 bg-no-repeat relative"
     >
       <Container>
-        <div className="relative flex justify-center">
+        <div className="relative flex justify-center px-6">
           <MajalesHeadline width={700} />
         </div>
       </Container>
@@ -32,8 +31,10 @@ export const LandingSection = () => {
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0">
         <div className="relative">
-          <CheckerRectangleLandscape className="h-12 md:h-24" color1="#1F2041" color2="#FFFFFF" />
-          <Triangle className="absolute -left-12 md:-left-24 bottom-0 h-12 md:h-24 rotate-180" color='#FF785A' />
+          <Triangle className="absolute right-36 md:right-72 bottom-0 md:bottom-0 h-12 md:h-24 rotate-180" color='#FF785A' />
+          <CheckerSquare className="absolute right-24 md:right-48 bottom-0 md:bottom-0 h-12 md:h-24" color1='#1F2041' color2='#FFFFFF' />
+          <CheckerSquare className="absolute right-12 md:right-24 bottom-0 md:bottom-0 h-12 md:h-24" color1='#FFFFFF' color2='#1F2041' />
+          <CheckerSquare className="absolute right-0 md:right-0 bottom-0 md:bottom-0 h-12 md:h-24" color1='#1F2041' color2='#FFFFFF' />
         </div>
       </div>
       {/* BOTTOM LEFT */}

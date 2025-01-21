@@ -5,7 +5,7 @@ import { BigTriangle } from '../svg/elements/BigTriangle';
 
 export const AboutSection = () => {
   return (
-    <SectionContainer id="lineup" bgColor="pink">
+    <SectionContainer id="lineup" bgColor="pink" className='text-white'>
       <h2 className="text-h2">Line up</h2>
       <div className="max-w-[800px] space-y-4">
         {CAN_SHOW_BANDS ? (
