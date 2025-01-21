@@ -2,6 +2,7 @@
 import { QuestionListSection } from '../components/qna/QuestionListSection';
 import Layout from '../components/shared/Layout.astro';
 import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
+import { SectionHero } from '../components/shared/SectionHero';
 
 const metaTags = {
   title: 'Majáles',
@@ -11,6 +12,15 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <MajalesHeadlineDateLanding />
+  <SectionHero
+    dateRectColor="#1F2041"
+    BottomLeftTriangle1="#F49183"
+    BottomLeftTriangle2="#FFFFFF"
+    BottomRightTriangle1="#6459FD"
+    BottomRightSquare="#E7548A"
+    BottomRightSquareAsterisk="#FFE2DE"
+    BottomRightTriangle2="#6459FD"
+    BottomRightTriangle3="#FF785A"
+  />
   <QuestionListSection />
 </Layout>
