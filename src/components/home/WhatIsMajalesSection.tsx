@@ -1,9 +1,9 @@
 import { ArrowRightBottomOrange } from '../svg/elements/ArrowRightBottomOrange';
-import { BlueTriangle } from '../svg/elements/BlueTriangle';
+import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { HalfTransparentRedTriangle2X } from '../svg/elements/HalfTransparentRedTriangle2X';
+import { Triangle } from '../svg/elements/hero/Triangle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
-import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
 
 export const WhatIsMajalesSection = () => {
   return (
@@ -33,15 +33,15 @@ export const WhatIsMajalesSection = () => {
         {/* TOP LEFT */}
         <div className="absolute top-0 left-0">
             <div className="relative">
-            <ArrowRightBottomOrange className="h-12 md:h-24" />
-            <CheckerSquare className="absolute top-12 md:top-24 h-12 md:h-24" />
-            <BlueTriangle className="absolute top-24 md:top-48 h-12 md:h-24" />
+            <ArrowSquare className="h-12 md:h-24 -rotate-90" color='#FF785A' />
+            <CheckerSquare className="absolute top-12 md:top-24 h-12 md:h-24" color1='#1F2041' color2='#FFFFFF' />
+            <Triangle className="absolute top-24 md:top-48 h-12 md:h-24" color='#1F2041' />
             <TextRectangle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 w-52 md:w-96 overflow-y-hidden" color='#6459FD'>
                 <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
                 Co je Majáles UTB?
                 </h2>
             </TextRectangle>
-            <WhiteTriangle className="absolute top-0 md:top-0 left-64 md:left-120 h-12 md:h-24 -rotate-90" />
+            <Triangle className="absolute top-0 md:top-0 left-64 md:left-120 h-12 md:h-24" color='#FFFFFF' />
             </div>
         </div>
         {/* BOTTOM RIGHT */}

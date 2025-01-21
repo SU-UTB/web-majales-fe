@@ -1,7 +1,8 @@
 import { usefulLinks } from '../../data/usefulLinks';
 import { ArrowRightBottomOrangeLight } from '../svg/elements/ArrowRightBottomOrangeLight';
+import { ArrowSquare } from '../svg/elements/ArrowSquare';
+import { Triangle } from '../svg/elements/hero/Triangle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
-import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
 import { LinkCard } from './usefulLinks/LinkCard';
 
 export const UsefulLinkList = () => {
@@ -13,13 +14,13 @@ export const UsefulLinkList = () => {
       {/* Title Section */}
       <div className="absolute top-0 left-0">
         <div className="relative">
-          <ArrowRightBottomOrangeLight className="h-12 md:h-24" />
+          <ArrowSquare className="h-12 md:h-24 -rotate-90" color='#F49183' />
           <TextRectangle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 w-52 md:w-120 overflow-y-hidden" color='#E7548A'>
             <h2 className="text-h3-reversed-mobile md:text-h2-reversed text-white">
               Co by se vám mohlo hodit
             </h2>
           </TextRectangle>
-          <WhiteTriangle className="absolute top-0 md:top-0 left-64 md:left-144 h-12 md:h-24 -rotate-90 overflow-hidden" />
+          <Triangle className="absolute top-0 md:top-0 left-64 md:left-144 h-12 md:h-24 overflow-hidden" color='#FFFFFF' />
         </div>
       </div>
 

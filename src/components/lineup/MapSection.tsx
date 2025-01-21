@@ -16,7 +16,7 @@ export const MapSection = () => {
       <div className="absolute top-0 left-0">
         <div className="relative">
           <Triangle className="absolute top-24 md:top-48 left-0 md:left-0 h-12 md:h-24" color='#E7548A' />
-          <CheckerSquare className="absolute top-12 md:top-24 left-0 md:left-0 h-12 md:h-24" />
+          <CheckerSquare className="absolute top-12 md:top-24 left-0 md:left-0 h-12 md:h-24" color1='#000000' color2='#FFFFFF' />
           <TextRectangle className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 w-48 md:w-96 overflow-y-hidden" color='#6459FD'>
             <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
               Mapa areálu

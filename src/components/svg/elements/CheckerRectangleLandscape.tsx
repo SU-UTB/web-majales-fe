@@ -1,4 +1,4 @@
-export const CheckerRectangle = ({ className }: { className?: string }) => {
+export const CheckerRectangleLandscape = ({ className, color1, color2 }: { className?: string, color1: string, color2: string }) => {
   return (
     <svg
       className={`w-auto ${className}`}

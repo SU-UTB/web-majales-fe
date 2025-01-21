@@ -3,14 +3,13 @@ import { Container } from '../shared/Container';
 import { MajalesHeadline } from '../svg/MajalesHeadline';
 
 import { ArrowLeftBottomPink } from '../svg/elements/ArrowLeftBottomPink';
-import { CheckerRectangle } from '../svg/elements/CheckerRectangle';
+import { ArrowSquare } from '../svg/elements/ArrowSquare';
+import { CheckerRectangleLandscape } from '../svg/elements/CheckerRectangleLandscape';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
-import { OrangeTriangle } from '../svg/elements/OrangeTriangle';
-import { PinkTriangle } from '../svg/elements/PinkTriangle';
 import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
-import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
+import { Triangle } from '../svg/elements/hero/Triangle';
 
 export const LandingSection = () => {
   return (
@@ -27,21 +26,21 @@ export const LandingSection = () => {
       {/* TOP RIGHT */}
       <div className="absolute top-0 right-0">
         <div className="relative">
-          <ArrowLeftBottomPink className="h-12 md:h-24" />
-          <WhiteTriangle className="absolute top-12 md:top-24 h-12 md:h-24" />
+          <ArrowSquare className="h-12 md:h-24" color='#E7548A' />
+          <Triangle className="absolute top-12 md:top-24 h-12 md:h-24 rotate-90" color='#FFFFFF' />
         </div>
       </div>
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0">
         <div className="relative">
-          <CheckerRectangle className="h-12 md:h-24" />
-          <OrangeTriangle className="absolute -left-12 md:-left-24 bottom-0 h-12 md:h-24" />
+          <CheckerRectangleLandscape className="h-12 md:h-24" color1="#1F2041" color2="#FFFFFF" />
+          <Triangle className="absolute -left-12 md:-left-24 bottom-0 h-12 md:h-24 rotate-180" color='#FF785A' />
         </div>
       </div>
       {/* BOTTOM LEFT */}
       <div className="absolute bottom-0 left-0">
         <div className="relative">
-          <CheckerSquare className="absolute bottom-0 h-12 md:h-24" />
+          <CheckerSquare className="absolute bottom-0 h-12 md:h-24" color1='#000000' color2='#FFFFFF' />
           <SquareWithCircle className="absolute bottom-12 md:bottom-24 h-12 md:h-24" />
           <CheckerTriangleTransparent className="absolute bottom-24 md:bottom-48 h-12 md:h-24" />
           <TextRectangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 w-36 md:w-72  overflow-hidden" color='#6459FD'>
@@ -49,7 +48,7 @@ export const LandingSection = () => {
               {MAJALES_DATE.toLocaleDateString('cs-CZ')}
             </h2>
           </TextRectangle>
-          <PinkTriangle className="absolute bottom-0 md:bottom-0 left-48 md:left-96 h-12 md:h-24" />
+          <Triangle className="absolute bottom-0 md:bottom-0 left-48 md:left-96 h-12 md:h-24 -rotate-90" color='#E7548A' />
         </div>
       </div>
     </section>

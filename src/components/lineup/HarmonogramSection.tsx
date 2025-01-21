@@ -29,7 +29,7 @@ export const HarmonogramSection = () => {
           </TextRectangle>
           <AsteriskSquare className="absolute top-0 md:top-0 left-48 md:left-96 h-12 md:h-24" color='#FFE2DE' asteriskColor='#FF785A'/>
 
-          <CheckerSquare className="absolute top-0 md:top-0 left-60 md:left-120 h-12 md:h-24" />           
+          <CheckerSquare className="absolute top-0 md:top-0 left-60 md:left-120 h-12 md:h-24" color1='#000000' color2='#FFFFFF' />           
           <Triangle className="absolute top-0 md:top-0 left-72 md:left-144 h-12 md:h-24" color='#F49183' />
         </div>
       </div>

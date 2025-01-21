@@ -1,11 +1,10 @@
 import { CAN_SHOW_BANDS } from '../../config/constants';
 import { bands } from '../../data/bands';
 import { SectionContainer } from '../shared/SectionContainer';
-import { ArrowLeftBottomWhite } from '../svg/elements/ArrowLeftBottomWhite';
+import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { BigTriangle } from '../svg/elements/BigTriangle';
-import { CheckerRectanglePinkBeige } from '../svg/elements/CheckerRectanglePinkBeige';
-import { OrangeTriangle } from '../svg/elements/OrangeTriangle';
-import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
+import { CheckerRectanglePortrait } from '../svg/elements/CheckerRectanglePortrait';
+import { Triangle } from '../svg/elements/hero/Triangle';
 import { BandListItem } from './bandlist/BandListItem';
 
 export const BandListSection = () => {
@@ -24,10 +23,10 @@ export const BandListSection = () => {
       {/* TOP RIGHT */}
       <div className="absolute top-0 right-0 z-10">
         <div className="relative">
-          <WhiteTriangle className="absolute -top-12 md:-top-24 right-0 md:right-0 h-12 md:h-24 rotate-90" />
-          <CheckerRectanglePinkBeige className="absolute top-0 md:top-0 right-0 md:right-0 w-12 md:w-24" />
-          <ArrowLeftBottomWhite className="absolute top-28 md:top-56 right-0 md:right-0 h-12 md:h-24" />
-          <OrangeTriangle className="absolute top-40 md:top-80 right-0 md:right-0 h-12 md:h-24 -rotate-90" />
+          <Triangle className="absolute -top-12 md:-top-24 right-0 md:right-0 h-12 md:h-24 rotate-180" color='#FFFFFF' />
+          <CheckerRectanglePortrait className="absolute top-0 md:top-0 right-0 md:right-0 w-12 md:w-24" color1='#FFE2DE' color2='#E7548A' />
+          <ArrowSquare className="absolute top-28 md:top-56 right-0 md:right-0 h-12 md:h-24" color='#FFFFFF'/>
+          <Triangle className="absolute top-40 md:top-80 right-0 md:right-0 h-12 md:h-24 rotate-90" color='#FF785A' />
         </div>
       </div>
       {/* BOTTOM LEFT */}
