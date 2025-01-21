@@ -1,7 +1,7 @@
 ---
 import { AboutSection } from '../components/lineup/AboutSection';
 import Layout from '../components/shared/Layout.astro';
-import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
+import { SectionHero } from '../components/shared/SectionHero';
 
 const metaTags = {
   title: 'Majáles',
@@ -11,7 +11,14 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <MajalesHeadlineDateLanding />
+  <SectionHero 
+    dateRectColor="#E7548A" 
+    BLT1='#FF785A' 
+    BLT2='#6459FD' 
+    BRT1='#FF785A' 
+    BRS1='#6459FD' 
+    BRT2='#F49183' 
+    BRT3='#FFFFFF' />
   <AboutSection />
   <!-- <BandListSection /> -->
   <!-- <WinnerBandListSection /> -->
