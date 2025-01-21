@@ -10,6 +10,7 @@ export default {
       black: '#000000',
       beige: '#FFE2DE',
       pink: '#E7548A',
+      orange: '#FF785A',
       lightpink: '#F49183',
       blue: '#6459FD',
       darkDarkBlue: '#1F2041',

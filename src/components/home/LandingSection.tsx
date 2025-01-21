@@ -2,15 +2,15 @@ import { MAJALES_DATE } from '../../config/constants';
 import { Container } from '../shared/Container';
 import { MajalesHeadline } from '../svg/MajalesHeadline';
 
-import { ArrowLeftBottom } from '../svg/elements/ArrowLeftBottomPink';
+import { ArrowLeftBottomPink } from '../svg/elements/ArrowLeftBottomPink';
 import { CheckerRectangle } from '../svg/elements/CheckerRectangle';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
 import { OrangeTriangle } from '../svg/elements/OrangeTriangle';
+import { PinkTriangle } from '../svg/elements/PinkTriangle';
 import { PurpleRectangle } from '../svg/elements/PurpleRectangle';
 import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
 import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
-import { PinkTriangle } from '../svg/elements/PinkTriangle';
 
 export const LandingSection = () => {
   return (
@@ -27,7 +27,7 @@ export const LandingSection = () => {
       {/* TOP RIGHT */}
       <div className="absolute top-0 right-0">
         <div className="relative">
-          <ArrowLeftBottom className="h-12 md:h-24" />
+          <ArrowLeftBottomPink className="h-12 md:h-24" />
           <WhiteTriangle className="absolute top-12 md:top-24 h-12 md:h-24" />
         </div>
       </div>

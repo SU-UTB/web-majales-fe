@@ -1,5 +1,8 @@
 ---
 import { AboutSection } from '../components/lineup/AboutSection';
+import { BandListSection } from '../components/lineup/BandListSection';
+import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
+import { MapSection } from '../components/lineup/MapSection';
 import Layout from '../components/shared/Layout.astro';
 import { SectionHero } from '../components/shared/SectionHero';
 
@@ -12,7 +15,7 @@ const metaTags = {
 
 <Layout {...metaTags}>
   <SectionHero 
-    dateRectColor="#E7548A" 
+    dateRectColor="#1F2041" 
     BLT1='#FF785A' 
     BLT2='#6459FD' 
     BRT1='#FF785A' 
@@ -20,8 +23,7 @@ const metaTags = {
     BRT2='#F49183' 
     BRT3='#FFFFFF' />
   <AboutSection />
-  <!-- <BandListSection /> -->
-  <!-- <WinnerBandListSection /> -->
-  <!-- <HarmonogramSection /> -->
-  <!-- <MapSection /> -->
+  <BandListSection /> 
+  <HarmonogramSection />
+  <MapSection />
 </Layout>

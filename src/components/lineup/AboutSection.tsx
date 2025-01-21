@@ -1,10 +1,14 @@
-import { CAN_SHOW_BANDS } from '../../config/constants';
+import { CAN_SHOW_BANDS, MAJALES_DATE } from '../../config/constants';
 import { ExternalLink } from '../shared/ExternalLink';
 import { SectionContainer } from '../shared/SectionContainer';
+import { BigTriangle } from '../svg/elements/BigTriangle';
+import { CheckerSquare } from '../svg/elements/CheckerSquare';
+import { DateRectangle } from '../svg/elements/hero/DateRectangle';
+import { Triangle } from '../svg/elements/hero/Triangle';
 
 export const AboutSection = () => {
   return (
-    <SectionContainer id="lineup" bgColor="lightpink">
+    <SectionContainer id="lineup" bgColor="pink">
       <h2 className="text-h2">Line up</h2>
       <div className="max-w-[800px] space-y-4">
         {CAN_SHOW_BANDS ? (
@@ -40,6 +44,11 @@ export const AboutSection = () => {
             </p>
           </>
         )}
+      </div>
+      <div className="absolute top-0 right-0">
+        <div className="relative">
+          <BigTriangle className="absolute top-0 md:top-0 right-0 md:right-0 h-24 md:h-48" color='#FFE2DE'/>
+        </div>
       </div>
     </SectionContainer>
   );
