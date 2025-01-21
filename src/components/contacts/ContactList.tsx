@@ -13,13 +13,10 @@ export const ContactList = () => {
       id="kontakty-seznam"
       className='text-white'
       bgColor='pink'
-      style={{
-        backgroundSize: '400px',
-      }}
     >
       <h2 className="text-h2-reversed">Kontakty</h2>
       <OrganizerItem />
-      <div className="py-4 md:py-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 md:gap-y-12">
+      <div className="py-4 md:py-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 md:gap-y-12 relative z-20">
         {contacts.map((contact) => (
           <ContactItem {...contact} key={contact.email} />
         ))}
