@@ -1,4 +1,4 @@
-export const PurpleRectangle = ({ className, children }: { className?: string, children?: React.ReactNode }) => {
+export const TextRectangle = ({ className, children, color }: { className?: string, children?: React.ReactNode, color: string }) => {
   return (
     <div className={`${className}`}>
       <svg
@@ -6,7 +6,7 @@ export const PurpleRectangle = ({ className, children }: { className?: string, c
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="393" height="131" fill="#6459FD" />
+        <rect width="393" height="131" fill={color} />
       </svg>
       {children && (
         <div className="absolute inset-0 flex justify-center items-center">

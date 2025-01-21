@@ -8,8 +8,8 @@ import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
 import { OrangeTriangle } from '../svg/elements/OrangeTriangle';
 import { PinkTriangle } from '../svg/elements/PinkTriangle';
-import { PurpleRectangle } from '../svg/elements/PurpleRectangle';
 import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
+import { TextRectangle } from '../svg/elements/TextRectangle';
 import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
 
 export const LandingSection = () => {
@@ -44,11 +44,11 @@ export const LandingSection = () => {
           <CheckerSquare className="absolute bottom-0 h-12 md:h-24" />
           <SquareWithCircle className="absolute bottom-12 md:bottom-24 h-12 md:h-24" />
           <CheckerTriangleTransparent className="absolute bottom-24 md:bottom-48 h-12 md:h-24" />
-          <PurpleRectangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 w-36 md:w-72  overflow-hidden">
+          <TextRectangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 w-36 md:w-72  overflow-hidden" color='#6459FD'>
             <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
               {MAJALES_DATE.toLocaleDateString('cs-CZ')}
             </h2>
-          </PurpleRectangle>
+          </TextRectangle>
           <PinkTriangle className="absolute bottom-0 md:bottom-0 left-48 md:left-96 h-12 md:h-24" />
         </div>
       </div>

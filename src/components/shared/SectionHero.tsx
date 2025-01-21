@@ -7,7 +7,7 @@ import { Triangle } from "../svg/elements/hero/Triangle";
 import { MajalesHeadline } from "../svg/MajalesHeadline";
 import { SectionContainer } from "./SectionContainer";
 
-export const SectionHero = ({ dateRectColor, BLT1, BLT2, BRT1, BRS1, BRT2, BRT3 } : { dateRectColor: string, BLT1: string, BLT2: string, BRT1: string, BRS1: string, BRT2: string, BRT3: string }) => {
+export const SectionHero = ({ dateRectColor, BLT1, BLT2, BRT1, BRS1, BRSa1, BRT2, BRT3 } : { dateRectColor: string, BLT1: string, BLT2: string, BRT1: string, BRS1: string, BRSa1:string, BRT2: string, BRT3: string }) => {
   return(
     <SectionContainer
       id="majales-headline"
@@ -34,7 +34,7 @@ export const SectionHero = ({ dateRectColor, BLT1, BLT2, BRT1, BRS1, BRT2, BRT3 
         <div className="relative">
           <Triangle className="absolute -left-12 md:-left-24 h-12 md:h-24 -rotate-180" color={BRT1} />
           <CheckerRectangle className="h-12 md:h-24" />
-          <AsteriskSquare className="absolute right-0 md:right-0 bottom-12 md:bottom-24 h-12 md:h-24" color={BRS1} /> 
+          <AsteriskSquare className="absolute right-0 md:right-0 bottom-12 md:bottom-24 h-12 md:h-24" color={BRS1} asteriskColor={BRSa1} /> 
           <Triangle className="absolute right-12 md:right-24 bottom-12 md:bottom-24 h-12 md:h-24 -rotate-180" color={BRT2} />
           <Triangle className="absolute right-0 md:right-0 bottom-24 md:bottom-48 h-12 md:h-24 -rotate-180" color={BRT3} />
         </div>

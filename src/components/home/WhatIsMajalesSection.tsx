@@ -2,7 +2,7 @@ import { ArrowRightBottomOrange } from '../svg/elements/ArrowRightBottomOrange';
 import { BlueTriangle } from '../svg/elements/BlueTriangle';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { HalfTransparentRedTriangle2X } from '../svg/elements/HalfTransparentRedTriangle2X';
-import { PurpleRectangle } from '../svg/elements/PurpleRectangle';
+import { TextRectangle } from '../svg/elements/TextRectangle';
 import { WhiteTriangle } from '../svg/elements/WhiteTriangle';
 
 export const WhatIsMajalesSection = () => {
@@ -36,18 +36,18 @@ export const WhatIsMajalesSection = () => {
             <ArrowRightBottomOrange className="h-12 md:h-24" />
             <CheckerSquare className="absolute top-12 md:top-24 h-12 md:h-24" />
             <BlueTriangle className="absolute top-24 md:top-48 h-12 md:h-24" />
-            <PurpleRectangle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 w-52 md:w-96 overflow-y-hidden">
+            <TextRectangle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 w-52 md:w-96 overflow-y-hidden" color='#6459FD'>
                 <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
                 Co je Majáles UTB?
                 </h2>
-            </PurpleRectangle>
+            </TextRectangle>
             <WhiteTriangle className="absolute top-0 md:top-0 left-64 md:left-120 h-12 md:h-24 -rotate-90" />
             </div>
         </div>
         {/* BOTTOM RIGHT */}
         <div className="absolute bottom-0 right-0">
             <div className="relative">
-            <HalfTransparentRedTriangle2X className="h-24 md:h-48" />
+              <HalfTransparentRedTriangle2X className="h-24 md:h-48" color='#E7548A' />
             </div>
         </div>
     </section>
