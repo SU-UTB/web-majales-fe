@@ -1,6 +1,7 @@
 ---
 import { GallerySection } from '../components/gallery/GallerySection.tsx';
 import Layout from "../components/shared/Layout.astro";
+import { SectionHero } from '../components/shared/SectionHero';
 
 const metaTags = {
   title: 'Majáles',
@@ -10,5 +11,14 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
+  <SectionHero 
+    dateRectColor="#6459FD" 
+    BottomLeftTriangle1='#FF785A' 
+    BottomLeftTriangle2='#FFFFFF' 
+    BottomRightTriangle1='#E7548A' 
+    BottomRightSquare='#6459FD' 
+    BottomRightSquareAsterisk='#FFFFFF'
+    BottomRightTriangle2='#F49183' 
+    BottomRightTriangle3='#FF785A' />
     <GallerySection/>
 </Layout>

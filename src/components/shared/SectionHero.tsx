@@ -7,7 +7,7 @@ import { Triangle } from "../svg/elements/hero/Triangle";
 import { MajalesHeadline } from "../svg/MajalesHeadline";
 import { SectionContainer } from "./SectionContainer";
 
-export const SectionHero = ({ dateRectColor, BLT1, BLT2, BRT1, BRS1, BRSa1, BRT2, BRT3 } : { dateRectColor: string, BLT1: string, BLT2: string, BRT1: string, BRS1: string, BRSa1:string, BRT2: string, BRT3: string }) => {
+export const SectionHero = ({ dateRectColor, BottomLeftTriangle1: BLT1, BottomLeftTriangle2: BLT2, BottomRightTriangle1: BRT1, BottomRightSquare: BRS1, BottomRightSquareAsterisk: BRSa1, BottomRightTriangle2: BRT2, BottomRightTriangle3: BRT3 } : { dateRectColor: string, BottomLeftTriangle1: string, BottomLeftTriangle2: string, BottomRightTriangle1: string, BottomRightSquare: string, BottomRightSquareAsterisk:string, BottomRightTriangle2: string, BottomRightTriangle3: string }) => {
   return(
     <SectionContainer
       id="majales-headline"
