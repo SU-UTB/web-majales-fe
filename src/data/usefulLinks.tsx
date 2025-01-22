@@ -33,18 +33,12 @@ export const usefulLinks: UsefulLinkType[] = [
       </>
     ),
   },
-  {
-    linkTo: CONTACTS,
-    headline: 'Kontakty',
-    children: (
-      <>
-        Máte otázky ohledně Majálesu?
-        <br />
-        <br />
-        Připravili jsme si pro vás odpovědi na ty nejčastější. Pokud máte jakoukoli jinou, neváhejte nám napsat.
-      </>
-    ),
-  },
+  // {
+  //   linkTo: CONTACTS,
+  //   headline: 'Kontakty',
+  //   children: 
+  //     'Kontakty na vedení Majálesu',
+  // },
   {
     linkTo: PARTNERS,
     headline: 'Partneři',
