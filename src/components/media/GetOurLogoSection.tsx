@@ -3,7 +3,6 @@ import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
-import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
 import { Triangle } from '../svg/elements/Triangle';
 
 export const GetOurLogoSection = () => {

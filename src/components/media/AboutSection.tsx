@@ -10,6 +10,8 @@ export const AboutSection = () => {
         name="PETRA NĚMCOVÁ"
         email="nemcova@sutb.cz"
         textColor="darkDarkBlue"
+        phone=''
+        photo=''
       />
     </SectionContainer>
   );
