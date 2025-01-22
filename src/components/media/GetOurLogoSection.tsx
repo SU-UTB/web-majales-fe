@@ -17,7 +17,7 @@ export const GetOurLogoSection = () => {
           href="https://drive.google.com/drive/folders/1yJkrVtKaPwjG8hMc4S5ObNAtqRgY9PTI"
           target="_blank"
           rel="noopener noreferrer external"
-          className="bg-orange px-6 py-2 rounded-xl text-beige inline-block"
+          className="bg-orange px-6 py-2 rounded-xl text-white inline-block"
         >
           Stáhnout
         </a>

@@ -8,7 +8,7 @@ import { AboutContent } from './AboutContent';
 export const AboutSection = () => {
   return (
     <SectionContainer id="kral-a-kralovna" bgColor="lightpink">
-      <div className="space-y-12">
+      <div className="space-y-12 relative px-4">
         <AboutContent />
         {/* <Register registerLink="https://docs.google.com/forms/d/113IkYHtUnrcFXTQybnU9GNiz4d0crpIdnoFt3w1alew/viewform" /> */}
       </div>

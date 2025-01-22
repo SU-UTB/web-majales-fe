@@ -11,7 +11,7 @@ import { QuestionListItem } from './QuestionListItem';
 export const QuestionListSection = () => {
   return (
     <SectionContainer id="otazky-a-odpovedi" bgColor='lightpink'>
-      <h1 className="text-h2-reversed text-white">Nejčastěji se nás ptáte</h1>
+      <h1 className="text-h2-reversed text-white px-4">Nejčastěji se nás ptáte</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-16 text-white">
         {questions.map((question) => (
           <QuestionListItem key={question.question} {...question} />
