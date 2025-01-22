@@ -7,7 +7,7 @@ export const AboutContent = () => {
         <h1 className="text-h2-reversed">Meatfly Král a Královna Majálesu</h1>
         <p>
           Chcete zažít nezapomenutelný zážitek, soutěžit v unikátních disciplínách a získat titul Král a Královna Majálesu UTB?
-          Pak neváhejte a společně se svým parťákem sepřihlaste do naší jedinečné soutěže.
+          Pak neváhejte a přihlaste se společně se svým parťákem do naší jedinečné soutěže.
         </p>
       </div>
       <div>

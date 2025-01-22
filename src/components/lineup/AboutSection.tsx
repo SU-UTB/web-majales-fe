@@ -26,7 +26,7 @@ export const AboutSection = () => {
           <>
             <p>
               Kompletní line-up vám zatím neprozradíme, ale těšit se můžete na spoustu interpretů. Ti se postupně
-              vystřídají na dvou stagích. A&nbsp;můžeme vám slíbit, že tobude fakt něco. Těšit se totiž můžete na
+              vystřídají na dvou stagích. A&nbsp;můžeme vám slíbit, že to bude fakt něco. Těšit se totiž můžete na
               interprety různých žánrů, a&nbsp;to od rocku přes pop až po rap.
             </p>
             <p>

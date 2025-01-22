@@ -24,7 +24,7 @@ export const ContactList = () => {
       {/* TOP RIGHT */}
       <div className="absolute top-0 right-0">
         <div className="relative">
-          <BigTriangle className="absolute top-0 md:top-0 right-0 md:right-0 h-32 md:h-60 " color='#FFE2DE' />
+          <BigTriangle className="absolute top-0 md:top-0 right-0 md:right-0 h-32 md:h-60 " color='#F49183' />
           <Triangle className="absolute top-12 md:top-24 right-0 md:right-0 h-12 md:h-24 rotate-180" color='#FFFFFF' />
           <CheckerSquare className="absolute top-24 md:top-48 right-0 md:right-0 h-12 md:h-24" color1='#FFFFFF' color2='#1F2041' />
           <CheckerSquare className="absolute top-36 md:top-72 right-0 md:right-0 h-12 md:h-24" color1='#1F2041' color2='#FFFFFF' />
