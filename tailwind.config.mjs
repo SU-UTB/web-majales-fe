@@ -41,6 +41,18 @@ export default {
           fontWeight: 700,
         },
       ],
+      'h3': [
+        '30px',
+        {
+          fontWeight: 600,
+        },
+      ],
+      'h3-mobile': [
+        '18px',
+        {
+          fontWeight: 600,
+        },
+      ],
       'h3-reversed': [
         '30px',
         {
