@@ -17,6 +17,18 @@ export default {
       transparent: 'transparent',
     },
     fontSize: {
+      'h1': [
+        '45px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      'h1-mobile': [
+        '35px',
+        {
+          fontWeight: 700,
+        },
+      ],
       h2: [
         '38px',
         {

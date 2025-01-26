@@ -20,7 +20,7 @@ export const PartnerSection = () => {
   return (
     <SectionContainer id="partneri" bgColor='white'>
       <div className="space-y-12 lg:gap-y-16 flex flex-col items-center md:pb-12">
-        <h2 className="text-h2-reversed text-darkDarkBlue">Partneři podporující studentský Majáles UTB</h2>
+        <h2 className="text-h1-reversed-mobile md:text-h1-reversed text-darkDarkBlue">Partneři podporující studentský Majáles UTB</h2>
         <div className="flex flex-wrap justify-center gap-x-20 gap-y-8">
           <SinglePartnerItem headline="Pořadatel" img={suLogo} alt="SU logo" link="https://su.utb.cz/" />
           <SinglePartnerItem headline="Spolupořadatel" img={utbLogo} alt="UTB logo" link="https://www.utb.cz/" />
