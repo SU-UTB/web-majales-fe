@@ -1,9 +1,11 @@
+import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
 import { Triangle } from '../svg/elements/Triangle';
+import MartaPhoto from '../../assets/img/contacts/marta.jpg?url';
 
 export const GetOurLogoSection = () => {
   return (
@@ -21,6 +23,14 @@ export const GetOurLogoSection = () => {
         >
           Stáhnout
         </a>
+        <ContactItem
+          position="Kontaktní osoba pro média"
+          name="MARTINA MATULÍKOVÁ"
+          email="matulikova@sutb.cz"
+          phone='+420 730 930 139'
+          photo={MartaPhoto}
+          textColor="white"
+        />
       </div>
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0 z-10">
