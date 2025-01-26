@@ -1,6 +1,6 @@
 export const OrganizerItem = () => {
   return (
-    <div className="py-8 px-4">
+    <div className="py-8 pr-4">
       <h3 className="text-pink font-semibold">Pořadatel</h3>
       <p>Studentská unie UTB, z. s.</p>
       <p>IČO: 26996286</p>
