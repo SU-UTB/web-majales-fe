@@ -8,13 +8,27 @@ export default {
     colors: {
       white: '#FFFFFF',
       black: '#000000',
-      beige: '#FFFCD9',
-      orange: '#EF5A23',
-      blue: '#4400FF',
-      purple: '#EA92F4',
+      beige: '#FFE2DE',
+      pink: '#E7548A',
+      orange: '#FF785A',
+      lightpink: '#F49183',
+      blue: '#6459FD',
+      darkDarkBlue: '#1F2041',
       transparent: 'transparent',
     },
     fontSize: {
+      'h1': [
+        '45px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      'h1-mobile': [
+        '35px',
+        {
+          fontWeight: 700,
+        },
+      ],
       h2: [
         '38px',
         {
@@ -35,6 +49,30 @@ export default {
       ],
       'h2-reversed-mobile': [
         '26px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      'h3': [
+        '30px',
+        {
+          fontWeight: 600,
+        },
+      ],
+      'h3-mobile': [
+        '18px',
+        {
+          fontWeight: 600,
+        },
+      ],
+      'h3-reversed': [
+        '30px',
+        {
+          fontWeight: 700,
+        },
+      ],
+      'h3-reversed-mobile': [
+        '18px',
         {
           fontWeight: 700,
         },
@@ -78,6 +116,13 @@ export default {
       screens: {
         xs: '480px',
       },
+      spacing: {
+        92: '23rem',
+        108: '27rem',
+        120: '30rem',
+        144: '36rem',
+        202: '50.5rem',
+      }
     },
   },
 

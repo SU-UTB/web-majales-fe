@@ -1,31 +1,36 @@
 import { usefulLinks } from '../../data/usefulLinks';
-import { ExternalLink } from '../shared/ExternalLink';
+import { ArrowSquare } from '../svg/elements/ArrowSquare';
+import { TextRectangle } from '../svg/elements/TextRectangle';
+import { Triangle } from '../svg/elements/Triangle';
 import { LinkCard } from './usefulLinks/LinkCard';
 
 export const UsefulLinkList = () => {
   return (
-    <div className="grid gap-8 lg:gap-12">
-      <div>
-        <h2 className="text-orange text-h2-reversed">Mohlo by se vám hodit</h2>
+    <section
+      id="useful-links"
+      className="pt-12 pb-24 md:pb-32 xl:py-24 bg-no-repeat relative"
+    >
+      {/* Title Section */}
+      <div className="absolute top-0 left-0">
+        <div className="relative">
+          <ArrowSquare className="h-12 md:h-24 -rotate-90" color='#F49183' />
+          <TextRectangle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 w-52 md:w-120 overflow-y-hidden" color='#E7548A'>
+            <h2 className="text-h3-reversed-mobile md:text-h2-reversed text-white">
+              Co by se vám mohlo hodit
+            </h2>
+          </TextRectangle>
+          <Triangle className="absolute top-0 md:top-0 left-64 md:left-144 h-12 md:h-24 overflow-hidden" color='#FFFFFF' />
+        </div>
+      </div>
+
+      {/* Grid Section */}
+      <div className="grid gap-8 lg:gap-12 pt-24 px-2">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-16 py-8 content-center">
           {usefulLinks.map((link) => (
             <LinkCard key={link.linkTo} {...link} />
           ))}
         </div>
       </div>
-      <ExternalLink
-        className="inline-flex justify-self-center"
-        link="https://www.kudyznudy.cz/?utm_source=kzn&utm_medium=partneri_kzn&utm_campaign=banner"
-        icon={
-          <img
-            width={300}
-            height={300}
-            src="https://www.kudyznudy.cz/getmedia/f15722f4-8d08-4872-b431-18e73f2dbf75/1012102023-online-bannery-hq-300x300.jpg.aspx"
-            alt="Kudyznudy.cz - nejlepší začátek výletu"
-            className="rounded-2xl"
-          />
-        }
-      />
-    </div>
+    </section>
   );
 };

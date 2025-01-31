@@ -12,7 +12,7 @@ export const Register = ({ registerLink }: Props) => {
       <ExternalLink
         link={registerLink}
         text="Registrovat"
-        className="inline-block px-6 py-2 text-black bg-beige rounded-xl"
+        className="inline-block px-6 py-2 text-darkDarkBlue bg-beige rounded-xl"
       />
       {dayjs().isBefore(dayjs(KING_QUEEN_REGISTRATION_DATE)) && (
         <p className="-skew-x-3 bg-beige px-2">registrace se spouští od 1. 4. 2024</p>

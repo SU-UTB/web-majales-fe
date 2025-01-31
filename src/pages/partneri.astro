@@ -1,4 +1,8 @@
 ---
+import { ContactSection } from '../components/partners/ContactSection';
+import Layout from '../components/shared/Layout.astro';
+import { SectionHero } from '../components/shared/SectionHero';
+import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
   title: 'Majáles',
@@ -6,11 +10,21 @@ const metaTags = {
   image: '/meta_image.jpg',
 };
 ---
-<!-- 
+
 <Layout {...metaTags}>
-  <div>
-    <MajalesHeadlineDateLanding />
-    <ContactSection />
-  </div>
-  <PartnerSection />
-</Layout> -->
+  <SectionHero
+    dateRectColor="#1F2041"
+    BottomLeftTriangle1="#E7548A"
+    BottomLeftTriangle2="#FFFFFF"
+    BottomRightTriangle1="#FF785A"
+    BottomRightCheckerSquare1="#FFFFFF"
+    BottomRightCheckerSquare2="#1F2041"
+    BottomRightSquare="#6459FD"
+    BottomRightSquareAsterisk="#FFFFFF"
+    BottomRightTriangle2="#F49183"
+    BottomRightTriangle3="#FFFFFF"
+  />
+  <ContactSection />
+  <!-- <PartnerSection /> -->
+   <UpperFooter />
+</Layout>

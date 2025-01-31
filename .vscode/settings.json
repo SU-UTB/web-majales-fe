@@ -10,12 +10,15 @@
     "typescript", // Enable .ts
     "typescriptreact" // Enable .tsx
   ],
-  "editor.codeActionsOnSave": ["source.organizeImports", "source.fixAll.eslint"],
+  "editor.codeActionsOnSave": [
+    "source.organizeImports",
+    "source.fixAll.eslint"
+  ],
   "editor.formatOnSave": true,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }

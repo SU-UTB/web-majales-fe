@@ -1,7 +1,9 @@
 ---
 import { AboutSection } from '../components/lineup/AboutSection';
+import { BandListSection } from '../components/lineup/BandListSection';
 import Layout from '../components/shared/Layout.astro';
-import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
+import { SectionHero } from '../components/shared/SectionHero';
+import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
   title: 'Majáles',
@@ -11,10 +13,21 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <MajalesHeadlineDateLanding />
+  <SectionHero
+    dateRectColor="#1F2041"
+    BottomLeftTriangle1="#FF785A"
+    BottomLeftTriangle2="#6459FD"
+    BottomRightTriangle1="#FF785A"
+    BottomRightCheckerSquare1="#1F2041"
+    BottomRightCheckerSquare2="#FFFFFF"
+    BottomRightSquare="#6459FD"
+    BottomRightSquareAsterisk="#FFFFFF"
+    BottomRightTriangle2="#F49183"
+    BottomRightTriangle3="#FFFFFF"
+  />
   <AboutSection />
-  <!-- <BandListSection /> -->
-  <!-- <WinnerBandListSection /> -->
-  <!-- <HarmonogramSection /> -->
-  <!-- <MapSection /> -->
+  <BandListSection />
+  <!-- <HarmonogramSection />
+  <MapSection /> -->
+   <UpperFooter />
 </Layout>

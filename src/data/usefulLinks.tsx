@@ -1,7 +1,7 @@
 import type { UsefulLinkType } from '../AppTypes';
 import { APP_ROUTES } from '../config/constants';
 
-const { LINE_UP, KING_AND_QUEEN, UBC, QNA, PARTNERS, MEDIA } = APP_ROUTES;
+const { LINE_UP, KING_AND_QUEEN, UBC, QNA, CONTACTS, PARTNERS, MEDIA } = APP_ROUTES;
 
 export const usefulLinks: UsefulLinkType[] = [
   {
@@ -34,11 +34,17 @@ export const usefulLinks: UsefulLinkType[] = [
     ),
   },
   // {
-  //   linkTo: PARTNERS,
-  //   headline: 'Partneři',
-  //   children:
-  //     'Poděkování patří také našim skvělým partnerům, kteří Majáles UTB podporují. Pokud chcete být partnerem i vy, kontaktujte nás.',
+  //   linkTo: CONTACTS,
+  //   headline: 'Kontakty',
+  //   children: 
+  //     'Kontakty na vedení Majálesu',
   // },
+  {
+    linkTo: PARTNERS,
+    headline: 'Partneři',
+    children:
+      'Poděkování patří také našim skvělým partnerům, kteří Majáles UTB podporují. Pokud chcete být partnerem i vy, kontaktujte nás.',
+  },
   {
     linkTo: MEDIA,
     headline: 'Média',

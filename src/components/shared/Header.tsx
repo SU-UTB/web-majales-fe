@@ -10,7 +10,7 @@ export const Header = () => {
 
   return (
     <header className="w-full bg-transparent mx-auto sticky top-0 left-0 z-10">
-      <nav className="relative z-20 bg-blue text-white">
+      <nav className="relative z-20 bg-darkDarkBlue text-white">
         <div className="max-w-screen-xl flex flex-col items-center xl:flex-row xl:justify-between xl:py-4 mx-auto">
           <div className="hidden xl:block">
             <NavLogo />
@@ -22,7 +22,7 @@ export const Header = () => {
           {isOpen && (
             <AnimatePresence>
               <motion.ul
-                className="flex flex-col items-center justify-center gap-y-6 xl:hidden absolute w-full h-[100svh] bg-blue z-20"
+                className="flex flex-col items-center justify-center gap-y-6 xl:hidden absolute w-full h-[100svh] bg-darkDarkBlue z-20"
                 variants={mobNavItemVariants}
                 initial="hidden"
                 animate="visible"

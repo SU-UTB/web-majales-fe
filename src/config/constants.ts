@@ -18,4 +18,4 @@ export const APP_ROUTES = {
   CONTACTS: '/kontakty',
 };
 
-export const CAN_SHOW_BANDS = true;
+export const CAN_SHOW_BANDS = false;

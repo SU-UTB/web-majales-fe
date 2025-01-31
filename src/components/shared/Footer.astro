@@ -3,11 +3,17 @@ import { footerItems } from '../../data/footer';
 import { SocialItem } from '../footer/SocialItem';
 import { Container } from './Container';
 ---
-
-<footer class="py-8 lg:py-16">
+<footer class="relative py-12 lg:py-16 bg-darkDarkBlue">
   <Container>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-      {footerItems.map((item) => <SocialItem logo={item.logo} logoName={item.logoName} socials={item.socials} />)}
+      {footerItems.map((item) => (
+        <SocialItem logo={item.logo} logoName={item.logoName} socials={item.socials} />
+      ))}
     </div>
   </Container>
 </footer>
+
+
+
+
+

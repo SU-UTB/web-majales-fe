@@ -1,8 +1,8 @@
 ---
-import Image from 'astro/components/Image.astro';
 import { AboutSection } from '../components/king-queen/AboutSection';
 import Layout from '../components/shared/Layout.astro';
-import { MajalesHeadlineDateLanding } from '../components/shared/MajalesHeadlineDateLanding';
+import { SectionHero } from '../components/shared/SectionHero';
+import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
   title: 'Majáles',
@@ -12,17 +12,18 @@ const metaTags = {
 ---
 
 <Layout {...metaTags}>
-  <MajalesHeadlineDateLanding />
-  <div class="relative">
-    <AboutSection />
-    <!-- <NewsSection /> -->
-    <Image
-      src="/assets/img/kral-kralovna-right.webp"
-      alt="Kral a Kralovna pozadi"
-      width={750}
-      height={1350}
-      class="absolute right-0 top-1/2 -translate-y-1/2 select-none h-4/5 w-max hidden lg:block"
-    />
-  </div>
-  <!-- <HowItWorksSection /> -->
+  <SectionHero
+    dateRectColor="#E7548A"
+    BottomLeftTriangle1="#F49183"
+    BottomLeftTriangle2="#6459FD"
+    BottomRightTriangle1="#FF785A"
+    BottomRightCheckerSquare1='#1F2041'
+    BottomRightCheckerSquare2='#FFFFFF'
+    BottomRightSquare="#FF785A"
+    BottomRightSquareAsterisk="#FFE2DE"
+    BottomRightTriangle2="#E7548A"
+    BottomRightTriangle3="#6459FD"
+  />
+  <AboutSection />
+  <UpperFooter />
 </Layout>

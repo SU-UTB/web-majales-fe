@@ -1,10 +1,14 @@
 ---
 import { AboutSection } from '../components/home/AboutSection';
+import { WhatIsMajalesSection } from '../components/home/WhatIsMajalesSection';
+import { Map } from '../components/home/Map';
+import { UsefulLinkList } from '../components/home/UsefulLinkList';
 import { BaseInfoSection } from '../components/home/BaseInfoSection';
 import { CountdownSection } from '../components/home/CountdownSection';
 import { LandingSection } from '../components/home/LandingSection';
 import Layout from '../components/shared/Layout.astro';
 import { MAJALES_DATE } from '../config/constants';
+import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
   title: 'Majáles',
@@ -18,5 +22,9 @@ const metaTags = {
   <LandingSection />
   <BaseInfoSection />
   <CountdownSection targetDate={MAJALES_DATE} client:load/>
-  <AboutSection />
+  <WhatIsMajalesSection />
+  <Map />
+  <UsefulLinkList />
+  <!-- <AboutSection /> -->
+   <UpperFooter />
 </Layout>
