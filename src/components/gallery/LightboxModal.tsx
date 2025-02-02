@@ -31,6 +31,23 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
             onClick={onClose}
         >
             <div {...swipeHandlers} onClick={(e) => e.stopPropagation()} className="relative">
+
+                {/* Invisible left swipe zone (20% width) */}
+                <div
+                    className="absolute left-0 top-0 h-full w-1/5 cursor-pointer"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        onPrev();
+                    }}
+                ></div>
+                {/* Invisible right swipe zone (20% width) */}
+                <div
+                    className="absolute right-0 top-0 h-full w-1/5 cursor-pointer"
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        onNext();
+                    }}
+                ></div>
                 <img
                     src={images[currentIndex].src}
                     alt="Enlarged gallery item"
