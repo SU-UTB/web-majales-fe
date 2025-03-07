@@ -1,3 +1,4 @@
+import MartaPhoto from '../../assets/img/contacts/marta.jpg?url';
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
@@ -5,23 +6,22 @@ import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
 import { Triangle } from '../svg/elements/Triangle';
-import MartaPhoto from '../../assets/img/contacts/marta.jpg?url';
 
 export const GetOurLogoSection = () => {
   return (
     <SectionContainer id="media-logo" bgColor='darkDarkBlue' className="relative py-14 md:py-20 lg:py-24">
       <div className="max-w-2xl space-y-8 text-white pb-8 pr-6">
         <p>
-          Sháníte naše logo, tiskovou zprávu nebo třeba fotografie z loňského ročníku?<br/> Vše jsme pro vás přehledně
+          Sháníte naše logo, tiskovou zprávu nebo třeba fotografie z loňského ročníku?<br /> Vše jsme pro vás přehledně
           připravili tady.
         </p>
         <a
-          href="https://drive.google.com/drive/folders/1yJkrVtKaPwjG8hMc4S5ObNAtqRgY9PTI"
+          href="https://drive.google.com/drive/folders/147j9gm0UYpwz2vGKWfxjh7AKkGzxAvvy"
           target="_blank"
           rel="noopener noreferrer external"
           className="bg-orange px-6 py-2 rounded-xl text-white inline-block"
         >
-          Stáhnout
+          Press Kit
         </a>
         <ContactItem
           position="Kontaktní osoba pro média"
