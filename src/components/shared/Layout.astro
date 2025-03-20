@@ -12,6 +12,12 @@ type Props = HeadProps;
 <html lang="cs">
   <Head {...Astro.props} />
   <body class="text-p-mobile lg:text-p bg-beige relative">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGXGR29Q" height="0" width="0" style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <Header client:only />
     <main transition:animate="slide">
       <slot />
