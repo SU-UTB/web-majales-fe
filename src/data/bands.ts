@@ -1,50 +1,54 @@
 import type { BandType } from '../AppTypes';
 
-import qocna_post from '../assets/img/bands/qocna_post.webp?url';
-import saraNoff from '../assets/img/bands/sara-noff.webp?url';
+import qocna from '../assets/img/bands/qocna.webp?url';
+import saraNoff from '../assets/img/bands/saranoff.webp?url';
+import novaStopa from '../assets/img/bands/novastopa.webp?url';
+import echo from '../assets/img/bands/echo.webp?url';
+import johnny from '../assets/img/bands/johnnycurbes.webp?url';
+import marko from '../assets/img/bands/markodamian.webp?url';
+import focus from '../assets/img/bands/focusrock.webp?url';
+import misik from '../assets/img/bands/adammisik.webp?url';
+import kharma from '../assets/img/bands/kharmadj.webp?url';
+import renne from '../assets/img/bands/rennedang.webp?url';
 export const bands: BandType[] = [
   {
+    img: renne,
+    title: 'Renne Dang',
+  },
+  {
+    img: misik,
+    title: 'Adam Mišík',
+  },
+  {
+    img: marko,
+    title: 'Marko Damian',
+  },
+  {
+    img: focus,
+    title: 'Focus Rock',
+  },
+  {
     img: saraNoff,
     title: 'Sara Noff',
   },
   {
-    img: qocna_post,
-    title: 'Qočna',
+    img: novaStopa,
+    title: 'Nová stopa',
   },
   {
-    img: qocna_post,
-    title: 'Qočna',
+    img: kharma,
+    title: 'Kharma DJ',
   },
   {
-    img: saraNoff,
-    title: 'Sara Noff',
+    img: johnny,
+    title: 'Johnny Čurbes',
   },
-  // {
-  //   img: hospodskyBordel,
-  //   title: 'Hospodsky Bordel',
-  // },
-  // {
-  //   img: nsf,
-  //   title: 'N.S.F.W.',
-  // },
-  // {
-  //   img: qocna,
-  //   title: 'Qočna',
-  // },
-  // {
-  //   img: rez,
-  //   title: 'REZ',
-  // },
-  // {
-  //   img: zociVoci,
-  //   title: 'Zoči Voči',
-  // },
-  // {
-  //   img: restWich,
-  //   title: 'Rest',
-  // },
-  // {
-  //   img: restWich1,
-  //   title: 'DJ Wich',
-  // },
+  {
+    img: echo,
+    title: 'echo',
+  },
+  {
+    img: qocna,
+    title: 'Qočna',
+  },
 ];

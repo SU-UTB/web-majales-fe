@@ -2,15 +2,21 @@ import { SectionContainer } from '../shared/SectionContainer';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { TextRectangle } from '../svg/elements/TextRectangle';
 import { Triangle } from '../svg/elements/Triangle';
+import mapa from '../../assets/img/mapa.webp?url';
 
 import { MajalesAreaMap } from '../svg/MajalesAreaMap';
 
 export const MapSection = () => {
   return (
     <SectionContainer id="mapa" bgColor="lightpink">
-      <div className="pt-12 md:pt-20 px-12 md:px-16 flex justify-center items-center h-full">
-        <MajalesAreaMap width={600} />
+      <div className="pt-16 md:pt-20 px-4 md:px-16 flex justify-center items-center">
+        <div className="w-full max-w-[600px]">
+          <img src={mapa} alt="Majáles Area Map" className="w-full h-auto" />
+        </div>
       </div>
+      {/* <div className="pt-12 md:pt-20 px-12 md:px-16 flex justify-center items-center h-full">
+        <MajalesAreaMap width={600} />
+      </div> */}
 
       {/* TOP LEFT */}
       <div className="absolute top-0 left-0">

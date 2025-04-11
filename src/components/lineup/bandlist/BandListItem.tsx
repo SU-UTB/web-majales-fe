@@ -2,7 +2,7 @@ import type { BandType } from '../../../AppTypes';
 
 export const BandListItem = ({ img, title }: BandType) => {
   return (
-    <div className="relative group overflow-hidden w-full aspect-[0.8]">
+    <div className="relative group overflow-visible w-full flex items-center justify-center">
       {/* <p className="text-beige text-p-mobile md:text-useful-link opacity-[0.99] z-[2] absolute left-4 bottom-4">
         {title}
       </p>
@@ -10,7 +10,7 @@ export const BandListItem = ({ img, title }: BandType) => {
       <img
         src={img}
         alt={title}
-        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform z-0"
+        className="lg:w-full h-auto object-cover object-center md:group-hover:scale-105 md:transition-transform z-0 shadow-lg"
       />
     </div>
   );

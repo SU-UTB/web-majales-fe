@@ -1,6 +1,8 @@
 ---
 import { AboutSection } from '../components/lineup/AboutSection';
 import { BandListSection } from '../components/lineup/BandListSection';
+import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
+import { MapSection } from '../components/lineup/MapSection';
 import Layout from '../components/shared/Layout.astro';
 import { SectionHero } from '../components/shared/SectionHero';
 import { UpperFooter } from '../components/shared/UpperFooter';
@@ -25,9 +27,9 @@ const metaTags = {
     BottomRightTriangle2="#F49183"
     BottomRightTriangle3="#FFFFFF"
   />
-  <AboutSection />
+  <!-- <AboutSection /> -->
   <BandListSection />
-  <!-- <HarmonogramSection /> -->
-  <!-- <MapSection /> -->
+  <HarmonogramSection />
+  <MapSection />
   <UpperFooter />
 </Layout>
