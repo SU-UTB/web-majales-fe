@@ -7,8 +7,5 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://majales.utb.cz/',
-  server: {
-    host: true, // Allow local network access
-  },
   integrations: [tailwind(), react(), robotsTxt(), sitemap()],
 });
