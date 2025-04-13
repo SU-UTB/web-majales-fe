@@ -1,3 +1,4 @@
+import DefaultPhoto from '../../assets/img/contacts/default.jpg?url';
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
@@ -5,14 +6,13 @@ import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
 import { Triangle } from '../svg/elements/Triangle';
-import MartaPhoto from '../../assets/img/contacts/marta.jpg?url';
 
 export const GetOurLogoSection = () => {
   return (
     <SectionContainer id="media-logo" bgColor='darkDarkBlue' className="relative py-14 md:py-20 lg:py-24">
       <div className="max-w-2xl space-y-8 text-white pb-8 pr-6">
         <p>
-          Sháníte naše logo, tiskovou zprávu nebo třeba fotografie z loňského ročníku?<br/> Vše jsme pro vás přehledně
+          Sháníte naše logo, tiskovou zprávu nebo třeba fotografie z loňského ročníku?<br /> Vše jsme pro vás přehledně
           připravili tady.
         </p>
         <a
@@ -25,10 +25,10 @@ export const GetOurLogoSection = () => {
         </a>
         <ContactItem
           position="Kontaktní osoba pro média"
-          name="MARTINA MATULÍKOVÁ"
-          email="matulikova@sutb.cz"
-          phone='+420 730 930 139'
-          photo={MartaPhoto}
+          name="MARTIN JANOTKA"
+          email="janotka@sutb.cz"
+          phone='+421 910 339 794'
+          photo={DefaultPhoto}
           textColor="white"
         />
       </div>

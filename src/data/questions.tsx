@@ -34,4 +34,12 @@ export const questions: QuestionType[] = [
       </>
     ),
   },
+  {
+    question: 'Jak udržujeme náš majáles čistý?',
+    answer: (
+      <>
+        Společně s naším partnerem <a href="https://www.cistyfestival.cz/" target="_blank" rel="noopener noreferrer external" className="underline">Čistý festival</a> se staráme o třídění odpadu a minimalizaci dopadu naší akce na životní prostředí. Pomozte nám udržet park čistý!
+      </>
+    ),
+  },
 ];

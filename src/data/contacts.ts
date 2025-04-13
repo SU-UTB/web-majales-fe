@@ -1,11 +1,11 @@
 import type { ContactType } from '../AppTypes';
 import BetyPhoto from '../assets/img/contacts/bety.jpg?url';
+import DefaultPhoto from '../assets/img/contacts/default.jpg?url';
 import ErikPhoto from '../assets/img/contacts/erik.jpg?url';
 import JankaPhoto from '../assets/img/contacts/janka.jpg?url';
 import JstPhoto from '../assets/img/contacts/jst.jpg?url';
 import KlarkaPhoto from '../assets/img/contacts/klarka.jpg?url';
 import LukyPhoto from '../assets/img/contacts/luky.jpg?url';
-import MartaPhoto from '../assets/img/contacts/marta.jpg?url';
 import PataPhoto from '../assets/img/contacts/pata.jpg?url';
 
 export const contacts: ContactType[] = [
@@ -39,10 +39,10 @@ export const contacts: ContactType[] = [
   },
   {
     position: 'Media relations',
-    name: 'MARTINA MATULÍKOVÁ',
-    email: 'matulikova@sutb.cz',
-    phone: '+420 730 930 139',
-    photo: MartaPhoto,
+    name: 'MARTIN JANOTKA',
+    email: 'janotka@sutb.cz',
+    phone: '+421 910 339 794',
+    photo: DefaultPhoto,
   },
   {
     position: 'Produkce',
