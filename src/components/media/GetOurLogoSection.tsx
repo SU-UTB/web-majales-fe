@@ -1,3 +1,4 @@
+
 import DefaultPhoto from '../../assets/img/contacts/default.jpg?url';
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
@@ -16,12 +17,12 @@ export const GetOurLogoSection = () => {
           připravili tady.
         </p>
         <a
-          href="https://drive.google.com/drive/folders/1yJkrVtKaPwjG8hMc4S5ObNAtqRgY9PTI"
+          href="https://drive.google.com/drive/folders/147j9gm0UYpwz2vGKWfxjh7AKkGzxAvvy"
           target="_blank"
           rel="noopener noreferrer external"
           className="bg-orange px-6 py-2 rounded-xl text-white inline-block"
         >
-          Stáhnout
+          Press Kit
         </a>
         <ContactItem
           position="Kontaktní osoba pro média"

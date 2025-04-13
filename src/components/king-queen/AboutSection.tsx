@@ -4,13 +4,14 @@ import { BigTriangle } from '../svg/elements/BigTriangle';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { Triangle } from '../svg/elements/Triangle';
 import { AboutContent } from './AboutContent';
+import { Register } from './Register';
 
 export const AboutSection = () => {
   return (
     <SectionContainer id="kral-a-kralovna" bgColor="lightpink">
       <div className="space-y-12 relative px-4">
         <AboutContent />
-        {/* <Register registerLink="https://docs.google.com/forms/d/113IkYHtUnrcFXTQybnU9GNiz4d0crpIdnoFt3w1alew/viewform" /> */}
+        <Register registerLink="https://forms.gle/ZsBXSshDwSKwiQHR9" />
       </div>
       {/* TOP RIGHT */}
       <div className="absolute top-0 right-0">
