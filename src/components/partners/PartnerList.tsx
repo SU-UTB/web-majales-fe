@@ -1,21 +1,13 @@
-import krajLogo from '../../assets/img/partners/kraj.png?url';
-import mestoLogo from '../../assets/img/partners/zlin.png?url';
-import { partners } from '../../data/partners';
+import type { PartnerType } from '../../AppTypes';
 import { SinglePartnerItem } from './SinglePartnerItem';
 
-export const PartnerList = () => {
+export const PartnerList = ({ header, partnerList }: { header: string, partnerList: PartnerType[] }) => {
   return (
     <div className="space-y-8">
-      <h4 className="text-blue text-h2 text-center">Partneři</h4>
+      <h4 className="text-blue text-h2 text-center">{header}</h4>
       <div className="rounded-2xl bg-white p-8 flex flex-col items-center gap-8">
-        <div className="space-y-16 flex flex-col items-center">
-          <div className="flex flex-wrap justify-between items-center">
-            <SinglePartnerItem img={mestoLogo} alt="logo město Zlín" link="https://www.zlin.eu/" />
-            <SinglePartnerItem img={krajLogo} alt="logo kraj" link="https://zlinskykraj.cz/" />
-          </div>
-        </div>
         <div className="flex flex-wrap justify-center gap-y-12">
-          {partners.map((partner) => (
+          {partnerList.map((partner) => (
             <SinglePartnerItem key={partner.img} {...partner} />
           ))}
         </div>

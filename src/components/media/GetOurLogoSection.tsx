@@ -1,4 +1,5 @@
-import MartaPhoto from '../../assets/img/contacts/marta.jpg?url';
+
+import DefaultPhoto from '../../assets/img/contacts/default.jpg?url';
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
@@ -25,10 +26,10 @@ export const GetOurLogoSection = () => {
         </a>
         <ContactItem
           position="Kontaktní osoba pro média"
-          name="MARTINA MATULÍKOVÁ"
-          email="matulikova@sutb.cz"
-          phone='+420 730 930 139'
-          photo={MartaPhoto}
+          name="MARTIN JANOTKA"
+          email="janotka@sutb.cz"
+          phone='+421 910 339 794'
+          photo={DefaultPhoto}
           textColor="white"
         />
       </div>
