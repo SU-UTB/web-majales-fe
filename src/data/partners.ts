@@ -8,6 +8,7 @@ import exitRoomZlinLogo from '../assets/img/partners/exitRoomZlinLogo.png?url';
 import franzJosefKaiserLogo from '../assets/img/partners/franzJosefKaiserLogo.png?url';
 import isProdukceLogo from '../assets/img/partners/isProdukceLogo.png?url';
 import KFCLogo from '../assets/img/partners/kfc.png?url';
+import krajLogo from '../assets/img/partners/kraj.png?url';
 import krusoviceLogo from '../assets/img/partners/krusoviceLogo.png?url';
 import matchballLogo from '../assets/img/partners/matchball.png?url';
 import nextbikeLogo from '../assets/img/partners/nextbike.png?url';
@@ -17,6 +18,7 @@ import vertikonLogo from '../assets/img/partners/vertikonLogo.png?url';
 import vincentkaLogo from '../assets/img/partners/vincentka.png?url';
 import vitarLogo from '../assets/img/partners/vitar.png?url';
 import zffLogo from '../assets/img/partners/zff.png?url';
+import mestoLogo from '../assets/img/partners/zlin.png?url';
 
 export const mainPartners: PartnerType[] = [
   // ACTIVE
@@ -123,6 +125,19 @@ export const partners: PartnerType[] = [
     img: exitRoomZlinLogo,
     alt: 'Exit Room Zlín logo',
     link: 'https://www.exitroomzlin.cz/',
+  },
+];
+
+export const supportPartners: PartnerType[] = [
+  {
+    img: krajLogo,
+    alt: 'Kraj logo',
+    link: 'https://zlinskykraj.cz/',
+  },
+  {
+    img: mestoLogo,
+    alt: 'Město logo',
+    link: 'https://www.zlin.eu/',
   },
 ];
 

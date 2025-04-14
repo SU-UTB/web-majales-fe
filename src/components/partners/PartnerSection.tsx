@@ -1,9 +1,8 @@
 import hitradioZlinLogo from '../../assets/img/partners/hitradio-zlin.png?url';
 import medialniPartnerLogo from '../../assets/img/partners/medialniPartnerLogo.png?url';
 import postaBezHranicLogo from '../../assets/img/partners/pbh.png?url';
-import suLogo from '../../assets/img/partners/su.png?url';
 import trinityLogo from '../../assets/img/partners/trinity.jpg?url';
-import utbLogo from '../../assets/img/partners/utb.png?url';
+import { mainPartners, partners, supportPartners } from '../../data/partners';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
@@ -11,20 +10,14 @@ import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
 import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
 import { Triangle } from '../svg/elements/Triangle';
-import { MainPartnerList } from './MainPartnerList';
 import { PartnerList } from './PartnerList';
 import { SinglePartnerItem } from './SinglePartnerItem';
-
 export const PartnerSection = () => {
   return (
     <SectionContainer id="partneri" bgColor='white'>
-      <div className="space-y-12 lg:gap-y-16 flex flex-col items-center md:pb-12">
+      <div className="space-y-12 lg:gap-y-12 flex flex-col items-center md:pb-12">
         <div className="flex flex-col text-left">
           <h1 className="text-h2-reversed-mobile md:text-h2-reversed text-darkDarkBlue">Partneři podporující studentský Majáles UTB</h1>
-        </div>
-        <div className="flex flex-wrap justify-center gap-x-20 gap-y-8">
-          <SinglePartnerItem headline="Pořadatel" img={suLogo} alt="SU logo" link="https://su.utb.cz/" />
-          <SinglePartnerItem headline="Spolupořadatel" img={utbLogo} alt="UTB logo" link="https://www.utb.cz/" />
         </div>
         <SinglePartnerItem
           headline="Generální partner"
@@ -52,9 +45,9 @@ export const PartnerSection = () => {
             link="https://www.postabezhranic.cz/"
           />
         </div>
-        <MainPartnerList />
-        <PartnerList />
-        {/* <KingAndQueenPartnerList /> */}
+        <PartnerList header="S podporou" partnerList={supportPartners} />
+        <PartnerList header="Hlavní partneři" partnerList={mainPartners} />
+        <PartnerList header="Partneři" partnerList={partners} />
       </div>
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0 z-10">
