@@ -7,9 +7,9 @@ export const questions: QuestionType[] = [
       'Je naší mnohaletou tradicí, že na Majáles UTB je vstup ZDARMA. Proto vstupenku kupovat nemusíte a ani se nepotřebujete předem registrovat. Stačí přijít 2. 5. 2025 do parku před Baťovou vilou.',
   },
   {
-    question: 'Je v areálu bankomat?',
+    question: 'Lze v areálu platit kartou?',
     answer:
-      'V majálesovém areálu nebude k dispozici bankomat. Proto si prosím vyberte hotovost předem. Nezaručujeme, že u prodejců půjde platit kartou.',
+      'Ano! V celém areálu majálesu je bezkontaktní placení. Platit hotově můžete také, ale v každém stánku lze platit i kartou.'
   },
   {
     question: 'Jak se k vám dostanu?',
@@ -38,7 +38,7 @@ export const questions: QuestionType[] = [
     question: 'Jak udržujeme náš majáles čistý?',
     answer: (
       <>
-        Společně s naším partnerem <a href="https://www.cistyfestival.cz/" target="_blank" rel="noopener noreferrer external" className="underline">Čistý festival</a> se staráme o třídění odpadu a minimalizaci dopadu naší akce na životní prostředí. Pomozte nám udržet park čistý!
+        Společně s naším partnerem <a href="https://www.cistyfestival.cz/" target="_blank" rel="noopener noreferrer external" className="underline">Čistý festival</a> se staráme o třídění odpadu a minimalizaci dopadu naší akce na životní prostředí.
       </>
     ),
   },
