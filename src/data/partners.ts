@@ -31,7 +31,7 @@ export const mainPartners: PartnerType[] = [
   {
     img: backstageAgencyLogo,
     alt: 'Backstage Agency logo',
-    link: 'https://www.backstageagency.cz/',
+    link: 'https://www.backstage-agency.cz/',
   },
 ];
 
