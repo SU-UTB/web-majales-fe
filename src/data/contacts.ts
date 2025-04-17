@@ -4,7 +4,6 @@ import DefaultPhoto from '../assets/img/contacts/default.jpg?url';
 import ErikPhoto from '../assets/img/contacts/erik.jpg?url';
 import JankaPhoto from '../assets/img/contacts/janka.jpg?url';
 import JstPhoto from '../assets/img/contacts/jst.jpg?url';
-import KlarkaPhoto from '../assets/img/contacts/klarka.jpg?url';
 import LukyPhoto from '../assets/img/contacts/luky.jpg?url';
 import PataPhoto from '../assets/img/contacts/pata.jpg?url';
 
@@ -60,9 +59,9 @@ export const contacts: ContactType[] = [
   },
   {
     position: 'Kapely',
-    name: 'KLÁRA HRDLIČKOVÁ',
-    email: 'hrdlickova@sutb.cz',
-    phone: '+420 604 708 198',
-    photo: KlarkaPhoto,
+    name: 'ANETA NEJEZCHLEBOVÁ',
+    email: 'nejezchlebova@sutb.cz',
+    phone: '+420 723 132 295',
+    photo: DefaultPhoto,
   },
 ];

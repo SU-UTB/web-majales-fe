@@ -36,7 +36,7 @@ export const PartnerSection = () => {
             headline="Mediální partner"
             img={medialniPartnerLogo}
             alt="Mediální partner logo"
-            link="https://www.medialni.cz/"
+            link="https://www.kfbz.cz/"
           />
           <SinglePartnerItem
             headline="Logistický partner"
