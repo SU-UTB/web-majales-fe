@@ -49,6 +49,6 @@ export const barumStage: HarmonogramItemType[] = [
   },
   {
     time: '22:00-23:00',
-    band: 'Kharma DJ',
+    band: 'KHARMA DJ',
   },
 ];
