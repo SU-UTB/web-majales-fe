@@ -9,7 +9,7 @@ export const BaseInfoSection = () => {
             <p>
               Vstup <span className="font-semibold">ZDARMA</span> pro všechny
             </p>
-            <p>2 stage s 8 interprety </p>
+            <p>2 stage s 10 interprety </p>
             <p>Food & Chill-out zóna</p>
             <p>Doprovodný program</p>
           </div>
