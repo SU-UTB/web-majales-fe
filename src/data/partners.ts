@@ -10,9 +10,11 @@ import isProdukceLogo from '../assets/img/partners/isProdukceLogo.png?url';
 import KFCLogo from '../assets/img/partners/kfc.png?url';
 import krajLogo from '../assets/img/partners/kraj.png?url';
 import krusoviceLogo from '../assets/img/partners/krusoviceLogo.png?url';
+import kudyZNudyLogo from '../assets/img/partners/kudy-z-nudy-logo.png?url';
 import matchballLogo from '../assets/img/partners/matchball.png?url';
 import nextbikeLogo from '../assets/img/partners/nextbike.png?url';
 import ntbLogo from '../assets/img/partners/ntb.png?url';
+import olaOlaLogo from '../assets/img/partners/ola-ola-logo.png?url';
 import papecLogo from '../assets/img/partners/papecLogo.png?url';
 import vertikonLogo from '../assets/img/partners/vertikonLogo.png?url';
 import vincentkaLogo from '../assets/img/partners/vincentka.png?url';
@@ -125,6 +127,16 @@ export const partners: PartnerType[] = [
     img: exitRoomZlinLogo,
     alt: 'Exit Room Zlín logo',
     link: 'https://www.exitroomzlin.cz/',
+  },
+  {
+    img: kudyZNudyLogo,
+    alt: 'Kudy Z Nudy logo',
+    link: 'https://www.kudyznudy.cz/',
+  },
+  {
+    img: olaOlaLogo,
+    alt: 'Ola Ola logo',
+    link: 'https://www.olaola.cz/',
   },
 ];
 
