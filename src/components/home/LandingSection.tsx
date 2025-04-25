@@ -1,10 +1,12 @@
 import { MAJALES_DATE } from '../../config/constants';
+import { MAJALES_TIME } from '../../config/constants';
 import { Container } from '../shared/Container';
 import { MajalesHeadline } from '../svg/MajalesHeadline';
 
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
+import { DateRectangle } from '../svg/elements/DateRectangle';
 import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
 import { TextRectangle } from '../svg/elements/TextRectangle';
 import { Triangle } from '../svg/elements/Triangle';
@@ -32,9 +34,11 @@ export const LandingSection = () => {
       <div className="absolute bottom-0 right-0">
         <div className="relative">
           <Triangle className="absolute right-36 md:right-72 bottom-0 md:bottom-0 h-12 md:h-24 rotate-180" color='#FF785A' />
-          <CheckerSquare className="absolute right-24 md:right-48 bottom-0 md:bottom-0 h-12 md:h-24" color1='#1F2041' color2='#FFFFFF' />
-          <CheckerSquare className="absolute right-12 md:right-24 bottom-0 md:bottom-0 h-12 md:h-24" color1='#FFFFFF' color2='#1F2041' />
-          <CheckerSquare className="absolute right-0 md:right-0 bottom-0 md:bottom-0 h-12 md:h-24" color1='#1F2041' color2='#FFFFFF' />
+          <DateRectangle className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24 w-36 md:w-72 overflow-hidden" color='#E7548A'>
+            <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
+              {MAJALES_TIME}
+            </h2>
+          </DateRectangle>
         </div>
       </div>
       {/* BOTTOM LEFT */}
