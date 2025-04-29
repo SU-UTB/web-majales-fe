@@ -21,6 +21,7 @@ import vincentkaLogo from '../assets/img/partners/vincentka.png?url';
 import vitarLogo from '../assets/img/partners/vitar.png?url';
 import zffLogo from '../assets/img/partners/zff.png?url';
 import mestoLogo from '../assets/img/partners/zlin.png?url';
+import pizza_hallo from '../assets/img/partners/pizza_hallo.png?url';
 
 export const mainPartners: PartnerType[] = [
   // ACTIVE
@@ -91,6 +92,12 @@ export const partners: PartnerType[] = [
     img: ntbLogo,
     alt: 'Nadace Tomáše Bati logo',
     link: 'https://www.nadacetomasebati.cz/',
+  },
+  // ACTIVE
+  {
+    img: pizza_hallo,
+    alt: 'Pizza Halló',
+    link: 'https://pizzahallo.cz/',
   },
   // ACTIVE
   {
