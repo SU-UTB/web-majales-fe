@@ -97,7 +97,7 @@ export const partners: PartnerType[] = [
   {
     img: pizza_hallo,
     alt: 'Pizza Halló',
-    link: 'https://pizzahallo.cz/zlin/',
+    link: 'https://pizzahallo.cz/',
   },
   // ACTIVE
   {
