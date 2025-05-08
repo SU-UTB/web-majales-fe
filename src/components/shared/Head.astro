@@ -10,6 +10,18 @@ const socialImageURL = new URL(Astro.props.image ?? '/assets/img/meta-image.jpg'
 ---
 
 <head>
+    <!-- Set default consent mode -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
+    </script>
+
   <!-- Google Tag Manager -->
   <script>
     (function (w: any, d: any, s: any, l: any, i: any) {
