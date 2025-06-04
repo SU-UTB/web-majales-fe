@@ -11,7 +11,7 @@ export const AboutSection = () => {
     <SectionContainer id="kral-a-kralovna" bgColor="lightpink">
       <div className="space-y-12 relative px-4">
         <AboutContent />
-        <Register registerLink="https://forms.gle/ZsBXSshDwSKwiQHR9" />
+        {/* <Register registerLink="https://forms.gle/ZsBXSshDwSKwiQHR9" /> */}
       </div>
       {/* TOP RIGHT */}
       <div className="absolute top-0 right-0">
