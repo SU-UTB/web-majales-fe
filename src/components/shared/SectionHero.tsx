@@ -49,7 +49,8 @@ export const SectionHero = ({ dateRectColor, BottomLeftTriangle1, BottomLeftTria
           <CheckerSquare className="absolute bottom-12 md:bottom-24 left-0 md:left-0 h-12 md:h-24" color1="#000000" color2="#FFFFFF" />
           <DateRectangle className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24 w-36 md:w-72 overflow-hidden" color={dateRectColor}>
             <h2 className="text-h2-reversed-mobile md:text-h2-reversed text-white">
-              {MAJALES_DATE.toLocaleDateString('cs-CZ')}
+              {/* {MAJALES_DATE.toLocaleDateString('cs-CZ')} */}
+              {MAJALES_DATE}
             </h2>
           </DateRectangle>
           <Triangle className="absolute bottom-0 md:bottom-0 left-36 md:left-72 h-12 md:h-24 -rotate-90" color={BottomLeftTriangle2} />

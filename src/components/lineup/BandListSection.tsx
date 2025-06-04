@@ -3,7 +3,6 @@ import { bands } from '../../data/bands';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { BigTriangle } from '../svg/elements/BigTriangle';
-import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { Triangle } from '../svg/elements/Triangle';
 import { BandListItem } from './bandlist/BandListItem';
 import { BandListItemHeadliner } from './bandlist/BandListItemHeadliner';
