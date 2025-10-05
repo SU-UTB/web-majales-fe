@@ -24,6 +24,22 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install openconnect
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openconnect
+
+      - name: Connect to VPN
+        run: |
+          echo "${{ secrets.VPN_PASSWORD }}" > vpn-pass.txt
+          sudo openconnect \
+            --protocol=anyconnect \
+            --user=${{ secrets.VPN_USERNAME }} \
+            vpn.utb.cz \
+            --passwd-on-stdin < vpn-pass.txt \
+            --background
+          sleep 10
+
       - name: Build project
         run: npm ci && npm run build
 
