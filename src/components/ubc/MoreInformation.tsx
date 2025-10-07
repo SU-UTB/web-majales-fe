@@ -1,3 +1,4 @@
+import { MAJALES_DATE } from '../../config/constants';
 import { ExternalLink } from '../shared/ExternalLink';
 import { SectionContainer } from '../shared/SectionContainer';
 import { MoreInfoPart } from './MoreInfoPart';
@@ -19,7 +20,7 @@ export const MoreInformation = () => {
           <p>
             Splňujete všechny podmínky? Tak už se zbývá jen přihlásit. Pro letošní ročník již registrace skončili
             a&nbsp; mezi nimi se skrývá i&nbsp;letošní vítěz, ale nezapomeň sledovat UniBand Contest, ať nepropásneš
-            registrace pro rok 2025. Více informací na&nbsp;webu&nbsp;
+            registrace pro rok {MAJALES_DATE.getFullYear()}. Více informací na&nbsp;webu&nbsp;
             <ExternalLink link="https://unibandcontest.cz/" text="unibandcontest.cz" className="underline" />.
           </p>
         </MoreInfoPart>

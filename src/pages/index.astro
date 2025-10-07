@@ -11,7 +11,7 @@ import { MAJALES_DATE } from '../config/constants';
 import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
-  title: 'Majáles',
+  title: 'Majáles - UTB',
   description: 'TODO',
   image: '/meta_image.jpg',
 };
@@ -21,7 +21,7 @@ const metaTags = {
 <Layout {...metaTags}>
   <LandingSection />
   <BaseInfoSection />
-  <!-- <CountdownSection targetDate={MAJALES_DATE} client:load/> -->
+  <CountdownSection targetDate={MAJALES_DATE} client:load/>
   <WhatIsMajalesSection />
   <Map />
   <UsefulLinkList />

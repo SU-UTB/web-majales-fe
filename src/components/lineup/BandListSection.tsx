@@ -10,7 +10,7 @@ import { BandListItemHeadliner } from './bandlist/BandListItemHeadliner';
 export const BandListSection = () => {
   return (
     <SectionContainer id="kapely" bgColor="pink" className='text-white'>
-      <h2 className="text-h2-mobile md:text-h2 relative z-20">Na koho se můžete těšit?</h2>
+      <h2 className="text-h2-mobile p-6 md:text-h2 text-center relative z-20">Na koho se můžete těšit?</h2>
       {CAN_SHOW_BANDS ? (
       <div className="relative z-20">
         {/* Headliners */}
@@ -28,7 +28,7 @@ export const BandListSection = () => {
         </div>
       </div>
     ) : (
-      <p className="text-p-big py-12 relative z-20">Již brzy prozradíme</p>
+      <p className="text-p-big py-12 text-center relative z-20">Již brzy prozradíme</p>
     )}
 
       {/* TOP RIGHT */}

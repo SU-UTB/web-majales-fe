@@ -22,6 +22,7 @@ import vitarLogo from '../assets/img/partners/vitar.png?url';
 import zffLogo from '../assets/img/partners/zff.png?url';
 import mestoLogo from '../assets/img/partners/zlin.png?url';
 import pizza_hallo from '../assets/img/partners/pizza_hallo.png?url';
+import utb from '../assets/img/partners/utb.png?url';
 
 export const mainPartners: PartnerType[] = [
   // ACTIVE
@@ -148,6 +149,11 @@ export const partners: PartnerType[] = [
 ];
 
 export const supportPartners: PartnerType[] = [
+  {
+    img: utb,
+    alt: 'UTB logo',
+    link: 'https://utb.cz/',
+  },
   {
     img: krajLogo,
     alt: 'Kraj logo',

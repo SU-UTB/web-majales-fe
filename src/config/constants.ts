@@ -1,10 +1,10 @@
-//export const MAJALES_DATE = new Date('2025-05-02');
-export const MAJALES_DATE = "květen";
+export const MAJALES_DATE = new Date('2026-05-07');
+//export const MAJALES_DATE = "2026";
 //export const MAJALES_TIME = "od 14:00";
-export const MAJALES_TIME = "2026";
+export const MAJALES_TIME = "";
 export const KING_QUEEN_REGISTRATION_DATE = new Date('2024-04-01');
-//export const COPYRIGHT_TEXT = `©Studentská unie utb - ${MAJALES_DATE.getFullYear()}`;
-export const COPYRIGHT_TEXT = `©Studentská unie utb - 2025`;
+export const COPYRIGHT_TEXT = `©Studentská unie utb - ${MAJALES_DATE.getFullYear()}`;
+//export const COPYRIGHT_TEXT = `©Studentská unie utb - 2025`;
 export const MAJALES_TITLE = 'Majáles UTB Zlín';
 
 // !!!!! ZMĚNIT ZAKOMENTOVANÉ ZPÁTKY !!!!!

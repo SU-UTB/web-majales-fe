@@ -1,3 +1,4 @@
+import { MAJALES_DATE } from '../../config/constants';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { HalfTransparentRedTriangle2X } from '../svg/elements/HalfTransparentRedTriangle2X';
@@ -30,7 +31,7 @@ export const WhatIsMajalesSection = () => {
           historie této události!
         </p>
         <p className="w-full text-left">
-          Zní to skvěle, že? Tak si nezapomeňte poznamenat datum: 2. května. Uvidíme se v parku před Baťovou vilou. Těšíme se na vás!
+          Zní to skvěle, že? Tak si nezapomeňte poznamenat datum: {MAJALES_DATE.toLocaleDateString('cs-CZ')}. Uvidíme se v parku před Baťovou vilou. Těšíme se na vás!
         </p>
       </div>
       {/* TOP LEFT */}
