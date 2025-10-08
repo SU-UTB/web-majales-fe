@@ -1,6 +1,6 @@
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
-import JankaPhoto from '../../assets/img/contacts/janka.jpg?url';
+import DefaultPhoto from '../../assets/img/contacts/default.jpg?url';
 
 export const ContactSection = () => {
   return (
@@ -15,10 +15,10 @@ export const ContactSection = () => {
         </div>
         <ContactItem
           position="Kontaktní osoba pro sales"
-          name="JANKA NIEPELOVÁ"
-          email="niepelova@sutb.cz"
-          phone='+421 918 424 947'
-          photo={JankaPhoto}
+          name="ANNA DAREBNÍČKOVÁ"
+          email="darebnickova@sutb.cz"
+          phone='+420 721 948 952'
+          photo={DefaultPhoto}
           textColor="white"
         />
       </div>

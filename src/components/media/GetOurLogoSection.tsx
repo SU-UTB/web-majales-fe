@@ -26,9 +26,9 @@ export const GetOurLogoSection = () => {
         </a>
         <ContactItem
           position="Kontaktní osoba pro média"
-          name="MARTIN JANOTKA"
-          email="janotka@sutb.cz"
-          phone='+421 910 339 794'
+          name="BARBORA HANOLDOVÁ"
+          email="hanoldova@sutb.cz"
+          phone='+420 720 497 790'
           photo={DefaultPhoto}
           textColor="white"
         />

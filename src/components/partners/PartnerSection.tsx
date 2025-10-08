@@ -19,19 +19,19 @@ export const PartnerSection = () => {
         <div className="flex flex-col text-left">
           <h1 className="text-h2-reversed-mobile md:text-h2-reversed text-darkDarkBlue">Partneři podporující studentský Majáles UTB</h1>
         </div>
-        <SinglePartnerItem
+        {/* <SinglePartnerItem
           headline="Generální partner"
           img={trinityLogo}
           alt="Trinity logo"
           link="https://www.trinitybank.cz/"
-        />
-        <SinglePartnerItem
+        /> */}
+        {/* <SinglePartnerItem
           headline="Hlavní mediální partner"
           img={hitradioZlinLogo}
           alt="Hitradio Zlín logo"
           link="https://www.hitradiozlin.cz/"
-        />
-        <div className="flex flex-wrap items-center gap-16 lg:gap-20">
+        /> */}
+        {/* <div className="flex flex-wrap items-center gap-16 lg:gap-20">
           <SinglePartnerItem
             headline="Mediální partner"
             img={medialniPartnerLogo}
@@ -44,10 +44,10 @@ export const PartnerSection = () => {
             alt="Pošta bez hranic logo"
             link="https://www.postabezhranic.cz/"
           />
-        </div>
+        </div> */}
         <PartnerList header="S podporou" partnerList={supportPartners} />
-        <PartnerList header="Hlavní partneři" partnerList={mainPartners} />
-        <PartnerList header="Partneři" partnerList={partners} />
+        {/* <PartnerList header="Hlavní partneři" partnerList={mainPartners} />
+        <PartnerList header="Partneři" partnerList={partners} /> */}
       </div>
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0 z-10">

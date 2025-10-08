@@ -1,10 +1,16 @@
 import type { QuestionType } from '../AppTypes';
+import { MAJALES_DATE } from '../config/constants';
 
 export const questions: QuestionType[] = [
   {
     question: 'Kde a za kolik koupím vstupenku?',
-    answer:
-      'Je naší mnohaletou tradicí, že na Majáles UTB je vstup ZDARMA. Proto vstupenku kupovat nemusíte a ani se nepotřebujete předem registrovat. Stačí přijít 2. 5. 2025 do parku před Baťovou vilou.',
+    answer: (
+      <>
+        Je naší mnohaletou tradicí, že na Majáles UTB je vstup ZDARMA. Proto vstupenku kupovat nemusíte a ani se
+        nepotřebujete předem registrovat. Stačí přijít {MAJALES_DATE.toLocaleDateString('cs-CZ')} do parku před Baťovou
+        vilou.
+      </>
+    ),
   },
   {
     question: 'Lze v areálu platit kartou?',
