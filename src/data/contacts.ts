@@ -24,7 +24,7 @@ export const contacts: ContactType[] = [
     photo: DefaultPhoto,
   },
   {
-    position: 'Sales',
+    position: 'Sponzoring',
     name: 'ANNA DAREBNÍČKOVÁ',
     email: 'darebnickova@sutb.cz',
     phone: '+420 721 948 952',

@@ -14,7 +14,7 @@ export const ContactSection = () => {
           </p>
         </div>
         <ContactItem
-          position="Kontaktní osoba pro sales"
+          position="Kontaktní osoba pro sponzoring"
           name="ANNA DAREBNÍČKOVÁ"
           email="darebnickova@sutb.cz"
           phone='+420 721 948 952'
