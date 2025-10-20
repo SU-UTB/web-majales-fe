@@ -1,6 +1,7 @@
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
 import DefaultPhoto from '../../assets/img/contacts/default.jpg?url';
+import anicka_d from '../../assets/img/contacts/anicka_d.webp?url';
 
 export const ContactSection = () => {
   return (
@@ -18,7 +19,7 @@ export const ContactSection = () => {
           name="ANNA DAREBNÍČKOVÁ"
           email="darebnickova@sutb.cz"
           phone='+420 721 948 952'
-          photo={DefaultPhoto}
+          photo={anicka_d}
           textColor="white"
         />
       </div>

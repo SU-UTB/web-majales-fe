@@ -1,5 +1,6 @@
 
 import DefaultPhoto from '../../assets/img/contacts/default.jpg?url';
+import barca from '../../assets/img/contacts/barca.webp?url';
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
@@ -29,7 +30,7 @@ export const GetOurLogoSection = () => {
           name="BARBORA HANOLDOVÁ"
           email="hanoldova@sutb.cz"
           phone='+420 720 497 790'
-          photo={DefaultPhoto}
+          photo={barca}
           textColor="white"
         />
       </div>
