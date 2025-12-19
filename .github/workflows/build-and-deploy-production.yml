@@ -41,6 +41,8 @@ jobs:
           sleep 10
 
       - name: Build project
+        env:
+          PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
         run: npm ci && npm run build
 
       - name: SFTP uploader
