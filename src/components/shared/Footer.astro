@@ -2,6 +2,8 @@
 import { footerItems } from '../../data/footer';
 import { SocialItem } from '../footer/SocialItem';
 import { Container } from './Container';
+
+const currentYear = new Date().getFullYear();
 ---
 <footer class="relative py-8 bg-violet">
   <Container>
@@ -9,6 +11,14 @@ import { Container } from './Container';
       {footerItems.map((item) => (
         <SocialItem logo={item.logo} logoName={item.logoName} socials={item.socials} />
       ))}
+    </div>
+    <div class="mt-8 pt-8 border-t border-violet-700 flex flex-col md:flex-row justify-between items-center text-white text-sm">
+      <p class="mb-4 md:mb-0 text-center md:text-left">
+        &copy; Studentská unie UTB {currentYear}. Všechna práva vyhrazena.
+      </p>
+      <a href="/privacypolicy" class="hover:text-orange transition-colors duration-200">
+        Zásady ochrany osobních údajů
+      </a>
     </div>
   </Container>
 </footer>

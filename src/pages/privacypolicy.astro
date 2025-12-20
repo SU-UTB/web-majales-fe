@@ -1,0 +1,18 @@
+---
+import Layout from '../components/shared/Layout.astro';
+import { UpperFooter } from '../components/shared/UpperFooter';
+import { PrivacyPolicy } from './PrivacyPolicy.tsx';
+
+const metaTags = {
+  title: 'Majáles UTB - Zásady ochrany osobních údajů',
+  description: 'Zásady ochrany osobních údajů pro Majáles UTB ve Zlíně.',
+  image: '/meta_image.jpg',
+};
+---
+
+<Layout {...metaTags}>
+  <div class="px-4 py-8 md:px-6 lg:px-8">
+    <PrivacyPolicy client:load />
+  </div>
+  <UpperFooter bgColor='bg-pink' />
+</Layout>
