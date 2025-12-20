@@ -12,6 +12,9 @@ export const SinglePartnerItem = ({ headline, img, alt, link }: Props) => {
       <ExternalLink
         icon={<img src={img} alt={alt} width={400} height={300} className="h-[90px] object-contain" loading="lazy" />}
         link={link}
+        data-track-event="click"
+        data-track-category="Partner"
+        data-track-label={`Partner/${alt}`}
       />
     </div>
   );

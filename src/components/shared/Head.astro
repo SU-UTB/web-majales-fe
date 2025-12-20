@@ -1,55 +1,87 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import type { HeadProps } from '../../AppTypes';
-import { COPYRIGHT_TEXT } from '../../config/constants';
+import { COPYRIGHT_TEXT, MAJALES_DATE } from '../../config/constants';
 
 type Props = HeadProps;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const socialImageURL = new URL(Astro.props.image ?? '/assets/img/meta-image.jpg', Astro.url);
+const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+
+// Helper to ensure we get "YYYY-MM-DD"
+const isoDate = MAJALES_DATE.toISOString().split('T')[0];
+
+// CZECHIA TIMEZONE OFFSET (May is Daylight Savings = UTC+2)
+const TIME_OFFSET = '+02:00'; 
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Majáles UTB',
+    url: Astro.site?.href,
+    description: 'Majáles UTB ve Zlíně. Vstup ZDARMA. Baťa by šel!',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: `Majáles UTB ${MAJALES_DATE.getFullYear()}`,
+    startDate: `${isoDate}T14:00:00${TIME_OFFSET}`, 
+    endDate: `${isoDate}T23:59:59${TIME_OFFSET}`,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: {
+      '@type': 'Place',
+      name: 'Park u Baťovy vily',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Hlavničkovo nábř. 5675',
+        addressLocality: 'Zlín',
+        postalCode: '76001',
+        addressCountry: 'CZ',
+      },
+    },
+    image: [socialImageURL.href],
+    description: Astro.props.description,
+    offers: {
+      '@type': 'Offer',
+      'url': 'https://majales.utb.cz/',
+      'price': '0',
+      'priceCurrency': 'CZK',
+      'availability': 'https://schema.org/InStock'
+    },
+    organizer: {
+      '@type': 'Organization',
+      name: 'Studentská unie UTB',
+      url: 'https://su.utb.cz',
+    }
+  }
+];
 ---
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w: any, d: any, s: any, l: any, i: any) {
-      w[l] = w[l] || [];
-      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-      var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KGXGR29Q');
-  </script>
-  <!-- End Google Tag Manager -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta charset="utf-8" />
 
-  <title>{Astro.props.title}</title>
+<title>{Astro.props.title}</title>
 
-  <ViewTransitions />
-
-  <meta name="robots" content="index, follow" />
-
-  <meta name="title" content={Astro.props.title} />
+<meta name="robots" content="index, follow" />
+<meta name="title" content={Astro.props.title} />
   <meta name="description" content={Astro.props.description} />
-
   <meta name="copyright" content={COPYRIGHT_TEXT} />
   <meta name="author" content="Studentská unie utb" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
   <link rel="manifest" href="/favicon/site.webmanifest" />
   <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#fffbd6" />
 
-  <link rel="canonical" href={canonicalURL} data-baseprotocol="https:" />
+  <link rel="canonical" href={canonicalURL} />
   <link rel="sitemap" href="/sitemap-index.xml" />
 
   <meta property="og:type" content="website" />
@@ -64,4 +96,52 @@ const socialImageURL = new URL(Astro.props.image ?? '/assets/img/meta-image.jpg'
   <meta property="twitter:title" content={Astro.props.title} />
   <meta property="twitter:description" content={Astro.props.description} />
   <meta property="twitter:image" content={socialImageURL} />
+
+  <meta
+    name="keywords"
+    content={`Majáles UTB, Zlín, festival, studenti, hudba, kapely, ${MAJALES_DATE.getFullYear()}, Univerzita Tomáše Bati`}
+  />
+
+  <script type="application/ld+json" set:html={JSON.stringify(schemas)} />
+
+  <ViewTransitions />
+
+  <script is:inline>
+    document.addEventListener('astro:after-swap', ({ newDocument }) => {
+      const head = document.head;
+      const newHead = newDocument.head;
+
+      // Collect existing meta tags to remove
+      const existingMetaTags = Array.from(head.querySelectorAll('meta[name], meta[property]'));
+      const existingTitle = head.querySelector('title');
+
+      // Collect new meta tags and title
+      const newMetaTags = Array.from(newHead.querySelectorAll('meta[name], meta[property]'));
+      const newTitle = newHead.querySelector('title');
+
+      // Remove old title
+      if (existingTitle) {
+        existingTitle.remove();
+      }
+
+      // Remove old meta tags
+      existingMetaTags.forEach(tag => tag.remove());
+
+      // Add new title
+      if (newTitle) {
+        head.append(newTitle);
+      }
+
+      // Add new meta tags
+      newMetaTags.forEach(tag => {
+        // Clone the tag to ensure it's a fresh element for insertion
+        head.append(tag.cloneNode(true));
+      });
+
+      // Update the document title for the browser tab
+      if (newTitle) {
+        document.title = newTitle.textContent || '';
+      }
+    });
+  </script>
 </head>

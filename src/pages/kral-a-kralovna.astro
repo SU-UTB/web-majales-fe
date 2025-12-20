@@ -5,24 +5,49 @@ import { SectionHero } from '../components/shared/SectionHero';
 import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
-  title: 'Majáles - UTB',
-  description: 'TODO',
+  title: 'Král a Královna | Majáles UTB',
+  description: 'Kdo se stane letošním králem a královnou Majálesu?',
   image: '/meta_image.jpg',
+};
+
+// Konfigurace barev pro Hero sekci - sjednoceno napříč webem
+const heroColors = {
+  // --- LEFT SIDE ---
+  dateRectColor: 'fill-violet',
+  BottomLeftTriangleUpper: 'fill-lightOrange',
+  BottomLeftTriangleLower: 'fill-orange',
+  BottomLeftSquareStarMain: 'fill-orange',
+  BottomLeftSquareStarSec: 'fill-lightOrange',
+  BottomLeftSquareCircleMainLeft: 'fill-violet',
+  BottomLeftSquareCircleMainRight: 'fill-violet',
+  BottomLeftSquareCircleSecLeft: 'fill-lightOrange',
+  BottomLeftSquareCircleSecRight: 'fill-orange',
+
+  // --- RIGHT SIDE & BOTTOM ---
+  BottomRightTriangleLeft: 'fill-lightOrange',
+  timeRectColor: 'fill-violet',
+  BottomRightLightning: 'fill-violet',
+  BottomRightSquareCircleMainLeft: 'fill-violet',
+  BottomRightSquareCircleMainRight: 'fill-orange',
+  BottomRightSquareCircleSecLeft: 'fill-lightOrange',
+  BottomRightSquareCircleSecRight: 'fill-lightOrange',
+  BottomRightTriangleRight: 'fill-orange',
+
+  // --- TOP ---
+  TopRightTriangleUpper: 'fill-orange',
+  TopRightSquareStar45Main: 'fill-violet',
+  TopRightSquareStar45Sec: 'fill-lightOrange',
+  TopRightLeftArrowMain: 'fill-orange',
+  TopRightLeftArrowSec: 'fill-lightOrange',
 };
 ---
 
 <Layout {...metaTags}>
-  <SectionHero
-    dateRectColor="#E7548A"
-    BottomLeftTriangle1="#F49183"
-    BottomLeftTriangle2="#6459FD"
-    BottomRightTriangle1="#FF785A"
-    timeRectColor='#1F2041'
-    BottomRightSquare="#FF785A"
-    BottomRightSquareAsterisk="#FFE2DE"
-    BottomRightTriangle2="#E7548A"
-    BottomRightTriangle3="#6459FD"
-  />
-  <AboutSection />
-  <UpperFooter />
+  {/* Předání sjednocených barev */}
+  <SectionHero {...heroColors} />
+
+  <AboutSection client:visible />
+
+  {/* Sjednocení barvy footeru na "orange" jako u ostatních sekcí */}
+  <UpperFooter bgColor="bg-orange" />
 </Layout>

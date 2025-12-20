@@ -2,9 +2,9 @@ import type { QuestionType } from '../../AppTypes';
 
 export const QuestionListItem = ({ question, answer }: QuestionType) => {
   return (
-    <div className="space-y-4">
-      <h2 className="text-white text-h3-mobile md:text-h3">{question}</h2>
-      <p>{answer}</p>
+    <div className="relative z-10">
+      <h2 className="text-orange text-xl md:text-2xl font-medium">{question}</h2>
+      <p className="text-violet text-xl md:text-2xl font-normal">{answer}</p>
     </div>
   );
 };

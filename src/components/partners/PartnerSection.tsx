@@ -8,18 +8,19 @@ import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
+import { Lightning } from '../svg/elements/Lightning';
 import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
 import { Triangle } from '../svg/elements/Triangle';
 import { PartnerList } from './PartnerList';
 import { SinglePartnerItem } from './SinglePartnerItem';
 export const PartnerSection = () => {
   return (
-    <SectionContainer id="partneri" bgColor='white'>
+    <SectionContainer id="partneri" bgColor='beige'>
       <div className="space-y-12 lg:gap-y-12 flex flex-col items-center md:pb-12">
-        <div className="flex flex-col text-left">
-          <h1 className="text-h2-reversed-mobile md:text-h2-reversed text-darkDarkBlue">Partneři podporující studentský Majáles UTB</h1>
+        {/* <div className="flex flex-col text-left">
+          <h1 className="text-h2-reversed-mobile md:text-h2-reversed text-beige">Partneři podporující studentský Majáles UTB</h1>
         </div>
-        {/* <SinglePartnerItem
+        <SinglePartnerItem
           headline="Generální partner"
           img={trinityLogo}
           alt="Trinity logo"
@@ -49,18 +50,13 @@ export const PartnerSection = () => {
         {/* <PartnerList header="Hlavní partneři" partnerList={mainPartners} />
         <PartnerList header="Partneři" partnerList={partners} /> */}
       </div>
-      {/* BOTTOM RIGHT */}
-      <div className="absolute bottom-0 right-0 z-10">
+
+      {/* TOP LEFT */}
+      <div className="absolute top-0 left-0 z-10">
         <div className="relative">
-          <Triangle className="absolute bottom-0 md:bottom-0 right-60 md:right-120 h-12 md:h-24 rotate-180" color='#FFE2DE' />
-          <ArrowSquare className="absolute bottom-0 md:bottom-0 right-48 md:right-96 h-12 md:h-24 rotate-90" color='#1F2041' />
-          <CheckerSquare className="absolute bottom-0 md:bottom-0 right-36 md:right-72 h-12 md:h-24" color1='#E7548A' color2='#1F2041' />
-          <CheckerSquare className="absolute bottom-0 md:bottom-0 right-24 md:right-48 h-12 md:h-24" color1='#1F2041' color2='#E7548A' />
-          <CheckerSquare className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24" color1='#E7548A' color2='#1F2041' />
-          <AsteriskSquare className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24" color='#FF785A' asteriskColor='#FFFFFF' />
-          <CheckerSquare className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24" color1='#FFFFFF' color2='#000000' />
-          <SquareWithCircle className="absolute bottom-24 md:bottom-48 right-0 md:right-0 h-12 md:h-24" colorBg='#FFE2DE' colorLeftHalf='#FF785A' colorRightHalf='#FFFFFF' />
-          <CheckerTriangleTransparent className="absolute bottom-36 md:bottom-72 right-0 md:right-0 h-12 md:h-24 -rotate-90" color='#FF785A' />
+          <Lightning className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 rotate-180" colorMain='fill-lightPink' />
+          <SquareWithCircle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24" colorBgLeft='fill-lightPink' colorBgRight='fill-pink' colorCirLeft='fill-beige' colorCirRight='fill-beige' />
+          <Triangle className="absolute top-0 md:top-0 left-24 md:left-48 h-12 md:h-24" colorMain='fill-pink' />
         </div>
       </div>
     </SectionContainer>

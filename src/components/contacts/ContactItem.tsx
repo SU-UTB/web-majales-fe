@@ -18,8 +18,22 @@ export const ContactItem = ({ position, name, email, phone, photo, textColor = '
         </div>
         <div className="flex flex-col">
           <p className="uppercase font-medium">{name}</p>
-          <a href={`mailto:${email}`}>{email}</a>
-          <a href={`tel:${phone}`}>{phone}</a>
+          <a
+            href={`mailto:${email}`}
+            data-track-event="click"
+            data-track-category="Kontakty"
+            data-track-label={`Kontakty/Email/${name}`}
+          >
+            {email}
+          </a>
+          <a
+            href={`tel:${phone}`}
+            data-track-event="click"
+            data-track-category="Kontakty"
+            data-track-label={`Kontakty/Phone/${name}`}
+          >
+            {phone}
+          </a>
         </div>
       </div>
     </div>

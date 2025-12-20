@@ -1,0 +1,15 @@
+---
+import 'vanilla-cookieconsent/dist/cookieconsent.css';
+import '../../styles/global.css'; 
+---
+
+<script>
+  import { run } from 'vanilla-cookieconsent';
+  import { config } from './CookieConsentConfig';
+
+  // DŮLEŽITÉ: Zabalíme spuštění do 'astro:page-load'
+  // Tím zajistíme, že se lišta inicializuje znovu na každé nové stránce
+  document.addEventListener('astro:page-load', () => {
+    run(config);
+  });
+</script>

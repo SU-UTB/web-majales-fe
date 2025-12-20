@@ -4,26 +4,57 @@ import { PartnerSection } from '../components/partners/PartnerSection';
 import Layout from '../components/shared/Layout.astro';
 import { SectionHero } from '../components/shared/SectionHero';
 import { UpperFooter } from '../components/shared/UpperFooter';
+
 const metaTags = {
-  title: 'Majáles - UTB',
-  description: 'TODO',
+  title: 'Partneři | Majáles UTB',
+  description: 'Máte zájem o partnerství? Partneři podporující studentský Majáles UTB.',
   image: '/meta_image.jpg',
+};
+
+// Konfigurace barev pro Hero sekci - sjednoceno napříč webem
+const heroColors = {
+  // --- LEFT SIDE ---
+  dateRectColor: 'fill-violet',
+  BottomLeftTriangleUpper: 'fill-lightOrange',
+  BottomLeftTriangleLower: 'fill-orange',
+  BottomLeftSquareStarMain: 'fill-orange',
+  BottomLeftSquareStarSec: 'fill-lightOrange',
+  BottomLeftSquareCircleMainLeft: 'fill-violet',
+  BottomLeftSquareCircleMainRight: 'fill-violet',
+  BottomLeftSquareCircleSecLeft: 'fill-lightOrange',
+  BottomLeftSquareCircleSecRight: 'fill-orange',
+
+  // --- RIGHT SIDE & BOTTOM ---
+  BottomRightTriangleLeft: 'fill-lightOrange',
+  timeRectColor: 'fill-violet',
+  BottomRightLightning: 'fill-violet',
+  BottomRightSquareCircleMainLeft: 'fill-violet',
+  BottomRightSquareCircleMainRight: 'fill-orange',
+  BottomRightSquareCircleSecLeft: 'fill-lightOrange',
+  BottomRightSquareCircleSecRight: 'fill-lightOrange',
+  BottomRightTriangleRight: 'fill-orange',
+
+  // --- TOP ---
+  TopRightTriangleUpper: 'fill-orange',
+  TopRightSquareStar45Main: 'fill-violet',
+  TopRightSquareStar45Sec: 'fill-lightOrange',
+  TopRightLeftArrowMain: 'fill-orange',
+  TopRightLeftArrowSec: 'fill-lightOrange',
 };
 ---
 
 <Layout {...metaTags}>
-  <SectionHero
-    dateRectColor="#1F2041"
-    BottomLeftTriangle1="#E7548A"
-    BottomLeftTriangle2="#FFFFFF"
-    BottomRightTriangle1="#FF785A"
-    timeRectColor="#E7548A"
-    BottomRightSquare="#6459FD"
-    BottomRightSquareAsterisk="#FFFFFF"
-    BottomRightTriangle2="#F49183"
-    BottomRightTriangle3="#FFFFFF"
-  />
+  {/* Předání sjednocených barev pomocí spread operátoru */}
+  <SectionHero {...heroColors} />
+
   <ContactSection />
+
+  <div class:list={['px-8 py-4 md:py-8 flex flex-col bg-violet text-center']}>
+    <h1 class:list={['text-2xl md:text-5xl font-medium text-beige']}>Partneři podporující studentský Majáles UTB</h1>
+  </div>
+
   <PartnerSection />
-   <UpperFooter />
+
+  {/* Sjednocení barvy footeru na "orange" */}
+  <UpperFooter bgColor="bg-orange" />
 </Layout>

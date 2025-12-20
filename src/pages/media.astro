@@ -1,29 +1,53 @@
 ---
-import Image from 'astro/components/Image.astro';
 import { GetOurLogoSection } from '../components/media/GetOurLogoSection';
 import Layout from '../components/shared/Layout.astro';
 import { SectionHero } from '../components/shared/SectionHero';
 import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
-  title: 'Majáles - UTB',
-  description: 'TODO',
+  title: 'Média | Majáles UTB',
+  description: 'Podklady pro novináře a logomanuál Majálesu UTB ke stažení.',
   image: '/meta_image.jpg',
+};
+
+// Konfigurace barev pro Hero sekci - sjednoceno napříč celým webem
+const heroColors = {
+  // --- LEFT SIDE ---
+  dateRectColor: 'fill-violet',
+  BottomLeftTriangleUpper: 'fill-lightPink',
+  BottomLeftTriangleLower: 'fill-pink',
+  BottomLeftSquareStarMain: 'fill-pink',
+  BottomLeftSquareStarSec: 'fill-lightPink',
+  BottomLeftSquareCircleMainLeft: 'fill-violet',
+  BottomLeftSquareCircleMainRight: 'fill-violet',
+  BottomLeftSquareCircleSecLeft: 'fill-lightPink',
+  BottomLeftSquareCircleSecRight: 'fill-pink',
+
+  // --- RIGHT SIDE & BOTTOM ---
+  BottomRightTriangleLeft: 'fill-lightPink',
+  timeRectColor: 'fill-violet',
+  BottomRightLightning: 'fill-violet',
+  BottomRightSquareCircleMainLeft: 'fill-violet',
+  BottomRightSquareCircleMainRight: 'fill-pink',
+  BottomRightSquareCircleSecLeft: 'fill-lightPink',
+  BottomRightSquareCircleSecRight: 'fill-lightPink',
+  BottomRightTriangleRight: 'fill-pink',
+
+  // --- TOP ---
+  TopRightTriangleUpper: 'fill-pink',
+  TopRightSquareStar45Main: 'fill-violet',
+  TopRightSquareStar45Sec: 'fill-lightPink',
+  TopRightLeftArrowMain: 'fill-pink',
+  TopRightLeftArrowSec: 'fill-lightPink',
 };
 ---
 
 <Layout {...metaTags}>
-  <SectionHero
-    dateRectColor="#E7548A"
-    BottomLeftTriangle1="#F49183"
-    BottomLeftTriangle2="#FFFFFF"
-    BottomRightTriangle1="#FF785A"
-    timeRectColor='#F49183'
-    BottomRightSquare="#6459FD"
-    BottomRightSquareAsterisk="#FFE2DE"
-    BottomRightTriangle2="#1F2041"
-    BottomRightTriangle3="#FFFFFF"
-  />
-  <GetOurLogoSection />
-  <UpperFooter />
+  {/* Předání sjednocených barev */}
+  <SectionHero {...heroColors} />
+
+  <GetOurLogoSection client:visible />
+
+  {/* Sjednocení barvy footeru na "pink" */}
+  <UpperFooter bgColor="bg-pink" />
 </Layout>

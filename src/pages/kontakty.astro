@@ -1,28 +1,53 @@
 ---
-import { ContactLandingSection } from "../components/contacts/ContactLandingSection";
-import Layout from "../components/shared/Layout.astro";
-import { SectionHero } from "../components/shared/SectionHero";
-import { UpperFooter } from "../components/shared/UpperFooter";
+import { ContactLandingSection } from '../components/contacts/ContactLandingSection';
+import Layout from '../components/shared/Layout.astro';
+import { SectionHero } from '../components/shared/SectionHero';
+import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
-  title: 'Majáles - UTB',
-  description: 'TODO',
+  title: 'Kontakty | Majáles UTB',
+  description: 'Kontakty na manažery jednotlivých sekcí',
   image: '/meta_image.jpg',
+};
+
+// Konfigurace barev pro Hero sekci - sjednoceno napříč celým webem
+const heroColors = {
+  // --- LEFT SIDE ---
+  dateRectColor: 'fill-violet',
+  BottomLeftTriangleUpper: 'fill-lightOrange',
+  BottomLeftTriangleLower: 'fill-orange',
+  BottomLeftSquareStarMain: 'fill-orange',
+  BottomLeftSquareStarSec: 'fill-lightOrange',
+  BottomLeftSquareCircleMainLeft: 'fill-violet',
+  BottomLeftSquareCircleMainRight: 'fill-violet',
+  BottomLeftSquareCircleSecLeft: 'fill-lightOrange',
+  BottomLeftSquareCircleSecRight: 'fill-orange',
+
+  // --- RIGHT SIDE & BOTTOM ---
+  BottomRightTriangleLeft: 'fill-lightOrange',
+  timeRectColor: 'fill-violet',
+  BottomRightLightning: 'fill-violet',
+  BottomRightSquareCircleMainLeft: 'fill-violet',
+  BottomRightSquareCircleMainRight: 'fill-orange',
+  BottomRightSquareCircleSecLeft: 'fill-lightOrange',
+  BottomRightSquareCircleSecRight: 'fill-lightOrange',
+  BottomRightTriangleRight: 'fill-orange',
+
+  // --- TOP ---
+  TopRightTriangleUpper: 'fill-orange',
+  TopRightSquareStar45Main: 'fill-violet',
+  TopRightSquareStar45Sec: 'fill-lightOrange',
+  TopRightLeftArrowMain: 'fill-orange',
+  TopRightLeftArrowSec: 'fill-lightOrange',
 };
 ---
 
 <Layout {...metaTags}>
-  <SectionHero
-    dateRectColor="#1F2041"
-    BottomLeftTriangle1="#F49183"
-    BottomLeftTriangle2="#6459FD"
-    BottomRightTriangle1="#6459FD"
-    timeRectColor='#FF785A'
-    BottomRightSquare="#6459FD"
-    BottomRightSquareAsterisk="#FFE2DE"
-    BottomRightTriangle2="#F49183"
-    BottomRightTriangle3="#E7548A"
-  />
-  <ContactLandingSection />
-  <UpperFooter />
+  {/* Předání sjednocených barev pomocí spread operátoru */}
+  <SectionHero {...heroColors} />
+
+  <ContactLandingSection client:visible />
+
+  {/* Sjednocení barvy footeru na "orange" */}
+  <UpperFooter bgColor="bg-orange" />
 </Layout>

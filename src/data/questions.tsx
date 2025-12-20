@@ -33,6 +33,9 @@ export const questions: QuestionType[] = [
           target="_blank"
           rel="noopener noreferrer external"
           className="underline"
+          data-track-event="click"
+          data-track-category="QNA"
+          data-track-label="QNA/Návštěvní řád"
         >
           návštěvním&nbsp;řádu
         </a>
@@ -44,7 +47,17 @@ export const questions: QuestionType[] = [
     question: 'Jak udržujeme náš majáles čistý?',
     answer: (
       <>
-        Společně s naším partnerem <a href="https://www.cistyfestival.cz/" target="_blank" rel="noopener noreferrer external" className="underline">Čistý festival</a> se staráme o třídění odpadu a minimalizaci dopadu naší akce na životní prostředí.
+        Společně s naším partnerem&nbsp;
+        <a
+          href="https://www.cistyfestival.cz/"
+          target="_blank"
+          rel="noopener noreferrer external"
+          className="underline"
+          data-track-event="click"
+          data-track-category="QNA"
+          data-track-label="QNA/Čistý festival"
+        >
+          Čistý festival</a> se staráme o třídění odpadu a minimalizaci dopadu naší akce na životní prostředí.
       </>
     ),
   },
