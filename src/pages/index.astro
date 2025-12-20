@@ -1,30 +1,68 @@
 ---
-import { AboutSection } from '../components/home/AboutSection';
-import { WhatIsMajalesSection } from '../components/home/WhatIsMajalesSection';
-import { Map } from '../components/home/Map';
-import { UsefulLinkList } from '../components/home/UsefulLinkList';
 import { BaseInfoSection } from '../components/home/BaseInfoSection';
 import { CountdownSection } from '../components/home/CountdownSection';
-import { LandingSection } from '../components/home/LandingSection';
+import { Map } from '../components/home/Map';
+import { UsefulLinkList } from '../components/home/UsefulLinkList';
+import { WhatIsMajalesSection } from '../components/home/WhatIsMajalesSection';
+import { SectionHero } from '../components/shared/SectionHero';
+// import { LandingSection } from '../components/home/LandingSection';
 import Layout from '../components/shared/Layout.astro';
-import { MAJALES_DATE } from '../config/constants';
 import { UpperFooter } from '../components/shared/UpperFooter';
+import { MAJALES_DATE } from '../config/constants';
 
 const metaTags = {
-  title: 'Majáles - UTB',
-  description: 'TODO',
+  title: 'Majáles UTB',
+  description: 'Majáles UTB ve Zlíně. Vstup ZDARMA. Baťa by šel! Hudba, kultura a zábava v srdci města.',
   image: '/meta_image.jpg',
 };
 
+// ... tvé heroColors ...
+const heroColors = {
+  // --- LEFT SIDE ---
+  dateRectColor: 'fill-violet',
+  BottomLeftTriangleUpper: 'fill-lightPink',
+  BottomLeftTriangleLower: 'fill-pink',
+  BottomLeftSquareStarMain: 'fill-pink',
+  BottomLeftSquareStarSec: 'fill-lightPink',
+  BottomLeftSquareCircleMainLeft: 'fill-violet',
+  BottomLeftSquareCircleMainRight: 'fill-violet',
+  BottomLeftSquareCircleSecLeft: 'fill-lightPink',
+  BottomLeftSquareCircleSecRight: 'fill-pink',
+  // --- RIGHT SIDE & BOTTOM ---
+  // --- BOTTOM ---
+  BottomRightTriangleLeft: 'fill-lightPink',
+  timeRectColor: 'fill-violet',
+  BottomRightLightning: 'fill-violet',
+  BottomRightSquareCircleMainLeft: 'fill-violet',
+  BottomRightSquareCircleMainRight: 'fill-pink',
+  BottomRightSquareCircleSecLeft: 'fill-lightPink',
+  BottomRightSquareCircleSecRight: 'fill-lightPink',
+  BottomRightTriangleRight: 'fill-pink',
+  // --- TOP ---
+  TopRightTriangleUpper: 'fill-pink',
+  TopRightSquareStar45Main: 'fill-violet',
+  TopRightSquareStar45Sec: 'fill-lightPink',
+  TopRightLeftArrowMain: 'fill-pink',
+  TopRightLeftArrowSec: 'fill-lightPink',
+};
 ---
 
 <Layout {...metaTags}>
-  <LandingSection />
-  <BaseInfoSection />
-  <CountdownSection targetDate={MAJALES_DATE} client:load/>
+  {/* <LandingSection /> */}
+
+  <SectionHero {...heroColors} />
+
+  <BaseInfoSection client:visible />
+
+  <CountdownSection targetDate={MAJALES_DATE} client:load />
+
   <WhatIsMajalesSection />
+
   <Map />
-  <UsefulLinkList />
-  <!-- <AboutSection /> -->
-   <UpperFooter />
+
+  <UsefulLinkList client:visible />
+
+  {/* <AboutSection /> */}
+
+  <UpperFooter bgColor="bg-pink" />
 </Layout>

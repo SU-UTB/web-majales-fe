@@ -1,27 +1,55 @@
 ---
 import { GallerySection } from '../components/gallery/GallerySection.tsx';
-import Layout from "../components/shared/Layout.astro";
+import Layout from '../components/shared/Layout.astro';
 import { SectionHero } from '../components/shared/SectionHero';
 import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
-  title: 'Majáles - UTB',
-  description: 'TODO',
+  title: 'Galerie | Majáles UTB',
+  description: 'Prohlédněte si fotky a momentky z minulých ročníků Majálesu UTB.',
   image: '/meta_image.jpg',
+};
+
+// Konfigurace barev pro Hero sekci - sjednoceno s Lineup stránkou
+const heroColors = {
+  // --- LEFT SIDE ---
+  dateRectColor: 'fill-violet',
+  BottomLeftTriangleUpper: 'fill-lightPink',
+  BottomLeftTriangleLower: 'fill-pink',
+  BottomLeftSquareStarMain: 'fill-pink',
+  BottomLeftSquareStarSec: 'fill-lightPink',
+  BottomLeftSquareCircleMainLeft: 'fill-violet',
+  BottomLeftSquareCircleMainRight: 'fill-violet',
+  BottomLeftSquareCircleSecLeft: 'fill-lightPink',
+  BottomLeftSquareCircleSecRight: 'fill-pink',
+
+  // --- RIGHT SIDE & BOTTOM ---
+  BottomRightTriangleLeft: 'fill-lightPink',
+  timeRectColor: 'fill-violet',
+  BottomRightLightning: 'fill-violet',
+  BottomRightSquareCircleMainLeft: 'fill-violet',
+  BottomRightSquareCircleMainRight: 'fill-pink',
+  BottomRightSquareCircleSecLeft: 'fill-lightPink',
+  BottomRightSquareCircleSecRight: 'fill-lightPink',
+  BottomRightTriangleRight: 'fill-pink',
+
+  // --- TOP ---
+  TopRightTriangleUpper: 'fill-pink',
+  TopRightSquareStar45Main: 'fill-violet',
+  TopRightSquareStar45Sec: 'fill-lightPink',
+  TopRightLeftArrowMain: 'fill-pink',
+  TopRightLeftArrowSec: 'fill-lightPink',
 };
 ---
 
 <Layout {...metaTags}>
-  <SectionHero 
-    dateRectColor="#6459FD" 
-    BottomLeftTriangle1='#FF785A' 
-    BottomLeftTriangle2='#FFFFFF' 
-    BottomRightTriangle1='#E7548A' 
-    timeRectColor='#FF785A'
-    BottomRightSquare='#6459FD' 
-    BottomRightSquareAsterisk='#FFFFFF'
-    BottomRightTriangle2='#F49183' 
-    BottomRightTriangle3='#FF785A' />
-    <GallerySection client:load/>
-    <UpperFooter />
+  {/* Předání barev pomocí spread operátoru pro konzistentní vzhled */}
+  <SectionHero {...heroColors} />
+
+  <main>
+    <GallerySection client:load />
+  </main>
+
+  {/* Sjednocení barvy footeru s lineupem */}
+  <UpperFooter bgColor="bg-pink" />
 </Layout>

@@ -1,34 +1,54 @@
 ---
-import { AboutSection } from '../components/lineup/AboutSection';
 import { BandListSection } from '../components/lineup/BandListSection';
-import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
-import { MapSection } from '../components/lineup/MapSection';
 import Layout from '../components/shared/Layout.astro';
 import { SectionHero } from '../components/shared/SectionHero';
 import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
-  title: 'Majáles - UTB',
-  description: 'TODO',
+  title: 'Lineup a program | Majáles UTB',
+  description: 'Na koho se můžete těšit? Již brzy prozradíme!',
   image: '/meta_image.jpg',
+};
+
+// Konfigurace barev pro Hero sekci - přehledné a bezpečné pro komentáře
+const heroColors = {
+  // --- LEFT SIDE ---
+  dateRectColor: 'fill-violet',
+  BottomLeftTriangleUpper: 'fill-lightOrange',
+  BottomLeftTriangleLower: 'fill-orange',
+  BottomLeftSquareStarMain: 'fill-orange',
+  BottomLeftSquareStarSec: 'fill-lightOrange',
+  BottomLeftSquareCircleMainLeft: 'fill-violet',
+  BottomLeftSquareCircleMainRight: 'fill-violet',
+  BottomLeftSquareCircleSecLeft: 'fill-lightOrange',
+  BottomLeftSquareCircleSecRight: 'fill-orange',
+
+  // --- RIGHT SIDE & BOTTOM ---
+  BottomRightTriangleLeft: 'fill-lightOrange',
+  timeRectColor: 'fill-violet',
+  BottomRightLightning: 'fill-violet',
+  BottomRightSquareCircleMainLeft: 'fill-violet',
+  BottomRightSquareCircleMainRight: 'fill-orange',
+  BottomRightSquareCircleSecLeft: 'fill-lightOrange',
+  BottomRightSquareCircleSecRight: 'fill-lightOrange',
+  BottomRightTriangleRight: 'fill-orange',
+
+  // --- TOP ---
+  TopRightTriangleUpper: 'fill-orange',
+  TopRightSquareStar45Main: 'fill-violet',
+  TopRightSquareStar45Sec: 'fill-lightOrange',
+  TopRightLeftArrowMain: 'fill-orange',
+  TopRightLeftArrowSec: 'fill-lightOrange',
 };
 ---
 
 <Layout {...metaTags}>
-  <SectionHero
-    dateRectColor="#1F2041"
-    BottomLeftTriangle1="#FF785A"
-    BottomLeftTriangle2="#6459FD"
-    BottomRightTriangle1="#FF785A"
-    timeRectColor="#6459FD"
-    BottomRightSquare="#E7548A"
-    BottomRightSquareAsterisk="#FFFFFF"
-    BottomRightTriangle2="#F49183"
-    BottomRightTriangle3="#FFFFFF"
-  />
-  <!-- <AboutSection /> -->
+  {/* Předání všech barev najednou pomocí spread operátoru */}
+  <SectionHero {...heroColors} />
+
+  {/* <AboutSection /> */}
   <BandListSection />
-  <!-- <HarmonogramSection /> -->
-  <!-- <MapSection /> -->
-  <UpperFooter />
+  {/* <HarmonogramSection /> */}
+  {/* <MapSection /> */}
+  <UpperFooter bgColor="bg-orange" />
 </Layout>

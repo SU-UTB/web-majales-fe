@@ -1,4 +1,4 @@
-export const DateRectangle = ({ className, children, color }: { className?: string, children?: React.ReactNode, color: string }) => {
+export const DateRectangle = ({ className, children, colorMain, colorSecondary }: { className?: string, children?: React.ReactNode, colorMain?: string, colorSecondary?: string }) => {
   return (
     <div className={`${className}`}>
       <svg
@@ -6,10 +6,10 @@ export const DateRectangle = ({ className, children, color }: { className?: stri
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="393" height="131" fill={color} />
+        <rect width="393" height="131" className={colorMain} />
       </svg>
       {children && (
-        <div className="absolute inset-0 flex justify-center items-center">
+        <div className={"absolute inset-0 p-2 flex justify-center items-center"}>
           {children}
         </div>
       )}

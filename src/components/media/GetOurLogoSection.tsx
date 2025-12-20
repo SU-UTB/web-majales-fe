@@ -1,5 +1,4 @@
 
-import DefaultPhoto from '../../assets/img/contacts/default.jpg?url';
 import barca from '../../assets/img/contacts/barca.webp?url';
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
@@ -7,6 +6,9 @@ import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
 import { CheckerSquare } from '../svg/elements/CheckerSquare';
 import { CheckerTriangleTransparent } from '../svg/elements/CheckerTriangleTransparent';
+import { DualTriangle } from '../svg/elements/DualTriangle';
+import { HalfCircles } from '../svg/elements/HalfCircles';
+import { Star } from '../svg/elements/Star';
 import { Triangle } from '../svg/elements/Triangle';
 
 export const GetOurLogoSection = () => {
@@ -21,7 +23,10 @@ export const GetOurLogoSection = () => {
           href="https://drive.google.com/drive/folders/147j9gm0UYpwz2vGKWfxjh7AKkGzxAvvy"
           target="_blank"
           rel="noopener noreferrer external"
-          className="bg-orange px-6 py-2 rounded-xl text-white inline-block"
+          data-track-event="click"
+          data-track-category="Media"
+          data-track-label="Media/Press Kit"
+          className="bg-lightPink px-10 md:px-20 py-4 md:py-6 rounded-xl text-violet font-medium inline-block hover:bg-pink hover:text-white transition-colors"
         >
           Press Kit
         </a>
@@ -37,12 +42,12 @@ export const GetOurLogoSection = () => {
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0 z-10">
         <div className="relative">
-          <Triangle className="absolute bottom-0 md:bottom-0 right-36 md:right-72 h-12 md:h-24 rotate-180" color='#FFE2DE' />
-          <ArrowSquare className="absolute bottom-0 md:bottom-0 right-24 md:right-48 h-12 md:h-24 rotate-90" color='#E7548A' />
-          <CheckerSquare className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24" color1='#FF785A' color2='#1F2041' />
-          <AsteriskSquare className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24 rotate-90" color='#FFE2DE' asteriskColor='#FF785A' />
-          <CheckerSquare className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24" color1='#E7548A' color2='#FFFFFF' />
-          <CheckerTriangleTransparent className="absolute bottom-24 md:bottom-48 right-0 md:right-0 h-12 md:h-24 -rotate-90" color='#6459FD' />
+          <HalfCircles className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24 rotate-180" colorMain='fill-beige' colorSecondary='fill-lightPink' />
+          <Star className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24 rotate-180" colorMain='fill-beige' colorSecondary='fill-violet' />
+          <Triangle className="absolute bottom-0 md:bottom-0 right-24 md:right-48 h-12 md:h-24 rotate-180" colorMain='fill-beige' />
+          <DualTriangle className="absolute rotate-180 bottom-0 md:bottom-0 right-24 md:right-48 h-12 md:h-24" colorMain='fill-pink' colorSecondary='fill-lightPink' />
+          
+          <Triangle className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24 rotate-180" colorMain='fill-pink' />
         </div>
       </div>
     </SectionContainer>
