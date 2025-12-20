@@ -7,6 +7,8 @@ export const COPYRIGHT_TEXT = `©Studentská unie utb - ${MAJALES_DATE.getFullYe
 //export const COPYRIGHT_TEXT = `©Studentská unie utb - 2025`;
 export const MAJALES_TITLE = 'Majáles UTB Zlín';
 
+export const INSTAGRAM_URL = 'https://www.instagram.com/majalesutb';
+
 // !!!!! ZMĚNIT ZAKOMENTOVANÉ ZPÁTKY !!!!!
 
 export const MAJALES_HEADLINE_DATE_LANDING_LEFT_BG = '/assets/img/majales-heading-left.webp';

@@ -23,7 +23,7 @@ export type SvgProps = {
   fill?: string;
 };
 
-export type Colors = 'white' | 'black' | 'beige' | 'pink' | 'orange' | 'blue' | 'darkDarkBlue' | 'lightpink' | 'transparent';
+export type Colors = 'white' | 'black' | 'beige' | 'pink' | 'orange' | 'lightOrange' | 'violet' | 'blue' | 'darkDarkBlue' | 'lightPink' | 'transparent';
 
 export type ContactType = {
   position: string;
@@ -49,6 +49,9 @@ export type ExternalLinkType = {
   text?: string;
   icon?: ReactNode;
   className?: string;
+  'data-track-event'?: string;
+  'data-track-category'?: string;
+  'data-track-label'?: string;
 };
 
 export type FooterItemType = {

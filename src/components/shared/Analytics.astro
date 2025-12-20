@@ -1,0 +1,36 @@
+---
+import { trackPageview } from '../../analytics';
+const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+---
+
+<script is:inline src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}></script>
+<script is:inline define:vars={{ GA_MEASUREMENT_ID }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  window.gtag = gtag;
+
+  // 1. Set default consent state
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    wait_for_update: 500,
+  });
+
+  gtag('js', new Date());
+
+  // 2. Configure GA
+  gtag('config', GA_MEASUREMENT_ID, {
+    anonymize_ip: true,
+    transport_type: 'beacon',
+    //debug_mode: true,
+  });
+
+  // 3. Track pageviews on Astro's view transitions
+  document.addEventListener('astro:page-load', () => {
+    trackPageview();
+  });
+</script>
