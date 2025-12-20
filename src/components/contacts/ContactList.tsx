@@ -11,17 +11,17 @@ export const ContactList = () => {
   return (
     <SectionContainer
       id="kontakty-seznam"
-      className='text-white'
+      className='text-beige'
       bgColor='pink'
     >
-      <h2 className="text-h2-reversed">Kontakty</h2>
+      <h2 className="text-3xl md:text-5xl font-medium">Kontakty</h2>
       <OrganizerItem />
       <div className="py-4 md:py-12 grid grid-cols-1 sm:grid-cols-2 gap-y-8 md:gap-y-12 relative z-20">
         {contacts.map((contact) => (
           <ContactItem {...contact} key={contact.email} />
         ))}
       </div>
-      {/* TOP RIGHT */}
+      {/* TOP RIGHT
       <div className="absolute top-0 right-0">
         <div className="relative">
           <BigTriangle className="absolute top-0 md:top-0 right-0 md:right-0 h-32 md:h-60 " color='#F49183' />
@@ -31,7 +31,7 @@ export const ContactList = () => {
           <SquareWithCircle className="absolute top-48 md:top-96 right-0 md:right-0 h-12 md:h-24" colorBg='#1F2041' colorLeftHalf='#FFE2DE' colorRightHalf='#E7548A' />
           <Triangle className="absolute top-60 md:top-120 right-0 md:right-0 h-12 md:h-24 rotate-90" color='#6459FD' />
         </div>
-      </div>
+      </div> */}
     </SectionContainer>
   );
 };

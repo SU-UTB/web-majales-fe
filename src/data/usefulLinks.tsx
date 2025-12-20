@@ -26,10 +26,7 @@ export const usefulLinks: UsefulLinkType[] = [
     headline: 'Q&A',
     children: (
       <>
-        Máte otázky ohledně Majálesu?
-        <br />
-        <br />
-        Připravili jsme si pro vás odpovědi na ty nejčastější. Pokud máte jakoukoli jinou, neváhejte nám napsat.
+        Máte otázky ohledně Majálesu? Připravili jsme si pro vás odpovědi na ty nejčastější. Pokud máte jakoukoli jinou, neváhejte nám napsat.
       </>
     ),
   },
@@ -39,6 +36,13 @@ export const usefulLinks: UsefulLinkType[] = [
   //   children: 
   //     'Kontakty na vedení Majálesu',
   // },
+  {
+    linkTo: CONTACTS,
+    headline: 'Kontakty',
+    children:
+      'Potřebujete se spojit s konkrétním členem týmu? Zde najdete kontakty na vedení projektu, produkci, marketing i partnery.',
+  },
+
   {
     linkTo: PARTNERS,
     headline: 'Partneři',
