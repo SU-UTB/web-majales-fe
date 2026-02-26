@@ -14,12 +14,13 @@ export const AboutContent = () => {
         <h2 className="text-3xl md:text-5xl font-medium text-violet">Kdo se může stát Králem a Královnou?</h2>
         <p>
           Soutěžní dvojice musí být složena z muže a ženy, kteří studují
-          na jakékoliv fakultě UTB (klidně může být jeden z FT a druhý z FHS).
+          na stejné fakultě UTB.<br/>
+          Podrobnější informace v registračním formuláři.
         </p>
       </div>
       <div>
         <h2 className="text-3xl md:text-5xl font-medium text-violet">Kde a kdy se akce koná?</h2>
-        <p>Akce se uskuteční {/* {MAJALES_DATE.toLocaleDateString('cs-CZ')} */} v rámci Majálesu UTB v areálu festivalu.</p>
+        <p>Akce se uskuteční {MAJALES_DATE.toLocaleDateString('cs-CZ')} v rámci Majálesu UTB v areálu festivalu.</p>
       </div>
     </div>
   );
