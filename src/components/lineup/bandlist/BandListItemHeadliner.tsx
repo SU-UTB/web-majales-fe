@@ -6,7 +6,7 @@ export const BandListItemHeadliner = ({ img, title }: BandType) => {
       <img
         src={img}
         alt={title}
-        className="w-full h-auto object-cover object-center md:group-hover:scale-105 md:transition-transform md:duration-500 shadow-xl"
+        className="w-full h-auto object-cover object-center rounded-lg md:group-hover:scale-105 md:transition-transform md:duration-500 shadow-xl"
       />
     </div>
   );

@@ -10,7 +10,7 @@ export const BandListItem = ({ img, title }: BandType) => {
       <img
         src={img}
         alt={title}
-        className="lg:w-full h-auto object-cover object-center md:group-hover:scale-105 md:transition-transform z-0 shadow-lg"
+        className="lg:w-full h-auto object-cover object-center rounded-lg md:group-hover:scale-105 md:transition-transform z-0 shadow-lg"
       />
     </div>
   );
