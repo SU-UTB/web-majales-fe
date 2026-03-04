@@ -1,59 +1,59 @@
 import type { BandType } from '../AppTypes';
 
-import misik from '../assets/img/bands/adammisik.webp?url';
-import echo from '../assets/img/bands/echo.webp?url';
+import mat213 from '../assets/img/bands/mat213.webp?url';
+import sympl from '../assets/img/bands/sympl.webp?url';
 import focus from '../assets/img/bands/focusrock.webp?url';
-import johnny from '../assets/img/bands/johnnycurbes.webp?url';
-import kharma from '../assets/img/bands/kharmadj.webp?url';
-import marko from '../assets/img/bands/markodamian.webp?url';
-import novaStopa from '../assets/img/bands/novastopa.webp?url';
+import analog_killer from '../assets/img/bands/analog_killer.webp?url';
+import beira from '../assets/img/bands/beira.webp?url';
+//import kojo from '../assets/img/bands/kojo.webp?url';
+//import novahospodsky_bordel from '../assets/img/bands/hospodsky_bordel.webp?url';
 import qocna from '../assets/img/bands/qocna.webp?url';
-import renne from '../assets/img/bands/rennedang.webp?url';
-import saraNoff from '../assets/img/bands/saranoff.webp?url';
+//import michal_hruza from '../assets/img/bands/michal_hruza.webp?url';
+import dukla from '../assets/img/bands/dukla.webp?url';
 export const bands: (BandType & { visibleFrom: Date })[] = [
-  {
-    img: renne,
-    title: 'Renne Dang',
+  /* {
+    img: michal_hruza,
+    title: 'Michal Hrůza',
     visibleFrom: new Date('2026-04-02T18:00:00'),
-  },
+  }, */
   {
-    img: misik,
-    title: 'Adam Mišík',
+    img: mat213,
+    title: 'Mat213',
     visibleFrom: new Date('2026-03-30T18:00:00'),
   },
-  {
-    img: marko,
-    title: 'Marko Damian',
+  /* {
+    img: kojo,
+    title: 'Kojo',
+    visibleFrom: new Date('2026-03-30T18:00:00'),
+  }, */
+  /* {
+    img: hospodsky_bordel,
+    title: 'Hospodský Bordel',
     visibleFrom: new Date('2026-03-24T18:00:00'),
+  }, */
+  {
+    img: dukla,
+    title: 'Dukla',
+    visibleFrom: new Date('2026-03-16T18:00:00'),
   },
   {
     img: focus,
     title: 'Focus Rock',
-    visibleFrom: new Date('2026-04-14T18:00:00'),
-  },
-  {
-    img: saraNoff,
-    title: 'Sara Noff',
-    visibleFrom: new Date('2026-03-16T18:00:00'),
-  },
-  {
-    img: novaStopa,
-    title: 'Nová stopa',
     visibleFrom: new Date('2026-03-10T18:00:00'),
   },
   {
-    img: kharma,
-    title: 'Kharma DJ',
+    img: beira,
+    title: 'beira',
     visibleFrom: new Date('2026-03-06T18:00:00'),
   },
   {
-    img: johnny,
-    title: 'Johnny Čurbes',
+    img: analog_killer,
+    title: 'Analog Killer',
     visibleFrom: new Date('2026-03-02T18:00:00'),
   },
   {
-    img: echo,
-    title: 'echo',
+    img: sympl,
+    title: 'SYMPL',
     visibleFrom: new Date('2026-02-10T18:00:00'),
   },
   {
