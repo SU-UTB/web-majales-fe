@@ -26,11 +26,11 @@ export const bands: (BandType & { visibleFrom: Date })[] = [
     title: 'Kojo',
     visibleFrom: new Date('2026-03-30T18:00:00'),
   }, */
-  /* {
+  {
     img: hospodsky_bordel,
     title: 'Hospodský Bordel',
     visibleFrom: new Date('2026-03-24T18:00:00'),
-  }, */
+  },
   {
     img: dukla,
     title: 'Dukla',
