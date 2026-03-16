@@ -6,7 +6,7 @@ import focus from '../assets/img/bands/focusrock.webp?url';
 import analog_killer from '../assets/img/bands/analog_killer.webp?url';
 import beira from '../assets/img/bands/beira.webp?url';
 //import kojo from '../assets/img/bands/kojo.webp?url';
-//import novahospodsky_bordel from '../assets/img/bands/hospodsky_bordel.webp?url';
+import novahospodsky_bordel from '../assets/img/bands/hospodsky_bordel.webp?url';
 import qocna from '../assets/img/bands/qocna.webp?url';
 //import michal_hruza from '../assets/img/bands/michal_hruza.webp?url';
 import dukla from '../assets/img/bands/dukla.webp?url';
