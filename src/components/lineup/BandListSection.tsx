@@ -62,7 +62,7 @@ export const BandListSection = () => {
       {CAN_SHOW_BANDS ? (
         <div className="relative z-20">
           {/* Headliners */}
-          <div className="space-y-4 md:space-y-8 md:px-4">
+          <div className="md:px-4">
             {bands
               .slice(0, 2)
               .filter((band) => now >= band.visibleFrom)
