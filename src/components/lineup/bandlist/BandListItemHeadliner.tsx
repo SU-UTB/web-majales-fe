@@ -2,7 +2,7 @@ import type { BandType } from '../../../AppTypes';
 
 export const BandListItemHeadliner = ({ img, title }: BandType) => {
   return (
-    <div className="relative group overflow-visible w-full flex items-center justify-center md:py-6">
+    <div className="relative group overflow-visible w-full flex items-center justify-center py-2 md:py-6">
       <img
         src={img}
         alt={title}
