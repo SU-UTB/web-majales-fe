@@ -20,6 +20,7 @@ export const bands: (BandType & { visibleFrom: Date })[] = [
     img: kojo,
     title: 'Kojo',
     visibleFrom: new Date('2026-03-30T18:00:00'),
+
   },
   {
     img: mat213,
