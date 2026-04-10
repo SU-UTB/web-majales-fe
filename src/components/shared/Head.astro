@@ -6,8 +6,20 @@ import { COPYRIGHT_TEXT, MAJALES_DATE } from '../../config/constants';
 type Props = HeadProps;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Nastavení výchozích obrázků v různých poměrech stran pro Schema.org
+const defaultImage16x9 = new URL('/assets/img/meta-image-16x9.jpg', Astro.site);
+const defaultImage4x3 = new URL('/assets/img/meta-image-4x3.jpg', Astro.site);
+const defaultImage1x1 = new URL('/assets/img/meta-image-1x1.jpg', Astro.site);
+
 // Ujisti se, že socialImageURL vrací absolutní cestu (včetně domény)
-const socialImageURL = new URL(Astro.props.image ?? '/assets/img/meta-image.jpg', Astro.site);
+const socialImageURL = Astro.props.image ? new URL(Astro.props.image, Astro.site) : defaultImage16x9;
+
+// Pole obrázků pro Schema.org Event (doporučeno pro Google vyhledávání)
+const schemaImages = Astro.props.image 
+  ? [socialImageURL.href] 
+  : [defaultImage1x1.href, defaultImage4x3.href, defaultImage16x9.href];
+
 const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 
 const isoDate = MAJALES_DATE.toISOString().split('T')[0];
@@ -48,7 +60,7 @@ const schemas = [
         'addressCountry': 'CZ',
       },
     },
-    'image': [socialImageURL.href],
+    'image': schemaImages,
     'description': Astro.props.description,
     'offers': {
       '@type': 'Offer',
@@ -56,7 +68,7 @@ const schemas = [
       'price': '0',
       'priceCurrency': 'CZK',
       'availability': 'https://schema.org/InStock',
-      'validFrom': new Date().toISOString().split('T')[0]
+      'validFrom': isoDate
     },
     'organizer': {
       '@type': 'Organization',
@@ -91,6 +103,7 @@ const schemas = [
   <link rel="canonical" href={canonicalURL} />
   <link rel="sitemap" href="/sitemap-index.xml" />
 
+  <meta property="og:locale" content="cs_CZ" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:site_name" content="Majáles UTB" />
