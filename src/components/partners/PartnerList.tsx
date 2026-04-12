@@ -6,7 +6,7 @@ export const PartnerList = ({ header, partnerList }: { header: string, partnerLi
     <div className="space-y-8">
       <h4 className="text-violet text-h2 text-center">{header}</h4>
       <div className="rounded-2xl bg-beige p-8 flex flex-col items-center gap-8">
-        <div className="flex flex-wrap justify-center gap-y-12">
+        <div className="flex flex-wrap justify-center gap-y-12 gap-x-12 md:gap-x-16">
           {partnerList.map((partner) => (
             <SinglePartnerItem key={partner.img} {...partner} />
           ))}

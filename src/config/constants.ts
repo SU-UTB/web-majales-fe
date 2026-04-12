@@ -1,4 +1,4 @@
-export const MAJALES_DATE = new Date('2026-05-07');
+export const MAJALES_DATE = new Date('2026-05-07T14:00:00');
 //export const MAJALES_DATE = "2026";
 //export const MAJALES_TIME = "od 14:00";
 export const MAJALES_TIME = "";
