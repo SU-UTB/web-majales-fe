@@ -1,8 +1,8 @@
 import hitradioZlinLogo from '../../assets/img/partners/hitradio-zlin.png?url';
-import medialniPartnerLogo from '../../assets/img/partners/medialniPartnerLogo.png?url';
+import medialniPartnerLogo from '../../assets/img/partners/hitradio-zlin.png?url';
 import postaBezHranicLogo from '../../assets/img/partners/pbh.png?url';
-import trinityLogo from '../../assets/img/partners/trinity.jpg?url';
-import { mainPartners, partners, supportPartners } from '../../data/partners';
+import trinityLogo from '../../assets/img/partners/trinity.png?url';
+import { mainPartners, organizers, partners, supportPartners } from '../../data/partners';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
 import { AsteriskSquare } from '../svg/elements/AsteriskSquare';
@@ -17,38 +17,34 @@ export const PartnerSection = () => {
   return (
     <SectionContainer id="partneri" bgColor='beige'>
       <div className="space-y-12 lg:gap-y-12 flex flex-col items-center md:pb-12">
-        {/* <div className="flex flex-col text-left">
+         <div className="flex flex-col text-left">
           <h1 className="text-h2-reversed-mobile md:text-h2-reversed text-beige">Partneři podporující studentský Majáles UTB</h1>
         </div>
+        <PartnerList header="Pořadatelé" partnerList={organizers} />
         <SinglePartnerItem
           headline="Generální partner"
           img={trinityLogo}
-          alt="Trinity logo"
+          alt="Trinity Bank"
           link="https://www.trinitybank.cz/"
-        /> */}
-        {/* <SinglePartnerItem
-          headline="Hlavní mediální partner"
-          img={hitradioZlinLogo}
-          alt="Hitradio Zlín logo"
-          link="https://www.hitradiozlin.cz/"
-        /> */}
-        {/* <div className="flex flex-wrap items-center gap-16 lg:gap-20">
+        />
+        <PartnerList header="Hlavní partneři" partnerList={mainPartners} />
+        <div className="flex flex-wrap items-center gap-16 lg:gap-20">
           <SinglePartnerItem
-            headline="Mediální partner"
+            headline="Hlavní mediální partner"
             img={medialniPartnerLogo}
-            alt="Mediální partner logo"
-            link="https://www.kfbz.cz/"
+            alt="Hitrádio Zlín"
+            link="https://hitradiozlin.cz/"
           />
           <SinglePartnerItem
             headline="Logistický partner"
             img={postaBezHranicLogo}
-            alt="Pošta bez hranic logo"
+            alt="Pošta bez hranic"
             link="https://www.postabezhranic.cz/"
           />
-        </div> */}
+        </div>
         <PartnerList header="S podporou" partnerList={supportPartners} />
-        {/* <PartnerList header="Hlavní partneři" partnerList={mainPartners} />
-        <PartnerList header="Partneři" partnerList={partners} /> */}
+        {/* <PartnerList header="Hlavní partneři" partnerList={mainPartners} /> */}
+        <PartnerList header="Partneři" partnerList={partners} />
       </div>
 
       {/* TOP LEFT */}
