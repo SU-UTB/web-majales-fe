@@ -5,50 +5,46 @@ export type HarmonogramItemType = {
 
 export const utbTrinityStage: HarmonogramItemType[] = [
   {
-    time: '14:30-14:50',
+    time: '14:30-15:00',
     band: 'Qočna',
   },
   {
     time: '15:00-16:00',
-    band: 'Sara Noff',
+    band: 'SYMPL',
   },
   {
     time: '17:00-18:00',
-    band: 'echo',
+    band: 'Focus Rock',
   },
   {
     time: '19:00-20:00',
-    band: 'Marko Damian',
+    band: 'KOJO',
   },
   {
     time: '21:00-22:00',
-    band: 'Adam Mišík',
+    band: 'Michal Hrůza',
   },
   {
     time: '23:00-00:00',
-    band: 'Renne Dang',
+    band: 'Hospodský Bordel',
   },
 ];
 
 export const barumStage: HarmonogramItemType[] = [
   {
-    time: '14:50',
-    band: 'U Dance',
-  },
-  {
     time: '16:00-17:00',
-    band: 'Nová stopa',
+    band: 'Analog Killer + U Dance UTB',
   },
   {
     time: '18:00-19:00',
-    band: 'Johnny Čurbes',
+    band: 'beira',
   },
   {
     time: '20:00-21:00',
-    band: 'Focus Rock',
+    band: 'Dukla',
   },
   {
     time: '22:00-23:00',
-    band: 'KHARMA DJ',
+    band: 'Mat213 + special guests',
   },
 ];
