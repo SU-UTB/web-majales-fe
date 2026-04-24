@@ -2,6 +2,7 @@
 import { BandListSection } from '../components/lineup/BandListSection';
 import Layout from '../components/shared/Layout.astro';
 import { SectionHero } from '../components/shared/SectionHero';
+import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
 import { UpperFooter } from '../components/shared/UpperFooter';
 
 const metaTags = {
@@ -48,7 +49,7 @@ const heroColors = {
 
   {/* <AboutSection /> */}
   <BandListSection client:load />
-  {/* <HarmonogramSection /> */}
+  <HarmonogramSection />
   {/* <MapSection /> */}
   <UpperFooter bgColor="bg-orange" />
 </Layout>

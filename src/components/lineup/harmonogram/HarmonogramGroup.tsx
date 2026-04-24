@@ -9,7 +9,7 @@ type Props = {
 export const HarmonogramGroup = ({ title, harmonogramItems }: Props) => {
   return (
     <div className="flex flex-col space-y-5">
-      <h3 className="text-white text-h2-reversed text-center xs:text-left">{title}</h3>
+      <h3 className="text-orange text-h2 text-center xs:text-left">{title}</h3>
       <div className="flex-grow">
         <div className="space-y-4 xs:space-y-3">
           {harmonogramItems.map((item) => (
