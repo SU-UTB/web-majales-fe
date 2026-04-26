@@ -33,7 +33,7 @@ export const WhatIsMajalesSection = () => {
             Vyrazte s námi do prvomájového průvodu centrem Zlína a připojte se k oslavám, které vyvrcholí v den Majálesu. Možná si dokonce odnesete královský titul a stanete se součástí historie této události!
           </p><br/>
           <p>
-            Zní to skvěle, že? Tak si nezapomeňte poznamenat datum: <strong>{MAJALES_DATE.toLocaleDateString('cs-CZ')}</strong>. Uvidíme se v parku před Baťovou vilou. Těšíme se na vás!
+            Zní to skvěle, že? Tak si nezapomeňte poznamenat datum: <strong>{MAJALES_DATE.toLocaleDateString('cs-CZ').replace(/ /g, '\u00A0')}</strong>. Uvidíme se v parku před Baťovou vilou. Těšíme se na vás!
           </p>
         </div>
       </div>

@@ -13,13 +13,13 @@ export const ContactSection = () => {
   return (
     <SectionContainer id="kontakty" bgColor="lightPink">
       <div className="text-violet space-y-8">
-        <div className="space-y-4">
+        {/* <div className="space-y-4">
           <h1 className="text-4xl md:text-6xl font-medium">Máte zájem o&nbsp;partnerství?</h1>
           <p>
             Poděkování patří také našim skvělým partnerům, kteří Majáles UTB podporují. Pokud chcete být partnerem
             i&nbsp;vy, kontaktujte nás.
           </p>
-        </div>
+        </div> */}
         <ContactItem
           position="Kontaktní osoba pro sponzoring"
           name="ANNA DAREBNÍČKOVÁ"

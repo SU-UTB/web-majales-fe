@@ -7,7 +7,7 @@ export const questions: QuestionType[] = [
     answer: (
       <>
         Je naší mnohaletou tradicí, že na Majáles UTB je vstup ZDARMA. Proto vstupenku kupovat nemusíte a ani se
-        nepotřebujete předem registrovat. Stačí přijít {MAJALES_DATE.toLocaleDateString('cs-CZ')} do parku před Baťovou
+        nepotřebujete předem registrovat. Stačí přijít {MAJALES_DATE.toLocaleDateString('cs-CZ').replace(/ /g, '\u00A0')} do parku před Baťovou
         vilou.
       </>
     ),
