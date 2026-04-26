@@ -20,7 +20,7 @@ export const AboutContent = () => {
       </div>
       <div>
         <h2 className="text-3xl md:text-5xl font-medium text-violet">Kde a kdy se akce koná?</h2>
-        <p>Akce se uskuteční {MAJALES_DATE.toLocaleDateString('cs-CZ')} v rámci Majálesu UTB v areálu festivalu.</p>
+        <p>Akce se uskuteční {MAJALES_DATE.toLocaleDateString('cs-CZ').replace(/ /g, '\u00A0')} v rámci Majálesu UTB v areálu festivalu.</p>
       </div>
     </div>
   );

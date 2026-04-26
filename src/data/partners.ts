@@ -16,6 +16,7 @@ import krajskaknihovna from '../assets/img/partners/medialniPartnerLogo.png?url'
 import krajLogo from '../assets/img/partners/kraj.png?url';
 import krusoviceLogo from '../assets/img/partners/krusoviceLogo.png?url';
 import kudyZNudyLogo from '../assets/img/partners/kudy-z-nudy-logo.png?url';
+import laserGame from '../assets/img/partners/laser-game.png?url';
 import matchballLogo from '../assets/img/partners/matchball.png?url';
 import nextbikeLogo from '../assets/img/partners/nextbike.png?url';
 import ntbLogo from '../assets/img/partners/ntb.png?url';
@@ -114,6 +115,11 @@ export const partners: PartnerType[] = [
     link: 'https://www.krusovice.cz/',
   },
   {
+    img: laserGame,
+    alt: 'Laser Game Zlín',
+    link: 'https://lasergamezlin.cz/',
+  },
+  {
     img: matchballLogo,
     alt: 'Matchball',
     link: 'http://mball.cz/',
@@ -137,6 +143,11 @@ export const partners: PartnerType[] = [
     img: vincentkaLogo,
     alt: 'Vincentka logo',
     link: 'https://www.vincentka.cz/',
+  },
+  {
+    img: zffLogo,
+    alt: 'Zlín Film Festival',
+    link: 'https://www.zlinfest.cz/',
   },
 ];
 
