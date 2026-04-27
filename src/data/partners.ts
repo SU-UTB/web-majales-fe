@@ -24,6 +24,7 @@ import olaOlaLogo from '../assets/img/partners/ola-ola-logo.png?url';
 import papecLogo from '../assets/img/partners/papecLogo.png?url';
 import pizza_hallo from '../assets/img/partners/pizza_hallo.png?url';
 import su from '../assets/img/partners/su.png?url';
+import uSevce from '../assets/img/partners/uSevce.png?url';
 import utb from '../assets/img/partners/utb.png?url';
 import utb25 from '../assets/img/partners/utb25.png?url';
 import vertikonLogo from '../assets/img/partners/vertikonLogo.png?url';
@@ -133,6 +134,11 @@ export const partners: PartnerType[] = [
     img: nextbikeLogo,
     alt: 'NextBike',
     link: 'https://www.nextbikeczech.com/',
+  },
+  {
+    img: uSevce,
+    alt: 'Hotel U Ševce',
+    link: 'https://www.hotelusevce.cz/',
   },
   {
     img: vest,
