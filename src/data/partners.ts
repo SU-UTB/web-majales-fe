@@ -116,6 +116,11 @@ export const partners: PartnerType[] = [
     link: 'https://www.krusovice.cz/',
   },
   {
+    img: kudyZNudyLogo,
+    alt: 'Kudy z nudy',
+    link: 'https://www.kudyznudy.cz/',
+  },
+  {
     img: laserGame,
     alt: 'Laser Game Zlín',
     link: 'https://lasergamezlin.cz/',
