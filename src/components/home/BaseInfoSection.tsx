@@ -9,6 +9,8 @@ import { Triangle } from '../svg/elements/Triangle';
 export const BaseInfoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const VIDEO_ID = 'ao12Gek8WRg';
+  // Převedený odkaz na embed formát
+  const SPOTIFY_URL = 'https://open.spotify.com/embed/episode/0iCw1WaAcl2eq6axTCAsxk?utm_source=generator';
 
   const handleVideoPlay = () => {
     setIsPlaying(true);
@@ -16,7 +18,8 @@ export const BaseInfoSection = () => {
 
   return (
     <SectionContainer id="zakladni-informace" bgColor="lightOrange">
-      <div className="flex flex-wrap gap-8 xl:gap-12 w-full py-8 xl:py-16 xl:text-p-big items-center justify-center lg:justify-between">
+      {/* Horní část: Video a Text */}
+      <div className="flex flex-wrap gap-8 xl:gap-12 w-full py-8 xl:pt-16 xl:pb-8 xl:text-p-big items-center justify-center lg:justify-between">
         
         {/* Video Wrapper */}
         <div className="w-full lg:w-auto flex justify-center">
@@ -57,10 +60,9 @@ export const BaseInfoSection = () => {
           )}
         </div>
 
-        {/* Textový kontejner */}
-        <div className="flex-1 flex justify-center items-center min-w-[300px]">
-          {/* w-fit zajistí, že div není širší než text, takže text-right funguje vizuálně správně */}
-          <div className="space-y-2 pb-8 text-right text-violet w-fit">
+        {/* Textový kontejner - na mobilu vycentrovaný, na desktopu vpravo */}
+        <div className="flex-1 flex justify-center lg:justify-end items-center min-w-[300px]">
+          <div className="space-y-2 pb-8 text-center lg:text-right text-violet w-fit">
             <p className="text-p-big">
               Vstup <span className="font-semibold">ZDARMA</span>
             </p>
@@ -73,16 +75,37 @@ export const BaseInfoSection = () => {
         </div>
       </div>
 
-      {/* TOP RIGHT */}
-      <div className="absolute top-0 right-0">
+      {/* Spotify Banner Section - optimalizováno pro šířku mobilu */}
+      <div className="w-full max-w-[1100px] mx-auto pb-20 px-0 sm:px-4 pt-8 sm:pt-2">
+        <p className="text-center text-violet mb-4 px-4 sm:px-0">
+          Zajímá vás zákulisí Majálesu UTB? Pusťte si podcast s našimi manažery.
+        </p>
+        <div className="overflow-hidden shadow-md sm:rounded-xl">
+          <iframe
+            style={{ borderRadius: '0px' }} // Na mobilu (px-0) vypadá lépe bez zaoblení, pokud jde k hranám
+            className="sm:rounded-xl w-full h-[152px]"
+            src={SPOTIFY_URL}
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="Spotify Podcast Episode"
+            data-track-event="click"
+            data-track-category="Spotify"
+            data-track-label="Mainpage/Podcast"
+          ></iframe>
+        </div>
+      </div>
+
+      {/* TOP RIGHT DECORATIONS */}
+      <div className="absolute top-0 right-0 pointer-events-none">
         <div className="relative">
           <Star className="top-0 md:top-0 h-12 md:h-24" colorMain='fill-violet' colorSecondary='fill-lightOrange' />
           <Triangle className=" absolute top-12 md:top-24 h-12 md:h-24 rotate-90" colorMain='fill-orange' />
         </div>
       </div>
 
-      {/* BOTTOM RIGHT */}
-      <div className="absolute bottom-0 right-0">
+      {/* BOTTOM RIGHT DECORATIONS */}
+      <div className="absolute bottom-0 right-0 pointer-events-none">
         <div className="relative">
           <HalfCircles className="bottom-0 md:bottom-0 h-12 md:h-24" colorMain='fill-violet' colorSecondary='fill-beige' />
           <DateRectangle className="absolute right-12 md:right-24 bottom-0 md:bottom-0 w-36 md:w-72 overflow-hidden" colorMain='fill-orange' >
