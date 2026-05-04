@@ -169,7 +169,7 @@ export const partners: PartnerType[] = [
   {
     img: zffLogo,
     alt: 'Zlín Film Festival',
-    link: 'https://www.zlinfest.cz/',
+    link: 'https://www.zlinfest.cz/?utm_source=majales-utb&utm_medium=link&utm_content=partneri&utm_campaign=66-brand',
   },
 ];
 
