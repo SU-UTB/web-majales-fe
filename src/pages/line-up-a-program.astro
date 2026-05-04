@@ -4,6 +4,7 @@ import Layout from '../components/shared/Layout.astro';
 import { SectionHero } from '../components/shared/SectionHero';
 import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
 import { UpperFooter } from '../components/shared/UpperFooter';
+import { MapSection } from '../components/lineup/MapSection';
 
 const metaTags = {
   title: 'Lineup a program | Majáles UTB',
@@ -50,6 +51,6 @@ const heroColors = {
   {/* <AboutSection /> */}
   <BandListSection client:load />
   <HarmonogramSection />
-  {/* <MapSection /> */}
+  <MapSection />
   <UpperFooter bgColor="bg-orange" />
 </Layout>
