@@ -11,6 +11,7 @@ import faencyfries from '../assets/img/partners/faencyfries.png?url';
 import franzJosefKaiserLogo from '../assets/img/partners/franzJosefKaiserLogo.png?url';
 import gac from '../assets/img/partners/goldenapplecinema.png?url';
 import isProdukceLogo from '../assets/img/partners/isProdukceLogo.png?url';
+import kalina from '../assets/img/partners/kalina.png?url';
 import KFCLogo from '../assets/img/partners/kfc.png?url';
 import krajskaknihovna from '../assets/img/partners/medialniPartnerLogo.png?url';
 import krajLogo from '../assets/img/partners/kraj.png?url';
@@ -106,6 +107,16 @@ export const partners: PartnerType[] = [
     link: 'https://www.gacinema.cz/',
   },
   {
+    img: uSevce,
+    alt: 'Hotel U Ševce',
+    link: 'https://www.hotelusevce.cz/',
+  },
+  {
+    img: kalina,
+    alt: 'KALINA industries',
+    link: 'https://www.kalina.cz/',
+  },
+  {
     img: krajskaknihovna,
     alt: 'Krajská knihovna Františka Bartoše ve Zlíně',
     link: 'https://www.kfbz.cz/',
@@ -141,9 +152,9 @@ export const partners: PartnerType[] = [
     link: 'https://www.nextbikeczech.com/',
   },
   {
-    img: uSevce,
-    alt: 'Hotel U Ševce',
-    link: 'https://www.hotelusevce.cz/',
+    img: pizza_hallo,
+    alt: 'Pizza Hallo',
+    link: 'https://pizzahallo.cz/zlin/',
   },
   {
     img: vest,
