@@ -1,6 +1,8 @@
 import type { QuestionType } from '../AppTypes';
 import { MAJALES_DATE } from '../config/constants';
 
+import navstevniRadPdf from '../assets/pdf/navstevni_rad_festivalu_Majales_UTB_2026.pdf';
+
 export const questions: QuestionType[] = [
   {
     question: 'Kde a za kolik koupím vstupenku?',
@@ -29,9 +31,9 @@ export const questions: QuestionType[] = [
         Do areálu vás nepustíme s alkoholickými nápoji, zbraněmi, pyrotechnikou a&nbsp;podobně. Kompletní seznam
         naleznete v&nbsp;
         <a
-          href="https://drive.google.com/file/d/1tRZokCPlcyfR8DeEA5XFdgAIOoiOx2Uh/view?usp=sharing"
+          href={navstevniRadPdf}
           target="_blank"
-          rel="noopener noreferrer external"
+          rel="noopener noreferrer"
           className="underline"
           data-track-event="click"
           data-track-category="QNA"
