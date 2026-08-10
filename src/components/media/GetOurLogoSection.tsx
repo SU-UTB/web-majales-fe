@@ -30,14 +30,14 @@ export const GetOurLogoSection = () => {
         >
           Press Kit
         </a>
-        <ContactItem
+        {/* <ContactItem
           position="Kontaktní osoba pro média"
           name="BARBORA HANOLDOVÁ"
           email="hanoldova@sutb.cz"
           phone='+420 720 497 790'
           photo={barca}
           textColor="white"
-        />
+        /> */}
       </div>
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0 z-10">

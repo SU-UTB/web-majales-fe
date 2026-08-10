@@ -7,24 +7,25 @@ import bety from '../assets/img/contacts/bety.webp?url';
 import matus from '../assets/img/contacts/matus.webp?url';
 import peta from '../assets/img/contacts/peta.webp?url';
 import sarka from '../assets/img/contacts/sarka.webp?url';
+import simca from '../assets/img/contacts/simca.webp?url';
 import vanes from '../assets/img/contacts/vanes.webp?url';
 
 export const contacts: ContactType[] = [
   {
-    position: 'Manažer projektu',
-    name: 'ALŽBĚTA HRUŠKOVÁ',
-    email: 'hruskova@sutb.cz',
-    phone: '+420 775 673 216',
-    photo: bety,
+    position: 'Manažerka projektu',
+    name: 'ANNA DAREBNÍČKOVÁ',
+    email: 'darebnickova@sutb.cz',
+    phone: '+420 721 948 952',
+    photo: anicka_d,
   },
   {
-    position: 'Manažer projektu',
-    name: 'PETR SEDLÁČEK',
-    email: 'sedlacek@sutb.cz',
-    phone: '+420 722 126 518',
-    photo: peta,
+    position: 'Manažerka projektu',
+    name: 'BARBORA HANOLDOVÁ',
+    email: 'hanoldova@sutb.cz',
+    phone: '+420 720 497 790',
+    photo: barca,
   },
-  {
+  /*{
     position: 'Marketing',
     name: 'VANESA JASNÍKOVÁ',
     email: 'jasnikova@sutb.cz',
@@ -58,12 +59,12 @@ export const contacts: ContactType[] = [
     email: 'kubesova@sutb.cz',
     phone: '+420 773 477 050',
     photo: anicka_k,
-  },
+  },*/
   {
     position: 'Kapely',
-    name: 'SÁRA FOREJTOVÁ',
-    email: 'forejtova@sutb.cz',
-    phone: '+420 728 411 288',
-    photo: sarka,
+    name: 'SIMONA KOTUĽOVÁ',
+    email: 'kotulova@sutb.cz',
+    phone: '+421 940 192 891',
+    photo: simca,
   },
 ];
