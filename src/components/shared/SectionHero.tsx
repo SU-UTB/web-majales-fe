@@ -114,10 +114,9 @@ export const SectionHero = ({
           <Triangle className="absolute bottom-24 md:bottom-48 h-12 md:h-24 -rotate-90" colorMain={BottomLeftTriangleUpper} />
           {/* <CheckerTriangleTransparent className="absolute bottom-24 md:bottom-48 h-12 md:h-24" color='#FFFFFF' /> */}
           <DateRectangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 w-36 md:w-72 overflow-hidden" colorMain={dateRectColor}>
-            <h2 className="text-3xl md:text-6xl font-medium text-white">
+            {/*<h2 className="text-3xl md:text-6xl font-medium text-white">
               {MAJALES_DATE.toLocaleDateString('cs-CZ')}
-              {/* {MAJALES_DATE} */}
-            </h2>
+            </h2>*/}
           </DateRectangle>
           <Triangle className="absolute bottom-0 md:bottom-0 left-48 md:left-96 h-12 md:h-24 -rotate-90" colorMain={BottomLeftTriangleLower} />
         </div>
