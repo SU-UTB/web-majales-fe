@@ -64,7 +64,7 @@ export const contacts: ContactType[] = [
     position: 'Kapely',
     name: 'SIMONA KOTUĽOVÁ',
     email: 'kotulova@sutb.cz',
-    phone: '+421 940 192 891',
+    phone: '+421 907 618 182',
     photo: simca,
   },
 ];
