@@ -8,7 +8,7 @@ import { Triangle } from '../svg/elements/Triangle';
 
 export const BaseInfoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const VIDEO_ID = 'ao12Gek8WRg';
+  const VIDEO_ID = 'HBOaVJqwdcI';
   // Převedený odkaz na embed formát
   const SPOTIFY_URL = 'https://open.spotify.com/embed/episode/0iCw1WaAcl2eq6axTCAsxk?utm_source=generator';
 
@@ -20,33 +20,12 @@ export const BaseInfoSection = () => {
     <SectionContainer id="zakladni-informace" bgColor="lightOrange">
       {/* Horní část: Video a Text */}
       <div className="flex flex-wrap gap-8 xl:gap-12 w-full py-8 xl:pt-16 xl:pb-8 xl:text-p-big items-center justify-center lg:justify-between">
-
-        {/* Spotify Banner Section - optimalizováno pro šířku mobilu */}
-        <div className="w-full max-w-[1100px] mx-auto pb-20 px-0 sm:px-4 pt-8 sm:pt-2">
-          <p className="text-center text-violet mb-4 px-4 sm:px-0">
-            Zajímá vás zákulisí Majálesu UTB? Pusťte si podcast s našimi manažery.
-          </p>
-          <div className="overflow-hidden shadow-md sm:rounded-xl">
-            <iframe
-              style={{ borderRadius: '0px' }} // Na mobilu (px-0) vypadá lépe bez zaoblení, pokud jde k hranám
-              className="sm:rounded-xl w-full h-[152px]"
-              src={SPOTIFY_URL}
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-              title="Spotify Podcast Episode"
-              data-track-event="click"
-              data-track-category="Spotify"
-              data-track-label="Mainpage/Podcast"
-            ></iframe>
-          </div>
-        </div>
         
         {/* Video Wrapper */}
         <div className="w-full lg:w-auto flex justify-center">
           {isPlaying ? (
             <iframe
-              src={`https://www.youtube.com/embed/${VIDEO_ID}?si=N95euryS4_R8r7gT&autoplay=1`}
+              src={`https://www.youtube.com/embed/${VIDEO_ID}?si=2_DPv328-dm0zCfL&autoplay=1`}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -95,6 +74,27 @@ export const BaseInfoSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Spotify Banner Section - optimalizováno pro šířku mobilu */}
+        <div className="w-full max-w-[1100px] mx-auto pb-20 px-0 sm:px-4 pt-8 sm:pt-2">
+          <p className="text-center text-violet mb-4 px-4 sm:px-0">
+            Zajímá vás zákulisí Majálesu UTB? Pusťte si podcast s našimi manažery.
+          </p>
+          <div className="overflow-hidden shadow-md sm:rounded-xl">
+            <iframe
+              style={{ borderRadius: '0px' }} // Na mobilu (px-0) vypadá lépe bez zaoblení, pokud jde k hranám
+              className="sm:rounded-xl w-full h-[152px]"
+              src={SPOTIFY_URL}
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Spotify Podcast Episode"
+              data-track-event="click"
+              data-track-category="Spotify"
+              data-track-label="Mainpage/Podcast"
+            ></iframe>
+          </div>
+        </div>
 
       {/* TOP RIGHT DECORATIONS */}
       <div className="absolute top-0 right-0 pointer-events-none">
