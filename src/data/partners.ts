@@ -46,18 +46,18 @@ export const organizers: PartnerType[] = [
     alt: 'Univerzita Tomáše Bati',
     link: 'https://utb.cz/',
   },
-  {
+  /* {
     img: utb25,
     alt: 'Univerzita Tomáše Bati slaví 25 let',
     link: 'https://jenamdvacetpet.cz/',
-  },
+  }, */
 ];
 export const mainPartners: PartnerType[] = [
-  {
+  /* {
     img: barumLogo,
     alt: 'Barum',
     link: 'https://www.barum.cz/',
-  },
+  }, */
   {
     img: backstageAgencyLogo,
     alt: 'Backstage Agency',
