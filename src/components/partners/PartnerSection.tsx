@@ -28,7 +28,7 @@ export const PartnerSection = () => {
           link="https://www.trinitybank.cz/"
         />
         <PartnerList header="Hlavní partneři" partnerList={mainPartners} />
-        <div className="flex flex-wrap items-center gap-16 lg:gap-20">
+        {/* <div className="flex flex-wrap items-center gap-16 lg:gap-20">
           <SinglePartnerItem
             headline="Hlavní mediální partner"
             img={medialniPartnerLogo}
@@ -41,10 +41,10 @@ export const PartnerSection = () => {
             alt="Pošta bez hranic"
             link="https://www.postabezhranic.cz/"
           />
-        </div>
-        <PartnerList header="S podporou" partnerList={supportPartners} />
+        </div> */}
+        {/* <PartnerList header="S podporou" partnerList={supportPartners} /> */}
         {/* <PartnerList header="Hlavní partneři" partnerList={mainPartners} /> */}
-        <PartnerList header="Partneři" partnerList={partners} />
+        {/* <PartnerList header="Partneři" partnerList={partners} /> */}
       </div>
 
       {/* TOP LEFT */}
