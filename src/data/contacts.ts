@@ -1,14 +1,13 @@
 import type { ContactType } from '../AppTypes';
 import DefaultPhoto from '../assets/img/contacts/default.jpg?url';
-import anicka_d from '../assets/img/contacts/anicka_d.webp?url';
-import anicka_k from '../assets/img/contacts/anicka_k.webp?url';
-import barca from '../assets/img/contacts/barca.webp?url';
-import bety from '../assets/img/contacts/bety.webp?url';
-import matus from '../assets/img/contacts/matus.webp?url';
-import peta from '../assets/img/contacts/peta.webp?url';
-import sarka from '../assets/img/contacts/sarka.webp?url';
+import anicka from '../assets/img/contacts/anicka.webp?url';
+import barca_h from '../assets/img/contacts/barca_h.webp?url';
+import barca_v from '../assets/img/contacts/barca_v.webp?url';
+import bea from '../assets/img/contacts/bea.webp?url';
+import lucka from '../assets/img/contacts/lucka.webp?url';
+import maty from '../assets/img/contacts/maty.webp?url';
 import simca from '../assets/img/contacts/simca.webp?url';
-import vanes from '../assets/img/contacts/vanes.webp?url';
+//import dzon_web from '../assets/img/contacts/dzon_web.webp?url';
 
 export const contacts: ContactType[] = [
   {
@@ -16,50 +15,50 @@ export const contacts: ContactType[] = [
     name: 'ANNA DAREBNÍČKOVÁ',
     email: 'darebnickova@sutb.cz',
     phone: '+420 721 948 952',
-    photo: anicka_d,
+    photo: anicka,
   },
   {
     position: 'Manažerka projektu',
     name: 'BARBORA HANOLDOVÁ',
     email: 'hanoldova@sutb.cz',
     phone: '+420 720 497 790',
-    photo: barca,
+    photo: barca_h,
   },
-  /*{
+  {
     position: 'Marketing',
-    name: 'VANESA JASNÍKOVÁ',
-    email: 'jasnikova@sutb.cz',
-    phone: '+420 605 405 778',
-    photo: vanes,
+    name: 'BARBORA VEDRALOVÁ',
+    email: 'vedralova@sutb.cz',
+    phone: '+420 775 928 319',
+    photo: barca_v,
   },
   {
     position: 'Sponzoring',
-    name: 'ANNA DAREBNÍČKOVÁ',
-    email: 'darebnickova@sutb.cz',
-    phone: '+420 721 948 952',
-    photo: anicka_d,
+    name: 'BEATRICE ROCCA',
+    email: 'rocca@sutb.cz',
+    phone: '+420 776 311 203',
+    photo: bea,
   },
   {
     position: 'Media relations',
-    name: 'BARBORA HANOLDOVÁ',
-    email: 'hanoldova@sutb.cz',
-    phone: '+420 720 497 790',
-    photo: barca,
+    name: 'LUCIE BEČKOVÁ',
+    email: 'beckova@sutb.cz',
+    phone: '+420 720 115 317',
+    photo: lucka,
   },
-  {
+  /*{
     position: 'Produkce',
-    name: 'MATÚŠ VARGA',
-    email: 'varga@sutb.cz',
-    phone: '+421 904 947 289',
-    photo: matus,
-  },
+    name: 'JAN HOFFMANN',
+    email: 'hoffmann@sutb.cz',
+    phone: '+420 731 185 896',
+    photo: dzon_web,
+  },*/
   {
     position: 'Art director',
-    name: 'ANNA KUBEŠOVÁ',
-    email: 'kubesova@sutb.cz',
-    phone: '+420 773 477 050',
-    photo: anicka_k,
-  },*/
+    name: 'MATYÁŠ SELNÍK',
+    email: 'selnik@sutb.cz',
+    phone: '+420 703 133 233',
+    photo: maty,
+  },
   {
     position: 'Kapely',
     name: 'SIMONA KOTUĽOVÁ',
