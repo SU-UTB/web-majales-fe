@@ -1,5 +1,5 @@
 
-import barca from '../../assets/img/contacts/barca.webp?url';
+import lucka from '../../assets/img/contacts/lucka.webp?url';
 import { ContactItem } from '../contacts/ContactItem';
 import { SectionContainer } from '../shared/SectionContainer';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
@@ -30,14 +30,14 @@ export const GetOurLogoSection = () => {
         >
           Press Kit
         </a>
-        {/* <ContactItem
+        { <ContactItem
           position="Kontaktní osoba pro média"
-          name="BARBORA HANOLDOVÁ"
-          email="hanoldova@sutb.cz"
-          phone='+420 720 497 790'
-          photo={barca}
+          name="LUCIE BEČKOVÁ"
+          email="beckova@sutb.cz"
+          phone='+420 720 115 317'
+          photo={lucka}
           textColor="white"
-        /> */}
+        /> }
       </div>
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0 z-10">
