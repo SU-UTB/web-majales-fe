@@ -37,7 +37,7 @@ export const BandListSection = () => {
   // Show a loading state while fetching to prevent flickering or layout shifts
   if (isLoading || !now) {
     return (
-      <SectionContainer id="kapely" bgColor="violet" className="text-white">
+      <SectionContainer id="kapely" bgColor="bg-violet" className="text-white">
         <h2 className="text-3xl p-6 md:text-6xl font-medium text-center relative z-20">
           Na koho se můžete těšit?
         </h2>
@@ -54,7 +54,7 @@ export const BandListSection = () => {
   const hasHiddenBands = bands.some((band) => now < band.visibleFrom);
 
   return (
-    <SectionContainer id="kapely" bgColor="violet" className="text-white">
+    <SectionContainer id="kapely" bgColor="bg-violet" className="text-white">
       <h2 className="text-3xl p-6 md:text-6xl font-medium text-center relative z-20">
         Na koho se můžete těšit?
       </h2>

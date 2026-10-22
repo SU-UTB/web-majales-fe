@@ -15,7 +15,7 @@ import { PartnerList } from './PartnerList';
 import { SinglePartnerItem } from './SinglePartnerItem';
 export const PartnerSection = () => {
   return (
-    <SectionContainer id="partneri" bgColor='beige'>
+    <SectionContainer id="partneri" bgColor="bg-beige">
       <div className="space-y-12 lg:gap-y-12 flex flex-col items-center md:pb-12">
          <div className="flex flex-col text-left">
           <h1 className="text-h2-reversed-mobile md:text-h2-reversed text-beige">Partneři podporující studentský Majáles UTB</h1>

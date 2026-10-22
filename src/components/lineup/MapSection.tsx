@@ -8,7 +8,7 @@ import { MajalesAreaMap } from '../svg/MajalesAreaMap';
 
 export const MapSection = () => {
   return (
-    <SectionContainer id="mapa" bgColor="lightOrange">
+    <SectionContainer id="mapa" bgColor="bg-lightOrange">
       <div className="pt-16 md:pt-20 px-4 md:px-16 flex justify-center items-center">
         <div className="w-full max-w-[600px]">
           <img src={mapa} alt="Majáles Area Map" className="w-full h-auto" />

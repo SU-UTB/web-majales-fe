@@ -23,7 +23,7 @@ export type SvgProps = {
   fill?: string;
 };
 
-export type Colors = 'white' | 'black' | 'beige' | 'pink' | 'orange' | 'lightOrange' | 'violet' | 'blue' | 'darkDarkBlue' | 'lightPink' | 'transparent';
+
 
 export type ContactType = {
   position: string;

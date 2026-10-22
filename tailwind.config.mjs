@@ -13,10 +13,17 @@ export default {
         violet: '#210E4F',
         pink: '#EC4887',
         lightPink: '#FFBEDF',
-        orange: '#F16E2B',
+        //orange: '#F16E2B',
         lightOrange: '#F9B162',
         blue: '#6459FD',
         darkDarkBlue: '#1F2041',
+        // 2027 colors
+        lightGreen: '#BBE7BC',
+        darkGreen: '#01A37E',
+        lightPurple: '#F3EDFF',
+        darkPurple: '#5E1EF2',
+        yellow: '#FFFCD9',
+        orange: '#FF7E07',
       },
       // Velikosti písma v extend se přidají k xs, sm, base, lg atd.
       fontSize: {

@@ -10,7 +10,7 @@ import { Register } from './Register';
 
 export const AboutSection = () => {
   return (
-    <SectionContainer id="kral-a-kralovna" bgColor="pink">
+    <SectionContainer id="kral-a-kralovna" bgColor="bg-pink">
       <div className="space-y-12 relative px-4">
         <AboutContent />
         {/* <Register registerLink="https://forms.gle/wUeHxhU2NrdMgPAQ7" /> */}

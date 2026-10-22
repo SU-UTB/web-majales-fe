@@ -15,7 +15,7 @@ export const HarmonogramSection = () => {
   return (
     <SectionContainer
       id="harmonogram"
-      bgColor='beige'
+      bgColor="bg-beige"
     >
       <div className="my-12 py-4 md:py-12 px-4 lg:px-20 lg:py-10 max-w-max mx-auto grid grid-cols-1 xl:grid-cols-2 gap-14 items-start">
         <HarmonogramGroup title="UTB Trinity bank stage" harmonogramItems={utbTrinityStage} />

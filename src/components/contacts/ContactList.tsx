@@ -12,7 +12,7 @@ export const ContactList = () => {
     <SectionContainer
       id="kontakty-seznam"
       className='text-beige'
-      bgColor='pink'
+      bgColor="bg-pink"
     >
       <h2 className="text-3xl md:text-5xl font-medium">Kontakty</h2>
       <OrganizerItem />

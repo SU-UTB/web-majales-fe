@@ -13,7 +13,7 @@ import { Triangle } from '../svg/elements/Triangle';
 
 export const GetOurLogoSection = () => {
   return (
-    <SectionContainer id="media-logo" bgColor='darkDarkBlue' className="relative py-14 md:py-20 lg:py-24">
+    <SectionContainer id="media-logo" bgColor="bg-darkDarkBlue" className="relative py-14 md:py-20 lg:py-24">
       <div className="max-w-2xl space-y-8 text-white pb-8 pr-6">
         <p>
           Sháníte naše logo, tiskovou zprávu nebo třeba fotografie z loňského ročníku?<br /> Vše jsme pro vás přehledně

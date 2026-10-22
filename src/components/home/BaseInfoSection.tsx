@@ -17,7 +17,7 @@ export const BaseInfoSection = () => {
   };
 
   return (
-    <SectionContainer id="zakladni-informace" bgColor="lightOrange">
+    <SectionContainer id="zakladni-informace" bgColor="bg-lightOrange">
       {/* Horní část: Video a Text */}
       <div className="flex flex-wrap gap-8 xl:gap-12 w-full py-8 xl:pt-16 xl:pb-8 xl:text-p-big items-center justify-center lg:justify-between">
         

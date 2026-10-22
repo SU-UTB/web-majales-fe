@@ -3,7 +3,7 @@ import { SectionContainer } from '../shared/SectionContainer';
 
 export const AboutSection = () => {
   return (
-    <SectionContainer id="ubc" bgColor="pink">
+    <SectionContainer id="ubc" bgColor="bg-pink">
       <h1 className="text-beige text-h2">UBC – UniBand Contest 2024</h1>
       <div className="text-beige space-y-4 max-w-screen-md">
         <p>

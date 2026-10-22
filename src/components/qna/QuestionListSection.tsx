@@ -10,7 +10,7 @@ import { QuestionListItem } from './QuestionListItem';
 
 export const QuestionListSection = () => {
   return (
-    <SectionContainer id="otazky-a-odpovedi" bgColor='beige'>
+    <SectionContainer id="otazky-a-odpovedi" bgColor="bg-beige">
       <h1 className="text-3xl md:text-5xl font-medium text-violet pr-4">Nejčastěji se nás ptáte</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 py-2 md:py-8 text-white">
         {questions.map((question) => (

@@ -11,7 +11,7 @@ import { Triangle } from '../svg/elements/Triangle';
 
 export const ContactSection = () => {
   return (
-    <SectionContainer id="kontakty" bgColor="lightPink">
+    <SectionContainer id="kontakty" bgColor="bg-lightPink">
       <div className="text-violet space-y-8">
         {/* <div className="space-y-4">
           <h1 className="text-4xl md:text-6xl font-medium">Máte zájem o&nbsp;partnerství?</h1>

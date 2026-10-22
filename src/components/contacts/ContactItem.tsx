@@ -1,13 +1,15 @@
-import type { Colors, ContactType } from '../../AppTypes';
+import type { ContactType } from '../../AppTypes';
 
 type Props = ContactType & {
-  textColor?: Colors;
+  textColor?: string;
 };
 
-export const ContactItem = ({ position, name, email, phone, photo, textColor = 'white' }: Props) => {
+export const ContactItem = ({ position, name, email, phone, photo, textColor = 'text-white' }: Props) => {
+  const textClass = textColor ? (textColor.startsWith('text-') ? textColor : `text-${textColor}`) : '';
+
   return (
     <div className="flex flex-col">
-      <h3 className={`text-${textColor} font-semibold`}>{position}</h3>
+      <h3 className={`${textClass} font-semibold`}>{position}</h3>
       <div className="flex items-center gap-4">
         <div>
           <img
