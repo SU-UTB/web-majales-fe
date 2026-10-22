@@ -19,7 +19,7 @@ export const NavLink = ({
     <a
       onClick={onClick}
       href={linkTo}
-      className="text-white hover:text-orange transition-colors duration-200"
+      className="text-yellow hover:text-lightGreen transition-colors duration-200 whitespace-nowrap"
       data-track-event={dataTrackEvent}
       data-track-category={dataTrackCategory}
       data-track-label={dataTrackLabel}

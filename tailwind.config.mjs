@@ -17,6 +17,8 @@ export default {
         lightOrange: '#F9B162',
         blue: '#6459FD',
         darkDarkBlue: '#1F2041',
+
+
         // 2027 colors
         lightGreen: '#BBE7BC',
         darkGreen: '#01A37E',
