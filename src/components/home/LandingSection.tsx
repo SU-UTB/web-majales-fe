@@ -14,11 +14,11 @@ export const LandingSection = () => {
   return (
     <section
       id="landing"
-      className="pt-12 pb-20 md:pb-32 xl:py-20 bg-no-repeat relative"
+      className="bg-yellow pt-12 pb-20 md:pb-32 xl:py-20 bg-no-repeat relative"
     >
       <Container>
         <div className="relative flex justify-center px-6">
-          <MajalesHeadline width={700} />
+          <MajalesHeadline width={1090} />
         </div>
       </Container>
 

@@ -26,6 +26,7 @@ export default {
         darkPurple: '#5E1EF2',
         yellow: '#FFFCD9',
         orange: '#FF7E07',
+        transparent: 'transparent',
       },
       // Velikosti písma v extend se přidají k xs, sm, base, lg atd.
       fontSize: {

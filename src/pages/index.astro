@@ -30,6 +30,8 @@ const heroColors = {
   BottomLeftSquareCircleSecRight: 'fill-pink',
   // --- RIGHT SIDE & BOTTOM ---
   // --- BOTTOM ---
+  BottomRightSquaredSquare: 'darkPurple',
+
   BottomRightTriangleLeft: 'fill-lightPink',
   timeRectColor: 'fill-violet',
   BottomRightLightning: 'fill-violet',
@@ -50,11 +52,11 @@ const heroColors = {
 <Layout {...metaTags}>
   {/* <LandingSection /> */}
 
-  <SectionHero {...heroColors} />
+  <SectionHero client:load {...heroColors} />
 
-  <BaseInfoSection client:visible />
+  <CountdownSection targetDate={MAJALES_DATE} client:load />
 
-  <!-- <CountdownSection targetDate={MAJALES_DATE} client:load /> -->
+  <!-- <BaseInfoSection client:visible /> -->
 
   <WhatIsMajalesSection />
 
