@@ -12,17 +12,20 @@ export const calculateRemainingTime = (targetDate: Date): CountdownDateValueType
 
   const difference = targetDate.getTime() - currentDate.getTime();
 
-  let remainingMonths = Math.floor(difference / (1000 * 60 * 60 * 24 * 30));
-  let remainingDays = Math.floor((difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+  let remainingDays = Math.floor(difference / (1000 * 60 * 60 * 24));
   let remainingHours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let remainingMinutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  let remainingSeconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-  remainingMonths = Math.max(remainingMonths, 0);
   remainingDays = Math.max(remainingDays, 0);
   remainingHours = Math.max(remainingHours, 0);
+  remainingMinutes = Math.max(remainingMinutes, 0);
+  remainingSeconds = Math.max(remainingSeconds, 0);
 
   return {
-    months: remainingMonths,
     days: remainingDays,
     hours: remainingHours,
+    minutes: remainingMinutes,
+    seconds: remainingSeconds,
   };
 };
