@@ -5,6 +5,7 @@ import { OpenTriangles } from '../svg/shapes/OpenTriangles';
 import { SquareWithS } from '../svg/shapes/SquareWithS';
 import { SquareWithSemiArcs } from '../svg/shapes/SquareWithSemiArcs';
 import { Target } from '../svg/shapes/Target';
+import { SunSquare } from '../svg/shapes/SunSquare';
 
 export const BaseInfoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -104,23 +105,24 @@ export const BaseInfoSection = () => {
       {/* TOP LEFT */}
       <div className="absolute top-0 left-0">
         <div className="relative">
-          <DotLottieReact
+          {/* <DotLottieReact
             src="/animations/SunSquare.lottie"
             loop
             autoplay
             className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square"
-          />
+          /> */}
+          <SunSquare className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square" colorMain="stroke-orange" colorBg="fill-lightGreen" />
           <div className="absolute top-12 md:top-24 left-0 md:left-0 h-12 w-12 md:h-24 md:w-24 bg-darkPurple" />
           <Arc className="absolute top-16 md:top-32 left-0 md:left-0 h-8 md:h-16" colorMain="fill-lightGreen" />
+          <Arc className="absolute top-12 md:top-24 left-12 md:left-24 h-8 md:h-16 -scale-y-100" colorMain="fill-orange" />
+          <Arc className="absolute top-24 md:top-48 left-0 md:left-0 h-8 md:h-16 -scale-y-100" colorMain="fill-darkPurple" />
+          <SquareWithSemiArcs className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+          <SquareWithS className="absolute top-0 md:top-0 left-24 md:left-48 h-12 md:h-24 rotate-90" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
         </div>
-        <Arc className="absolute top-12 md:top-24 left-12 md:left-24 h-8 md:h-16 -scale-y-100" colorMain="fill-orange" />
-        <Arc className="absolute top-24 md:top-48 left-0 md:left-0 h-8 md:h-16 -scale-y-100" colorMain="fill-darkPurple" />
-        <SquareWithSemiArcs className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
-        <SquareWithS className="absolute top-0 md:top-0 left-24 md:left-48 h-12 md:h-24 rotate-90" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
       </div>
 
       {/* TOP RIGHT */}
-      <div className="absolute top-0 right-0 pointer-events-none">
+      <div className="absolute top-0 right-0">
         <div className="relative">
           <Target className="absolute top-0 md:top-0 right-0 md:right-0 h-12 md:h-24" colorMain1="fill-lightGreen" colorMain2="fill-orange" colorBg="fill-darkPurple" />
           {/* Badge v levém horním rohu */}
