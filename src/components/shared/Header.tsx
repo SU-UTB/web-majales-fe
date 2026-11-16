@@ -54,19 +54,8 @@ export const Header = () => {
                 ))}
 
                 {/* Mobile Instagram */}
-                <motion.li variants={mobNavItemVariants} className="mt-4">
-                  <a
-                    href={INSTAGRAM_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setIsOpen(false)}
-                    className="text-yellow hover:text-lightGreen transition-colors duration-200 [&>svg]:w-8 [&>svg]:h-8"
-                    data-track-event="click"
-                    data-track-category="Header"
-                    data-track-label="Header/Mobile/Instagram"
-                  >
+                <motion.li variants={mobNavItemVariants} className="mt-4 [&>svg]:w-8 [&>svg]:h-8">
                     <Lada fillColor="fill-yellow group-hover:fill-lightGreen duration-200" />
-                  </a>
                 </motion.li>
               </motion.ul>
             </AnimatePresence>
@@ -87,18 +76,8 @@ export const Header = () => {
           </ul>
 
           {/* Right-aligned Desktop Instagram */}
-          <div className="hidden lg:flex items-center">
-            <a
-              href={INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-yellow hover:text-lightGreen transition-colors duration-200 [&>svg]:w-auto [&>svg]:h-8"
-              data-track-event="click"
-              data-track-category="Header"
-              data-track-label="Header/Desktop/Instagram"
-            >
-              <Lada fillColor="fill-yellow group-hover:fill-lightGreen duration-200" />
-            </a>
+          <div className="hidden lg:flex items-center [&>svg]:w-auto [&>svg]:h-8">
+            <Lada fillColor="fill-yellow group-hover:fill-lightGreen duration-200" />
           </div>
 
         </div>
