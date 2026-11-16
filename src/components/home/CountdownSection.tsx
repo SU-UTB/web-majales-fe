@@ -23,7 +23,7 @@ export const CountdownSection = ({ targetDate }: { targetDate: Date }) => {
     <section id="kolik-casu-zbyva" className="bg-yellow relative pt-20 pb-10 sm:pt-24 sm:pb-12 md:pt-28 md:pb-20">
       {/* Badge right in the top-left corner */}
       <div className="absolute top-0 left-0">
-        <span className="inline-block bg-lightGreen text-orange text-sm xs:text-base sm:text-2xl md:text-3xl font-semibold px-4 py-2 xs:px-6 xs:py-2.5 sm:px-8 sm:py-3.5">
+        <span className="inline-flex items-center justify-center h-12 md:h-24 bg-lightGreen text-orange text-xl xs:text-xl sm:text-3xl md:text-5xl font-semibold px-4 py-2 xs:px-6 xs:py-2.5 sm:px-8 sm:py-3.5">
           Do Májálesu zbývá
         </span>
       </div>

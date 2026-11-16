@@ -27,6 +27,7 @@ export const APP_ROUTES = {
 };
 
 export const CAN_SHOW_BANDS = false;
+export const CAN_SHOW_HARMONOGRAM = true;
 
 export const COUNTDOWN_UNITS = {
   DAYS: {

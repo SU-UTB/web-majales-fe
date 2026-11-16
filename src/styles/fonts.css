@@ -1,6 +1,15 @@
 @font-face {
   font-family: 'Ladislav';
   src:
+    local('Ladislav-Light'),
+    url('../assets/fonts/LadislavLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ladislav';
+  src:
     local('Ladislav-Regular'),
     url('../assets/fonts/Ladislav.woff2') format('woff2');
   font-weight: 400;
@@ -12,7 +21,7 @@
   src:
     local('Ladislav-SemiBold'),
     url('../assets/fonts/LadislavSemiBold.woff2') format('woff2');
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -21,14 +30,42 @@
   src:
     local('Ladislav-Bold'),
     url('../assets/fonts/Ladislav-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Ladislav Reversed font-family */
+@font-face {
+  font-family: 'Ladislav Reversed';
+  src:
+    local('LadislavLightReversed'),
+    url('../assets/fonts/LadislavLightReversed.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ladislav Reversed';
+  src:
+    local('LadislavReversed'),
+    url('../assets/fonts/LadislavReversed.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ladislav Reversed';
+  src:
+    local('LadislavSemiBoldReversed'),
+    url('../assets/fonts/LadislavSemiBoldReversed.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ladislav';
+  font-family: 'Ladislav Reversed';
   src:
-    local('Ladislav-Reversed-Bold'),
+    local('LadislavReversed-Bold'),
     url('../assets/fonts/LadislavReversed-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
