@@ -1,13 +1,13 @@
 import type { FooterItemType } from '../AppTypes';
-import majalesLogo from '../assets/img/majales-footer.webp?url';
-import utbLogo from '../assets/img/utb-footer.webp?url';
-import suLogo from '../assets/img/su-footer.webp?url';
+import { Majales } from '../components/svg/logos/Majales';
+import { SU } from '../components/svg/logos/SU';
+import { UTB } from '../components/svg/logos/UTB';
 import { FbIcon, IgIcon, LinkedInIcon, WebIcon } from '../components/shared/Icons';
 import { MAJALES_TITLE } from '../config/constants';
 
 export const footerItems: FooterItemType[] = [
   {
-    logo: majalesLogo,
+    logo: Majales,
     logoName: MAJALES_TITLE,
     socials: [
       {
@@ -34,7 +34,7 @@ export const footerItems: FooterItemType[] = [
     ],
   },
   {
-    logo: suLogo,
+    logo: SU,
     logoName: 'Studenská unie',
     socials: [
       {
@@ -61,7 +61,7 @@ export const footerItems: FooterItemType[] = [
     ],
   },
   {
-    logo: utbLogo,
+    logo: UTB,
     logoName: 'Univerzita Tomáše Bati',
     socials: [
       {

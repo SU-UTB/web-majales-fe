@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import type React from 'react';
 
 export type HeadProps = {
   title: string;
@@ -55,7 +56,7 @@ export type ExternalLinkType = {
 };
 
 export type FooterItemType = {
-  logo: string;
+  logo: React.ComponentType<{ className?: string; colorMain?: string; colorBg?: string }>;
   logoName: string;
   socials: ExternalLinkType[];
 };
