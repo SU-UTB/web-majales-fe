@@ -43,11 +43,5 @@ const heroColors = {
 ---
 
 <Layout {...metaTags}>
-  {/* Předání sjednocených barev pomocí spread operátoru */}
-  <SectionHero {...heroColors} />
-
   <ContactLandingSection client:visible />
-
-  {/* Sjednocení barvy footeru na "orange" */}
-  <UpperFooter bgColor="bg-orange" />
 </Layout>

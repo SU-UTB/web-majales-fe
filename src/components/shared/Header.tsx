@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Twirl as Hamburger } from 'hamburger-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { INSTAGRAM_URL } from '../../config/constants';
 import { mobNavItemVariants, navItems } from '../../data/header';
 import { NavLink } from '../header/NavLink';
@@ -9,6 +9,31 @@ import { Lada } from '../svg/Lada';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState('');
+
+  useEffect(() => {
+    const updatePath = () => {
+      setCurrentPath(window.location.pathname);
+    };
+
+    updatePath();
+
+    document.addEventListener('astro:page-load', updatePath);
+    window.addEventListener('popstate', updatePath);
+
+    return () => {
+      document.removeEventListener('astro:page-load', updatePath);
+      window.removeEventListener('popstate', updatePath);
+    };
+  }, []);
+
+  const isLinkActive = (linkTo: string) => {
+    if (!currentPath || linkTo === '/' || linkTo === '') return false;
+    const normalize = (path: string) => path.replace(/\/+$/, '') || '/';
+    const normalizedCurrent = normalize(currentPath);
+    const normalizedTarget = normalize(linkTo);
+    return normalizedCurrent === normalizedTarget;
+  };
 
   return (
     <header className="w-full bg-transparent mx-auto sticky top-0 left-0 z-10">
@@ -45,6 +70,7 @@ export const Header = () => {
                   <motion.li key={navItem.text} variants={mobNavItemVariants}>
                     <NavLink
                       {...navItem}
+                      isActive={isLinkActive(navItem.linkTo)}
                       onClick={() => setIsOpen(false)}
                       data-track-event="click"
                       data-track-category="Header"
@@ -67,6 +93,7 @@ export const Header = () => {
               <li key={navItem.text}>
                 <NavLink
                   {...navItem}
+                  isActive={isLinkActive(navItem.linkTo)}
                   data-track-event="click"
                   data-track-category="Header"
                   data-track-label={`Header/Desktop/${navItem.text}`}
