@@ -4,7 +4,7 @@ import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
 import { Doprogram } from '../components/lineup/Doprogram';
 import { MapSection } from '../components/lineup/MapSection';
 import Layout from '../components/shared/Layout.astro';
-import { CAN_SHOW_HARMONOGRAM } from '../config/constants';
+import { CAN_SHOW_HARMONOGRAM, CAN_SHOW_DOPROGRAM } from '../config/constants';
 
 const metaTags = {
   title: 'Lineup a program | Majáles UTB',
@@ -17,5 +17,5 @@ const metaTags = {
   <BandListSection client:load />
   {CAN_SHOW_HARMONOGRAM && <HarmonogramSection />}
   {CAN_SHOW_HARMONOGRAM && <MapSection />}
-  <Doprogram client:visible />
+  {CAN_SHOW_DOPROGRAM && <Doprogram />}
 </Layout>
