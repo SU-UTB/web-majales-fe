@@ -8,7 +8,6 @@ import { SquareWithSemiArcs } from "../svg/shapes/SquareWithSemiArcs";
 import { Arc } from "../svg/shapes/Arc";
 import { TitsWithNipples } from "../svg/shapes/TitsWithNipples";
 import { DotsSquare } from "../svg/shapes/DotsSquare";
-import { A } from "../../../dist/_astro/constants.dc3e9ac7";
 import { Rays } from "../svg/shapes/Rays";
 import { OpenTriangles } from "../svg/shapes/OpenTriangles";
 
