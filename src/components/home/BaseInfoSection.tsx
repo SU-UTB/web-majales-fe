@@ -136,23 +136,6 @@ export const BaseInfoSection = () => {
           <OpenTriangles className="absolute top-12 md:top-24 right-0 md:right-0 h-12 md:h-24 rotate-180" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
         </div>
       </div>
-
-      {/* BOTTOM LEFT */}
-      <div className="absolute bottom-0 left-0">
-        <div className="relative">
-          <OpenTriangles className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
-          <SquareWithHalfCircles className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
-          <DotsTriangle className="absolute bottom-12 md:bottom-24 left-0 md:left-0 h-12 md:h-24 rotate-90" colorMain="fill-orange" colorBg="fill-transparent" />
-        </div>
-      </div>
-
-      {/* BOTTOM RIGHT */}
-      <div className="absolute bottom-0 right-0">
-        <div className="relative">
-          <SunSquare className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24" colorMain="stroke-lightGreen" colorBg="fill-darkPurple" />
-          <Arc className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-8 md:h-16 -rotate-90" colorMain="fill-orange" />
-        </div>
-      </div>
     </section>
   );
 };
