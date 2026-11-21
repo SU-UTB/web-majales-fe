@@ -113,6 +113,9 @@ export const GalleryPreview: React.FC = () => {
       <div className="mt-8 md:mt-12 flex justify-center items-center relative z-10">
         <a
           href="/galerie"
+          data-track-event="click"
+          data-track-category="Mainpage"
+          data-track-label="Mainpage/Galerie"
           className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-3.5 bg-darkPurple text-white text-xl sm:text-2xl md:text-3xl font-sans font-semibold rounded-xl hover:bg-orange transition-colors duration-200 shadow-md"
         >
           <span>Galerie</span>

@@ -16,7 +16,13 @@ const currentYear = new Date().getFullYear();
       <p class="mb-4 md:mb-0 text-center md:text-left">
         &copy; Studentská unie UTB {currentYear}. Všechna práva vyhrazena.
       </p>
-      <a href="/privacypolicy" class="hover:text-orange transition-colors duration-200">
+      <a
+        href="/privacypolicy"
+        data-track-event="click"
+        data-track-category="Footer"
+        data-track-label="Footer/PrivacyPolicy"
+        class="hover:text-orange transition-colors duration-200"
+      >
         Zásady ochrany osobních údajů
       </a>
     </div>

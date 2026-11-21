@@ -25,7 +25,6 @@ export const config: CookieConsentConfig = {
         ga4: {
           label: 'Google Analytics 4 (GA4)',
           onAccept: () => {
-            console.log('✅ GA4 consent granted');
             window.gtag('consent', 'update', {
               analytics_storage: 'granted',
               ad_storage: 'granted',
@@ -34,7 +33,6 @@ export const config: CookieConsentConfig = {
             });
           },
           onReject: () => {
-            console.log('❌ GA4 consent rejected');
             window.gtag('consent', 'update', {
               analytics_storage: 'denied',
               ad_storage: 'denied',

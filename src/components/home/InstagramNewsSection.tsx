@@ -17,6 +17,9 @@ export const InstagramNewsSection = ({ igFeed }: Props) => {
             href={permalink}
             target="_blank"
             rel="noopener noreferrer external"
+            data-track-event="click"
+            data-track-category="Novinky"
+            data-track-label={`Novinky/Instagram/${id}`}
           >
             <img
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform"

@@ -19,7 +19,12 @@ const metaTags = {
           Stránka nenalezena
         </h1>
         <p class="mt-2 text-base">Omlouváme se, ale vámi hledaná stránka nebyla nalezena.</p>
-        <a href="/" class="block mt-6 font-semibold text-lg transition duration-300"
+        <a
+          href="/"
+          data-track-event="click"
+          data-track-category="404"
+          data-track-label="404/BackToHome"
+          class="block mt-6 font-semibold text-lg transition duration-300"
           >Zpět na domovskou stránku<span aria-hidden="true"> &rarr;</span></a
         >
       </div>

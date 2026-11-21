@@ -1,13 +1,21 @@
 import { trackEvent } from './analytics';
 
+declare global {
+  interface Window {
+    __declarativeTrackingInitialized?: boolean;
+  }
+}
+
 /**
  * Initializes a global click listener to track events declaratively.
  * It looks for 'data-track-*' attributes on clicked elements.
  */
 export const initDeclarativeTracking = () => {
-  if (typeof window === 'undefined') {
+  if (typeof window === 'undefined' || window.__declarativeTrackingInitialized) {
     return;
   }
+
+  window.__declarativeTrackingInitialized = true;
 
   document.body.addEventListener('click', (e) => {
     const target = e.target as HTMLElement;
