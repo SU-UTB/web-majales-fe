@@ -44,6 +44,7 @@ export type PartnerType = {
   img: string;
   alt: string;
   link: string;
+  hidden?: boolean;
 };
 
 export type ExternalLinkType = {
