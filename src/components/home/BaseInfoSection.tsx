@@ -112,12 +112,16 @@ export const BaseInfoSection = () => {
             className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square"
           /> */}
           <SunSquare className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square" colorMain="stroke-orange" colorBg="fill-lightGreen" />
+          {/* Badge v levém horním rohu */}
+          <div className="absolute top-0 left-12 md:left-24 z-10">
+            <span className="inline-flex items-center justify-center h-12 md:h-24 bg-lightGreen text-orange text-xl xs:text-xl sm:text-3xl md:text-5xl font-semibold px-4 xs:px-6 sm:px-8">
+              Aftermovie
+            </span>
+          </div>
           <div className="absolute top-12 md:top-24 left-0 md:left-0 h-12 w-12 md:h-24 md:w-24 bg-darkPurple" />
           <Arc className="absolute top-16 md:top-32 left-0 md:left-0 h-8 md:h-16" colorMain="fill-lightGreen" />
           <Arc className="absolute top-12 md:top-24 left-12 md:left-24 h-8 md:h-16 -scale-y-100" colorMain="fill-orange" />
           <Arc className="absolute top-24 md:top-48 left-0 md:left-0 h-8 md:h-16 -scale-y-100" colorMain="fill-darkPurple" />
-          <SquareWithSemiArcs className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
-          <SquareWithS className="absolute top-0 md:top-0 left-24 md:left-48 h-12 md:h-24 rotate-90" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
         </div>
       </div>
 
@@ -125,12 +129,8 @@ export const BaseInfoSection = () => {
       <div className="absolute top-0 right-0">
         <div className="relative">
           <Target className="absolute top-0 md:top-0 right-0 md:right-0 h-12 md:h-24" colorMain1="fill-lightGreen" colorMain2="fill-orange" colorBg="fill-darkPurple" />
-          {/* Badge v levém horním rohu */}
-          <div className="absolute top-0 right-12 md:right-24 z-10">
-            <span className="inline-flex items-center justify-center h-12 md:h-24 bg-lightGreen text-orange text-xl xs:text-xl sm:text-3xl md:text-5xl font-semibold px-4 xs:px-6 sm:px-8">
-              Aftermovie
-            </span>
-          </div>
+          <SquareWithS className="absolute top-0 md:top-0 right-12 md:right-24 h-12 md:h-24 rotate-90" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+          <SquareWithSemiArcs className="absolute top-0 md:top-0 right-24 md:right-48 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
           <OpenTriangles className="absolute top-12 md:top-24 right-0 md:right-0 h-12 md:h-24 rotate-180" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
         </div>
       </div>
