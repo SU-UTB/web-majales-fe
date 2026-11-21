@@ -3,10 +3,14 @@ import { trackEvent } from '../../analytics';
 import { galleryImages } from '../../data/gallery';
 import { GalleryImageItem } from './GalleryImageItem';
 import { LightboxModal } from './LightboxModal';
-import { Lightning } from '../svg/elements/Lightning';
-import { SquareWithCircle } from '../svg/elements/SquareWithCircle';
-import { Triangle } from '../svg/elements/Triangle';
-import { Star } from '../svg/elements/Star';
+import { Arc } from '../svg/shapes/Arc';
+import { BublyCircles } from '../svg/shapes/BublyCircles';
+import { DotsTriangle } from '../svg/shapes/DotsTriangle';
+import { DoubleArrow } from '../svg/shapes/DoubleArrow';
+import { Keyboard } from '../svg/shapes/Keyboard';
+import { Rays } from '../svg/shapes/Rays';
+import { SquaredSquare } from '../svg/shapes/SquaredSquare';
+import { TitsWithNipples } from '../svg/shapes/TitsWithNipples';
 
 const getFileNameFromSrc = (src: string) => {
   const parts = src.split('/');
@@ -42,8 +46,11 @@ export const GallerySection: React.FC = () => {
   };
 
   return (
-    <section id="galerie" className="bg-lightOrange">
-      <div className="max-w-7xl mx-auto p-4 pt-8 pb-16 md:pb-32">
+    <section
+      id="galerie"
+      className="relative min-h-[70vh] overflow-hidden bg-yellow py-20 sm:py-28 md:py-36"
+    >
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-12 sm:px-8 md:px-12">
         <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-4">
           {galleryImages.map((img, index) => (
             <GalleryImageItem
@@ -65,21 +72,40 @@ export const GallerySection: React.FC = () => {
         />
       )}
 
-      {/* BOTTOM LEFT */}
-      <div className="bottom-0 left-0">
+      {/* TOP LEFT */}
+      <div className="absolute left-0 top-0" aria-hidden="true">
         <div className="relative">
-          <Lightning className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24" colorMain='fill-violet' colorSecondary='fill-transparent' />
-          <SquareWithCircle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24" colorBgLeft='fill-violet' colorBgRight='fill-orange' colorCirLeft='fill-beige' colorCirRight='fill-beige' />
-          <Triangle className="absolute -rotate-90 bottom-0 md:bottom-0 left-24 md:left-48 h-12 md:h-24" colorMain='fill-beige' />
+          <div className="absolute left-12 top-0 z-10 md:left-24">
+            <h1 className="inline-flex h-12 items-center justify-center whitespace-nowrap bg-lightGreen px-4 text-xl font-semibold text-orange xs:px-6 xs:text-xl sm:px-8 sm:text-3xl md:h-24 md:text-5xl">
+              Galerie
+            </h1>
+          </div>
+          <DoubleArrow className="absolute left-0 top-0 h-24 md:h-48" colorMain="fill-orange" colorBg="fill-lightGreen" />
+          <Arc className="absolute left-12 top-12 h-8 rotate-90 md:left-24 md:top-24 md:h-16" colorMain="fill-darkPurple" />
+        </div>
+      </div>
+
+      {/* TOP RIGHT */}
+      <div className="absolute right-0 top-0" aria-hidden="true">
+        <div className="relative">
+          <Rays className="absolute right-0 top-0 h-24 md:h-48 -scale-x-100" colorMain="stroke-orange" colorBg="fill-darkPurple" />
+          <Keyboard className="absolute right-12 top-0 h-12 md:right-24 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+        </div>
+      </div>
+
+      {/* BOTTOM LEFT */}
+      <div className="absolute bottom-0 left-0" aria-hidden="true">
+        <div className="relative">
+          <SquaredSquare className="absolute bottom-0 left-0 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-lightGreen" />
+          <DotsTriangle className="absolute bottom-0 left-12 h-12 rotate-90 md:left-24 md:h-24" colorMain="fill-orange" colorBg="fill-transparent" />
         </div>
       </div>
 
       {/* BOTTOM RIGHT */}
-      <div className="bottom-0 right-0">
+      <div className="absolute bottom-0 right-0" aria-hidden="true">
         <div className="relative">
-          <Star className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24" colorMain='fill-orange' colorSecondary='fill-beige' />
-          <SquareWithCircle className="absolute -rotate-90 bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24" colorBgLeft='fill-violet' colorBgRight='fill-violet' colorCirLeft='fill-beige' colorCirRight='fill-orange' />
-          <Triangle className="absolute rotate-180 bottom-0 md:bottom-0 right-24 md:right-48 h-12 md:h-24" colorMain='fill-beige' />
+          <BublyCircles className="absolute bottom-0 right-0 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+          <TitsWithNipples className="absolute bottom-12 right-0 h-12 md:bottom-24 md:h-24" colorMain1="fill-lightGreen" colorMain2="fill-darkPurple" colorBg="fill-orange" />
         </div>
       </div>
     </section>
