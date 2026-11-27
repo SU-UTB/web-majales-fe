@@ -1,4 +1,4 @@
-export const MAJALES_DATE = new Date('2026-05-07T14:00:00');
+export const MAJALES_DATE = new Date('2027-05-07T14:00:00');
 //export const MAJALES_DATE = "2026";
 //export const MAJALES_TIME = "od 14:00";
 export const MAJALES_TIME = "";
@@ -27,3 +27,41 @@ export const APP_ROUTES = {
 };
 
 export const CAN_SHOW_BANDS = false;
+export const CAN_SHOW_HARMONOGRAM = false;
+export const CAN_SHOW_DOPROGRAM = false;
+
+export const COUNTDOWN_UNITS = {
+  DAYS: {
+    one: 'den',
+    few: 'dny',
+    many: 'dní',
+  },
+  HOURS: {
+    one: 'hodina',
+    few: 'hodiny',
+    many: 'hodin',
+  },
+  MINUTES: {
+    one: 'minuta',
+    few: 'minuty',
+    many: 'minut',
+  },
+  SECONDS: {
+    one: 'sekunda',
+    few: 'sekundy',
+    many: 'sekund',
+  },
+} as const;
+
+export const getCzechPlural = (
+  count: number,
+  forms: { one: string; few: string; many: string }
+): string => {
+  if (count === 1) {
+    return forms.one;
+  }
+  if (count >= 2 && count <= 4) {
+    return forms.few;
+  }
+  return forms.many;
+};

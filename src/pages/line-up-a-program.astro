@@ -1,56 +1,21 @@
 ---
 import { BandListSection } from '../components/lineup/BandListSection';
-import Layout from '../components/shared/Layout.astro';
-import { SectionHero } from '../components/shared/SectionHero';
 import { HarmonogramSection } from '../components/lineup/HarmonogramSection';
-import { UpperFooter } from '../components/shared/UpperFooter';
+import { Doprogram } from '../components/lineup/Doprogram';
 import { MapSection } from '../components/lineup/MapSection';
+import Layout from '../components/shared/Layout.astro';
+import { CAN_SHOW_HARMONOGRAM, CAN_SHOW_DOPROGRAM } from '../config/constants';
 
 const metaTags = {
   title: 'Lineup a program | Majáles UTB',
   description: 'Na koho se můžete těšit? Již brzy prozradíme!',
   //image: '/meta_image.jpg',
 };
-
-// Konfigurace barev pro Hero sekci - přehledné a bezpečné pro komentáře
-const heroColors = {
-  // --- LEFT SIDE ---
-  dateRectColor: 'fill-violet',
-  BottomLeftTriangleUpper: 'fill-lightOrange',
-  BottomLeftTriangleLower: 'fill-orange',
-  BottomLeftSquareStarMain: 'fill-orange',
-  BottomLeftSquareStarSec: 'fill-lightOrange',
-  BottomLeftSquareCircleMainLeft: 'fill-violet',
-  BottomLeftSquareCircleMainRight: 'fill-violet',
-  BottomLeftSquareCircleSecLeft: 'fill-lightOrange',
-  BottomLeftSquareCircleSecRight: 'fill-orange',
-
-  // --- RIGHT SIDE & BOTTOM ---
-  BottomRightTriangleLeft: 'fill-lightOrange',
-  timeRectColor: 'fill-violet',
-  BottomRightLightning: 'fill-violet',
-  BottomRightSquareCircleMainLeft: 'fill-violet',
-  BottomRightSquareCircleMainRight: 'fill-orange',
-  BottomRightSquareCircleSecLeft: 'fill-lightOrange',
-  BottomRightSquareCircleSecRight: 'fill-lightOrange',
-  BottomRightTriangleRight: 'fill-orange',
-
-  // --- TOP ---
-  TopRightTriangleUpper: 'fill-orange',
-  TopRightSquareStar45Main: 'fill-violet',
-  TopRightSquareStar45Sec: 'fill-lightOrange',
-  TopRightLeftArrowMain: 'fill-orange',
-  TopRightLeftArrowSec: 'fill-lightOrange',
-};
 ---
 
 <Layout {...metaTags}>
-  {/* Předání všech barev najednou pomocí spread operátoru */}
-  <SectionHero {...heroColors} />
-
-  {/* <AboutSection /> */}
   <BandListSection client:load />
-  <!-- <HarmonogramSection /> -->
-  <!-- <MapSection /> -->
-  <UpperFooter bgColor="bg-orange" />
+  {CAN_SHOW_HARMONOGRAM && <HarmonogramSection client:load />}
+  {CAN_SHOW_HARMONOGRAM && <MapSection client:load />}
+  {CAN_SHOW_DOPROGRAM && <Doprogram client:load />}
 </Layout>

@@ -4,7 +4,23 @@ import { APP_ROUTES } from '../config/constants';
 const { HOME, LINE_UP, KING_AND_QUEEN, UBC, QNA, PARTNERS, MEDIA, CONTACTS, GALERIE } = APP_ROUTES;
 
 export const navItems: NavLinkType[] = [
-  // {
+  {
+    text: 'Program',
+    linkTo: LINE_UP,
+  },
+  {
+    text: 'Galerie',
+    linkTo: GALERIE,
+  },
+  {
+    text: 'Partneři & média',
+    linkTo: PARTNERS,
+  },
+  {
+    text: 'Kontakty',
+    linkTo: CONTACTS,
+  },
+  /*// {
   //   text: 'Domov',
   //   linkTo: HOME,
   // },
@@ -39,7 +55,7 @@ export const navItems: NavLinkType[] = [
   {
     text: 'Kontakty',
     linkTo: CONTACTS,
-  },
+  },*/
 ];
 
 export const mobNavItemVariants = {

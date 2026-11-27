@@ -2,6 +2,7 @@ import type { NavLinkType } from '../../AppTypes';
 
 type Props = {
   onClick?: () => void;
+  isActive?: boolean;
   'data-track-event'?: string;
   'data-track-category'?: string;
   'data-track-label'?: string;
@@ -11,6 +12,7 @@ export const NavLink = ({
   onClick,
   text,
   linkTo,
+  isActive = false,
   'data-track-event': dataTrackEvent,
   'data-track-category': dataTrackCategory,
   'data-track-label': dataTrackLabel,
@@ -19,7 +21,9 @@ export const NavLink = ({
     <a
       onClick={onClick}
       href={linkTo}
-      className="text-white hover:text-orange transition-colors duration-200"
+      className={`${
+        isActive ? 'text-orange' : 'text-yellow'
+      } hover:text-lightGreen transition-colors duration-200 whitespace-nowrap`}
       data-track-event={dataTrackEvent}
       data-track-category={dataTrackCategory}
       data-track-label={dataTrackLabel}

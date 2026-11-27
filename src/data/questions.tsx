@@ -4,7 +4,7 @@ import { MAJALES_DATE } from '../config/constants';
 import navstevniRadPdf from '../assets/pdf/navstevni_rad_festivalu_Majales_UTB_2026.pdf';
 
 export const questions: QuestionType[] = [
-  {
+  /* {
     question: 'Kde a za kolik koupím vstupenku?',
     answer: (
       <>
@@ -13,12 +13,7 @@ export const questions: QuestionType[] = [
         vilou.
       </>
     ),
-  },
-  {
-    question: 'Lze v areálu platit kartou?',
-    answer:
-      'Ano! V celém areálu majálesu je bezkontaktní placení. Platit hotově můžete také, ale v každém stánku lze platit i kartou.'
-  },
+  }, */
   {
     question: 'Jak se k vám dostanu?',
     answer:
@@ -44,6 +39,11 @@ export const questions: QuestionType[] = [
         .
       </>
     ),
+  },
+  {
+    question: 'Lze v areálu platit kartou?',
+    answer:
+      'Ano! V celém areálu majálesu je bezkontaktní placení. Platit hotově můžete také, ale v každém stánku lze platit i kartou.'
   },
   {
     question: 'Jak udržujeme náš majáles čistý?',

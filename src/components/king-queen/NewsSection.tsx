@@ -4,7 +4,7 @@ import { Register } from './Register';
 
 export const NewsSection = () => {
   return (
-    <SectionContainer id="novinka" bgColor="blue">
+    <SectionContainer id="novinka" bgColor="bg-blue">
       <HeadlineBubble>
         <h2 className="text-h2-reversed text-beige">Novinka</h2>
       </HeadlineBubble>

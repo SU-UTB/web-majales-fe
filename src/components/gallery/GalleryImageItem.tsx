@@ -6,22 +6,23 @@ interface GalleryImageItemProps {
 }
 
 export const GalleryImageItem: React.FC<GalleryImageItemProps> = ({ imageSrc, onClick }) => {
-  
-  const handleImageLoad = () => {
-    const fileName = imageSrc.split('/').pop() || 'unknown-image';
-  };
-
   return (
-    <div>
-      <img
+    <div className="mb-4 break-inside-avoid">
+      <button
+        type="button"
         onClick={onClick}
-        onLoad={handleImageLoad}
-        src={imageSrc}
-        alt="Gallery item"
-        // Accessibility/Testing label
-        aria-label={`gallery_image-${imageSrc.split('/').pop()}`}
-        className="mb-4 w-full h-auto object-cover rounded-md shadow cursor-pointer hover:opacity-90 transition-opacity"
-      />
+        aria-label={`Zobrazit fotografii ${imageSrc.split('/').pop()}`}
+        className="group block w-full overflow-hidden rounded-xl bg-lightGreen/40 shadow-xl transition-transform duration-200 hover:-translate-y-1 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-darkPurple"
+      >
+        <img
+          src={imageSrc}
+          alt="Momentka z Majálesu UTB"
+          loading="lazy"
+          decoding="async"
+          draggable={false}
+          className="h-auto w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+        />
+      </button>
     </div>
   );
 };

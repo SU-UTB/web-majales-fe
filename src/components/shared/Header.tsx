@@ -1,26 +1,51 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Twirl as Hamburger } from 'hamburger-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { INSTAGRAM_URL } from '../../config/constants';
 import { mobNavItemVariants, navItems } from '../../data/header';
 import { NavLink } from '../header/NavLink';
 import { NavLogo } from '../header/NavLogo';
-import { IgIcon } from '../shared/Icons';
+import { Lada } from '../svg/Lada';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState('');
+
+  useEffect(() => {
+    const updatePath = () => {
+      setCurrentPath(window.location.pathname);
+    };
+
+    updatePath();
+
+    document.addEventListener('astro:page-load', updatePath);
+    window.addEventListener('popstate', updatePath);
+
+    return () => {
+      document.removeEventListener('astro:page-load', updatePath);
+      window.removeEventListener('popstate', updatePath);
+    };
+  }, []);
+
+  const isLinkActive = (linkTo: string) => {
+    if (!currentPath || linkTo === '/' || linkTo === '') return false;
+    const normalize = (path: string) => path.replace(/\/+$/, '') || '/';
+    const normalizedCurrent = normalize(currentPath);
+    const normalizedTarget = normalize(linkTo);
+    return normalizedCurrent === normalizedTarget;
+  };
 
   return (
     <header className="w-full bg-transparent mx-auto sticky top-0 left-0 z-10">
-      <nav className="relative z-20 bg-violet text-white">
-        <div className="max-w-screen-xl flex flex-col items-center xl:flex-row xl:justify-between xl:py-4 mx-auto">
-          <div className="hidden xl:block">
+      <nav className="relative z-20 bg-darkPurple text-yellow">
+        <div className="w-full max-w-screen-xl flex flex-col lg:flex-row lg:items-center lg:justify-between lg:py-4 px-4 sm:px-6 lg:px-8 mx-auto relative">
+          <div className="hidden lg:flex items-center">
             <NavLogo />
           </div>
-          
-          <div className="z-30 w-full flex justify-between items-center p-4 xl:hidden">
+
+          <div className="z-30 w-full flex justify-between items-center py-4 lg:hidden">
             <NavLogo />
-            
+
             <button
               type="button"
               className="focus:outline-none"
@@ -35,7 +60,7 @@ export const Header = () => {
           {isOpen && (
             <AnimatePresence>
               <motion.ul
-                className="flex flex-col items-center justify-center gap-y-6 xl:hidden absolute w-full h-[100svh] bg-darkDarkBlue z-20"
+                className="flex flex-col items-center justify-start pt-12 sm:pt-16 gap-y-6 lg:hidden absolute top-full left-0 w-full h-[100svh] bg-darkPurple z-20"
                 variants={mobNavItemVariants}
                 initial="hidden"
                 animate="visible"
@@ -45,6 +70,7 @@ export const Header = () => {
                   <motion.li key={navItem.text} variants={mobNavItemVariants}>
                     <NavLink
                       {...navItem}
+                      isActive={isLinkActive(navItem.linkTo)}
                       onClick={() => setIsOpen(false)}
                       data-track-event="click"
                       data-track-category="Header"
@@ -52,53 +78,34 @@ export const Header = () => {
                     />
                   </motion.li>
                 ))}
-                
+
                 {/* Mobile Instagram */}
-                <motion.li variants={mobNavItemVariants} className="mt-4">
-                  <a
-                    href={INSTAGRAM_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setIsOpen(false)}
-                    className="text-white hover:text-orange transition-colors duration-200 [&>svg]:w-6 [&>svg]:h-6 [&_path]:fill-current"
-                    data-track-event="click"
-                    data-track-category="Header"
-                    data-track-label="Header/Mobile/Instagram"
-                  >
-                    <IgIcon />
-                  </a>
+                <motion.li variants={mobNavItemVariants} className="mt-4 [&>svg]:w-8 [&>svg]:h-8">
+                    <Lada fillColor="fill-yellow group-hover:fill-lightGreen duration-200" />
                 </motion.li>
               </motion.ul>
             </AnimatePresence>
           )}
 
-          <ul className="hidden xl:flex items-center space-x-8">
+          {/* Centered Desktop NavItems */}
+          <ul className="hidden lg:flex items-center space-x-20 xl:space-x-28 lg:absolute lg:left-1/2 lg:-translate-x-1/2">
             {navItems.map((navItem) => (
               <li key={navItem.text}>
                 <NavLink
                   {...navItem}
+                  isActive={isLinkActive(navItem.linkTo)}
                   data-track-event="click"
                   data-track-category="Header"
                   data-track-label={`Header/Desktop/${navItem.text}`}
                 />
               </li>
             ))}
-            
-            {/* Desktop Instagram */}
-            <li>
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-orange transition-colors duration-200 [&>svg]:w-6 [&>svg]:h-6 [&_path]:fill-current"
-                data-track-event="click"
-                data-track-category="Header"
-                data-track-label="Header/Desktop/Instagram"
-              >
-                <IgIcon />
-              </a>
-            </li>
           </ul>
+
+          {/* Right-aligned Desktop Instagram */}
+          <div className="hidden lg:flex items-center [&>svg]:w-auto [&>svg]:h-8">
+            <Lada fillColor="fill-yellow group-hover:fill-lightGreen duration-200" />
+          </div>
 
         </div>
       </nav>

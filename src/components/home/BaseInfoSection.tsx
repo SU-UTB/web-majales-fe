@@ -1,15 +1,17 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useState } from 'react';
-import { SectionContainer } from '../shared/SectionContainer';
-import { DateRectangle } from '../svg/elements/DateRectangle';
-import { DualTriangle } from '../svg/elements/DualTriangle';
-import { HalfCircles } from '../svg/elements/HalfCircles';
-import { Star } from '../svg/elements/Star';
-import { Triangle } from '../svg/elements/Triangle';
+import { Arc } from '../svg/shapes/Arc';
+import { OpenTriangles } from '../svg/shapes/OpenTriangles';
+import { SquareWithS } from '../svg/shapes/SquareWithS';
+import { SquareWithSemiArcs } from '../svg/shapes/SquareWithSemiArcs';
+import { Target } from '../svg/shapes/Target';
+import { SunSquare } from '../svg/shapes/SunSquare';
+import { SquareWithHalfCircles } from '../svg/shapes/SquareWithHalfCircles';
+import { DotsTriangle } from '../svg/shapes/DotsTriangle';
 
 export const BaseInfoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const VIDEO_ID = 'HBOaVJqwdcI';
-  // Převedený odkaz na embed formát
   const SPOTIFY_URL = 'https://open.spotify.com/embed/episode/0iCw1WaAcl2eq6axTCAsxk?utm_source=generator';
 
   const handleVideoPlay = () => {
@@ -17,105 +19,123 @@ export const BaseInfoSection = () => {
   };
 
   return (
-    <SectionContainer id="zakladni-informace" bgColor="lightOrange">
-      {/* Horní část: Video a Text */}
-      <div className="flex flex-wrap gap-8 xl:gap-12 w-full py-8 xl:pt-16 xl:pb-8 xl:text-p-big items-center justify-center lg:justify-between">
-        
-        {/* Video Wrapper */}
-        <div className="w-full lg:w-auto flex justify-center">
-          {isPlaying ? (
-            <iframe
-              src={`https://www.youtube.com/embed/${VIDEO_ID}?si=2_DPv328-dm0zCfL&autoplay=1`}
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="bg-beige rounded-2xl max-w-full aspect-video h-auto lg:w-[685px] lg:h-[380px]"
-            />
-          ) : (
-            <button
-              onClick={handleVideoPlay}
-              data-track-event="click"
-              data-track-category="Video"
-              data-track-label="Mainpage/Play video"
-              className="group relative bg-beige rounded-2xl max-w-full aspect-video h-auto w-full lg:w-[685px] lg:h-[380px] overflow-hidden cursor-pointer flex items-center justify-center"
-            >
-              {/* Thumbnail Image */}
-              <img
-                src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
-                alt="Majáles Video Thumbnail"
-                className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
-              />
-              
-              {/* Play Button Icon */}
-              <div className="relative z-10 w-16 h-16 md:w-20 md:h-20 bg-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <svg
-                  className="w-8 h-8 md:w-10 md:h-10 text-white ml-1"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+    <section
+      id="zakladni-informace"
+      className="bg-yellow relative pt-20 pb-20 sm:pt-28 sm:pb-28 md:pt-36 md:pb-36 overflow-hidden"
+    >
+      {/* Hlavní obsah se 2 boxy vedle sebe */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch">
+
+          {/* Levý box: Video */}
+          <div className="bg-white rounded-3xl p-4 sm:p-6 shadow-lg flex flex-col justify-center items-center min-h-[340px] sm:min-h-[420px] md:min-h-[480px] min-w-0">
+            {/* Obalový kontejner s pevným poměrem stran 16:9 přes celou šířku karty */}
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-yellow/20">
+              {isPlaying ? (
+                <iframe
+                  src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&playsinline=1&rel=0`}
+                  title="YouTube video player"
+                  width="100%"
+                  height="100%"
+                  style={{ width: '100%', height: '100%', maxWidth: '100%' }}
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="block w-full h-full border-0"
+                />
+              ) : (
+                <button
+                  onClick={handleVideoPlay}
+                  data-track-event="click"
+                  data-track-category="Video"
+                  data-track-label="Mainpage/Play video"
+                  className="group relative w-full h-full overflow-hidden cursor-pointer flex items-center justify-center"
                 >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </button>
-          )}
-        </div>
+                  {/* Thumbnail Image */}
+                  <img
+                    src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
+                    alt="Majáles Video Thumbnail"
+                    className="absolute inset-0 w-full h-full object-cover opacity-95 group-hover:opacity-100 transition-opacity"
+                  />
 
-        {/* Textový kontejner - na mobilu vycentrovaný, na desktopu vpravo */}
-        <div className="flex-1 flex justify-center lg:justify-end items-center min-w-[300px]">
-          <div className="space-y-2 pb-8 text-center lg:text-right text-violet w-fit">
-            <p className="text-p-big">
-              Vstup <span className="font-semibold">ZDARMA</span>
-            </p>
-            <br />
-            <p>2 stage</p>
-            <p>Food & Chill-out zóna</p>
-            <p>Doprovodný program</p>
-            <p>Král a Královna Majálesu</p>
+                  {/* Play Button Icon */}
+                  <div className="relative z-10 w-16 h-16 md:w-20 md:h-20 bg-darkPurple hover:bg-orange rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300">
+                    <svg
+                      className="w-8 h-8 md:w-10 md:h-10 text-white ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </button>
+              )}
+            </div>
           </div>
-        </div>
-      </div>
 
-      {/* Spotify Banner Section - optimalizováno pro šířku mobilu */}
-        <div className="w-full max-w-[1100px] mx-auto pb-20 px-0 sm:px-4 pt-8 sm:pt-2">
-          <p className="text-center text-violet mb-4 px-4 sm:px-0">
-            Zajímá vás zákulisí Majálesu UTB? Pusťte si podcast s našimi manažery.
-          </p>
-          <div className="overflow-hidden shadow-md sm:rounded-xl">
-            <iframe
-              style={{ borderRadius: '0px' }} // Na mobilu (px-0) vypadá lépe bez zaoblení, pokud jde k hranám
-              className="sm:rounded-xl w-full h-[152px]"
-              src={SPOTIFY_URL}
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-              title="Spotify Podcast Episode"
-              data-track-event="click"
-              data-track-category="Spotify"
-              data-track-label="Mainpage/Podcast"
-            ></iframe>
+          {/* Pravý box: Podcast */}
+          <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg flex flex-col justify-between min-h-[340px] sm:min-h-[420px] md:min-h-[480px] min-w-0">
+            <div className="space-y-4">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-darkPurple font-sans">
+                Podcast
+              </h2>
+              <p className="text-lg sm:text-xl text-darkPurple leading-relaxed font-sans">
+                Zajímá vás zákulisí Majálesu UTB? Pusťte si podcast s našimi manažery.
+              </p>
+            </div>
+
+            <div className="w-full min-w-0 mt-6">
+              <iframe
+                className="block rounded-2xl w-full h-[152px] border-0"
+                width="100%"
+                height="152"
+                style={{ width: '100%', height: '152px', maxWidth: '100%' }}
+                src={SPOTIFY_URL}
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                title="Spotify Podcast Episode"
+                data-track-event="click"
+                data-track-category="Spotify"
+                data-track-label="Mainpage/Podcast"
+              />
+            </div>
           </div>
-        </div>
 
-      {/* TOP RIGHT DECORATIONS */}
-      <div className="absolute top-0 right-0 pointer-events-none">
-        <div className="relative">
-          <Star className="top-0 md:top-0 h-12 md:h-24" colorMain='fill-violet' colorSecondary='fill-lightOrange' />
-          <Triangle className=" absolute top-12 md:top-24 h-12 md:h-24 rotate-90" colorMain='fill-orange' />
         </div>
       </div>
 
-      {/* BOTTOM RIGHT DECORATIONS */}
-      <div className="absolute bottom-0 right-0 pointer-events-none">
+      {/* TOP LEFT */}
+      <div className="absolute top-0 left-0">
         <div className="relative">
-          <HalfCircles className="bottom-0 md:bottom-0 h-12 md:h-24" colorMain='fill-violet' colorSecondary='fill-beige' />
-          <DateRectangle className="absolute right-12 md:right-24 bottom-0 md:bottom-0 w-36 md:w-72 overflow-hidden" colorMain='fill-orange' >
-            <h2 className="text-xs md:text-2xl font-semibold text-right text-beige">
-              To a mnohem víc<br/>na Majálesu UTB!!!
-            </h2>
-          </DateRectangle>
-          <DualTriangle className="absolute bottom-0 md:bottom-0 right-48 md:right-96 h-12 md:h-24" colorMain='fill-beige' colorSecondary='fill-violet'/>
+          <DotLottieReact
+            src="/animations/SunSquare-lightGreen.json"
+            loop
+            autoplay
+            className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square"
+          />
+          {/* <SunSquare className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square" colorMain="stroke-orange" colorBg="fill-lightGreen" /> */}
+          {/* Badge v levém horním rohu */}
+          <div className="absolute top-0 left-12 md:left-24 z-10">
+            <span className="inline-flex items-center justify-center h-12 md:h-24 bg-lightGreen text-orange text-xl xs:text-xl sm:text-3xl md:text-5xl font-semibold px-4 xs:px-6 sm:px-8">
+              Aftermovie
+            </span>
+          </div>
+          <div className="absolute top-12 md:top-24 left-0 md:left-0 h-12 w-12 md:h-24 md:w-24 bg-darkPurple" />
+          <Arc className="absolute top-16 md:top-32 left-0 md:left-0 h-8 md:h-16" colorMain="fill-lightGreen" />
+          <Arc className="absolute top-12 md:top-24 left-12 md:left-24 h-8 md:h-16 -scale-y-100" colorMain="fill-orange" />
+          <Arc className="absolute top-24 md:top-48 left-0 md:left-0 h-8 md:h-16 -scale-y-100" colorMain="fill-darkPurple" />
         </div>
       </div>
-    </SectionContainer>
+
+      {/* TOP RIGHT */}
+      <div className="absolute top-0 right-0">
+        <div className="relative">
+          <Target className="absolute top-0 md:top-0 right-0 md:right-0 h-12 md:h-24" colorMain1="fill-lightGreen" colorMain2="fill-orange" colorBg="fill-darkPurple" />
+          <SquareWithS className="absolute top-0 md:top-0 right-12 md:right-24 h-12 md:h-24 rotate-90" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+          <SquareWithSemiArcs className="absolute top-0 md:top-0 right-24 md:right-48 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+          <OpenTriangles className="absolute top-12 md:top-24 right-0 md:right-0 h-12 md:h-24 rotate-180" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+        </div>
+      </div>
+    </section>
   );
 };

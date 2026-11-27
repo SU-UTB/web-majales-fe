@@ -23,9 +23,6 @@ export const trackEvent = (action: string, category: string, label: string) => {
       event_category: category,
       event_label: label,
     });
-    console.log(`📡 GA Event: ${action} - Category: ${category}, Label: ${label}`);
-  } else {
-    console.warn(`⚠️ GA Event skipped (gtag not found): ${action} - Category: ${category}, Label: ${label}`);
   }
 };
 
@@ -40,8 +37,5 @@ export const trackPageview = () => {
       page_title: document.title,
       transport_type: 'beacon',
     });
-    console.log(`📡 GA Pageview: ${window.location.pathname}`);
-  } else {
-    console.warn(`⚠️ GA Pageview skipped (gtag not found): ${window.location.pathname}`);
   }
 };

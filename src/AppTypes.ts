@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import type React from 'react';
 
 export type HeadProps = {
   title: string;
@@ -23,7 +24,7 @@ export type SvgProps = {
   fill?: string;
 };
 
-export type Colors = 'white' | 'black' | 'beige' | 'pink' | 'orange' | 'lightOrange' | 'violet' | 'blue' | 'darkDarkBlue' | 'lightPink' | 'transparent';
+
 
 export type ContactType = {
   position: string;
@@ -31,6 +32,7 @@ export type ContactType = {
   email: string;
   phone: string;
   photo: string;
+  level?: 1 | 2 | 3;
 };
 
 export type QuestionType = {
@@ -42,6 +44,7 @@ export type PartnerType = {
   img: string;
   alt: string;
   link: string;
+  hidden?: boolean;
 };
 
 export type ExternalLinkType = {
@@ -55,7 +58,7 @@ export type ExternalLinkType = {
 };
 
 export type FooterItemType = {
-  logo: string;
+  logo: React.ComponentType<{ className?: string; colorMain?: string; colorBg?: string }>;
   logoName: string;
   socials: ExternalLinkType[];
 };
@@ -75,7 +78,8 @@ export type BandType = {
 };
 
 export type CountdownDateValueType = {
-  months: number;
   days: number;
   hours: number;
+  minutes: number;
+  seconds: number;
 };

@@ -5,7 +5,7 @@ import { BigTriangle } from '../svg/elements/BigTriangle';
 
 export const AboutSection = () => {
   return (
-    <SectionContainer id="lineup" bgColor="pink" className='text-white'>
+    <SectionContainer id="lineup" bgColor="bg-pink" className='text-white'>
       <h2 className="text-h2">Line up</h2>
       <div className="max-w-[800px] space-y-4">
         {CAN_SHOW_BANDS ? (
@@ -14,11 +14,29 @@ export const AboutSection = () => {
             <p>
               Dejte nám vědět na našich sociálních sítích:{' '}
               <strong>
-                <a href="https://www.facebook.com/studentskaunieutb">Facebook</a>
+                <a
+                  href="https://www.facebook.com/studentskaunieutb"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                  data-track-event="click"
+                  data-track-category="LineUp"
+                  data-track-label="LineUp/Facebook"
+                >
+                  Facebook
+                </a>
               </strong>{' '}
               &nbsp;nebo&nbsp;&nbsp;
               <strong>
-                <a href="https://www.instagram.com/studentskaunieutb/">Instagram</a>
+                <a
+                  href="https://www.instagram.com/studentskaunieutb/"
+                  target="_blank"
+                  rel="noopener noreferrer external"
+                  data-track-event="click"
+                  data-track-category="LineUp"
+                  data-track-label="LineUp/Instagram"
+                >
+                  Instagram
+                </a>
               </strong>
             </p>
           </>
