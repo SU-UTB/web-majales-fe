@@ -1,3 +1,4 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { visiblePartnerCategories } from '../../data/partners';
 import { SectionContainer } from '../shared/SectionContainer';
 import { AskewStrip } from '../svg/shapes/AskewStrip';
@@ -30,7 +31,13 @@ export const PartnerSection = () => {
         <div className="relative">
           <OpenTriangles className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 rotate-90" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
           <OpenTriangles className="absolute top-12 md:top-24 left-0 md:left-0 h-12 md:h-24 rotate-90" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
-          <TitsWithNipples className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24" colorMain1="fill-orange" colorMain2="fill-darkPurple" colorBg="fill-lightGreen" />
+          {/* <TitsWithNipples className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24" colorMain1="fill-orange" colorMain2="fill-darkPurple" colorBg="fill-lightGreen" /> */}
+          <DotLottieReact
+            src="/animations/TitsWithNipples-lightGreen.json"
+            loop
+            autoplay
+            className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 aspect-square"
+          />
           {/* Poslední prvek skryjeme na menších obrazovkách (do lg), aby nepřekážel dlouhému textu */}
           <DotsTriangle className="hidden lg:block absolute top-0 left-48 h-24 rotate-180" colorMain="fill-lightGreen" colorBg="fill-transparent" />
         </div>

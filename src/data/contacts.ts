@@ -59,23 +59,31 @@ export const contacts: ContactType[] = [
     level: 2,
   },
   {
+    position: 'Manažerka doprogramu',
+    name: 'VIKTORIE ADÁMKOVÁ',
+    email: 'adamkova@sutb.cz',
+    phone: '+420 604 545 834',
+    photo: viki,
+    level: 2,
+  },
+  {
+    position: 'Manažerka krále a královny',
+    name: 'KAROLÍNA JAROŠOVÁ',
+    email: 'jarosova@sutb.cz',
+    phone: '+420 775 510 290',
+    photo: karol,
+    level: 2,
+  },
+
+  // --- ÚROVEŇ 3 (Specializované role / Koordinátoři) ---
+  {
     position: 'Manažerka marketingu',
     name: 'BARBORA VEDRALOVÁ',
     email: 'vedralova@sutb.cz',
     phone: '+420 775 928 319',
     photo: barca_v,
-    level: 2,
+    level: 3,
   },
-  {
-    position: 'Manažerka PR',
-    name: 'LUCIE BEČKOVÁ',
-    email: 'beckova@sutb.cz',
-    phone: '+420 720 115 317',
-    photo: lucka,
-    level: 2,
-  },
-
-  // --- ÚROVEŇ 3 (Specializované role / Koordinátoři) ---
   {
     position: 'Manažerka offline marketingu',
     name: 'ANNA VRTALOVÁ',
@@ -93,19 +101,11 @@ export const contacts: ContactType[] = [
     level: 3,
   },
   {
-    position: 'Manažerka doprogramu',
-    name: 'VIKTORIE ADÁMKOVÁ',
-    email: 'adamkova@sutb.cz',
-    phone: '+420 604 545 834',
-    photo: viki,
-    level: 3,
-  },
-  {
-    position: 'Manažerka krále a královny',
-    name: 'KAROLÍNA JAROŠOVÁ',
-    email: 'jarosova@sutb.cz',
-    phone: '+420 775 510 290',
-    photo: karol,
+    position: 'Manažerka PR',
+    name: 'LUCIE BEČKOVÁ',
+    email: 'beckova@sutb.cz',
+    phone: '+420 720 115 317',
+    photo: lucka,
     level: 3,
   },
   {

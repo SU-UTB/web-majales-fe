@@ -1,13 +1,9 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { contacts } from '../../data/contacts';
 import { Arc } from '../svg/shapes/Arc';
 import { BublyCircles } from '../svg/shapes/BublyCircles';
-import { DotsSquare } from '../svg/shapes/DotsSquare';
 import { DotsTriangle } from '../svg/shapes/DotsTriangle';
 import { Rays } from '../svg/shapes/Rays';
-import { SquaredSquare } from '../svg/shapes/SquaredSquare';
-import { SquareWithHalfCircles } from '../svg/shapes/SquareWithHalfCircles';
-import { Target } from '../svg/shapes/Target';
-import { TitsWithNipples } from '../svg/shapes/TitsWithNipples';
 import { ContactItem } from './ContactItem';
 import { OrganizerItem } from './OrganizerItem';
 
@@ -68,9 +64,8 @@ export const ContactList = () => {
 
     return (
       <div
-        className={`grid grid-cols-1 ${
-          columns === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3'
-        } ${gapClass} w-fit justify-items-start`}
+        className={`grid grid-cols-1 ${columns === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3'
+          } ${gapClass} w-fit justify-items-start`}
       >
         {items.map((contact, index) => {
           let alignClass = '';
@@ -151,7 +146,13 @@ export const ContactList = () => {
       {/* TOP LEFT */}
       <div className="absolute top-0 left-0">
         <div className="relative">
-          <SquaredSquare className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
+          {/* <SquaredSquare className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" /> */}
+          <DotLottieReact
+            src="/animations/SquaredSquare-green-purple.json"
+            loop
+            autoplay
+            className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square"
+          />
           <DotsTriangle className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 rotate-180" colorMain="fill-lightGreen" colorBg="fill-transparent" />
           <DotsTriangle className="absolute top-12 md:top-24 left-0 md:left-0 h-12 md:h-24 rotate-180" colorMain="fill-lightGreen" colorBg="fill-transparent" />
         </div>

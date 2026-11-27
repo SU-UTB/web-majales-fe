@@ -107,13 +107,13 @@ export const BaseInfoSection = () => {
       {/* TOP LEFT */}
       <div className="absolute top-0 left-0">
         <div className="relative">
-          {/* <DotLottieReact
-            src="/animations/SunSquare.lottie"
+          <DotLottieReact
+            src="/animations/SunSquare-lightGreen.json"
             loop
             autoplay
             className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square"
-          /> */}
-          <SunSquare className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square" colorMain="stroke-orange" colorBg="fill-lightGreen" />
+          />
+          {/* <SunSquare className="absolute top-0 md:top-0 left-0 md:left-0 h-12 md:h-24 aspect-square" colorMain="stroke-orange" colorBg="fill-lightGreen" /> */}
           {/* Badge v levém horním rohu */}
           <div className="absolute top-0 left-12 md:left-24 z-10">
             <span className="inline-flex items-center justify-center h-12 md:h-24 bg-lightGreen text-orange text-xl xs:text-xl sm:text-3xl md:text-5xl font-semibold px-4 xs:px-6 sm:px-8">

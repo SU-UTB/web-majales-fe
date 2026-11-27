@@ -1,3 +1,4 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import bea from '../../assets/img/contacts/bea.webp?url';
 import lucka from '../../assets/img/contacts/lucka.webp?url';
 import { ContactItem } from '../contacts/ContactItem';
@@ -76,7 +77,12 @@ export const ContactSection = () => {
       <div className="absolute top-0 left-0">
         <div className="relative">
           <Rays className="absolute top-0 md:top-0 left-0 md:left-0 h-24 md:h-48" colorMain="stroke-darkPurple" colorBg="fill-lightGreen" />
-          <DotsSquare className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-darkPurple" />
+          <DotLottieReact
+            src="/animations/DotsSquare.json"
+            loop
+            autoplay
+            className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 aspect-square"
+          />
         </div>
       </div>
 
@@ -92,7 +98,12 @@ export const ContactSection = () => {
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0">
         <div className="relative">
-          <SquaredSquare className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+          <DotLottieReact
+            src="/animations/SquaredSquare-green-purple.json"
+            loop
+            autoplay
+            className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24 aspect-square"
+          />
           <DotsTriangle className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-transparent" />
           <OpenTriangles className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
         </div>

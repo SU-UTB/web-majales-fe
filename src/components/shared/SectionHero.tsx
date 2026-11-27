@@ -14,11 +14,11 @@ export const SectionHero = () => {
   return (
     <section
       id="landing"
-      className="relative min-h-[40vh] md:min-h-[60vh] xl:min-h-[80vh] flex flex-col justify-center pt-8 pb-16 md:py-12 bg-yellow bg-no-repeat overflow-hidden"
+      className="relative min-h-[40vh] md:min-h-[55vh] xl:min-h-[70vh] flex flex-col justify-center items-center pt-8 pb-16 md:py-12 bg-yellow bg-no-repeat overflow-hidden"
     >
       <Container>
-        <div className="relative flex justify-center px-4 sm:px-8 w-full">
-          <MajalesHeadline className="w-[60vw]" />
+        <div className="relative z-10 flex justify-center px-4 sm:px-8 w-full">
+          <MajalesHeadline className="w-[85vw] max-w-[320px] sm:max-w-[480px] md:max-w-[620px] lg:max-w-[750px] xl:max-w-[850px]" />
         </div>
       </Container>
 
@@ -27,7 +27,7 @@ export const SectionHero = () => {
         <div className="relative">
           <Rays className="absolute top-0 left-0 h-24 md:h-48" colorMain="stroke-darkPurple" colorBg="fill-lightGreen" />
           <DotLottieReact
-            src="/animations/DotsSquare.lottie"
+            src="/animations/DotsSquare.json"
             loop
             autoplay
             className="absolute top-0 md:top-0 left-12 md:left-24 h-12 md:h-24 aspect-square"
@@ -39,9 +39,15 @@ export const SectionHero = () => {
       <div className="absolute bottom-0 right-0">
         <div className="relative">
           <OpenTriangles className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
-          <SquaredSquare className="bottom-0 md:bottom-0 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
+          {/* <SquaredSquare className="bottom-0 md:bottom-0 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" /> */}
           <DotLottieReact
-            src="/animations/SunSquare.lottie"
+            src="/animations/SquaredSquare-green-purple.json"
+            loop
+            autoplay
+            className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24 aspect-square"
+          />
+          <DotLottieReact
+            src="/animations/SunSquareOrange.json"
             loop
             autoplay
             className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24 aspect-square"

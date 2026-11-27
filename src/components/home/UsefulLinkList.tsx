@@ -12,7 +12,6 @@ import { AskewStrip } from '../svg/shapes/AskewStrip';
 import { DotsSquare } from '../svg/shapes/DotsSquare';
 import { SquareWithHalfCircles } from '../svg/shapes/SquareWithHalfCircles';
 import { ArrowSquare } from '../svg/elements/ArrowSquare';
-import { DoubleArrow } from '../svg/shapes/DoubleArrow';
 import { SquaredSquare } from '../svg/shapes/SquaredSquare';
 import { DotsTriangle } from '../svg/shapes/DotsTriangle';
 
@@ -35,7 +34,7 @@ export const UsefulLinkList = () => {
           <div className="lg:col-span-5 flex justify-center items-center">
             <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 lg:w-72 lg:h-72 flex items-center justify-center">
               <DotLottieReact
-                src="/animations/DotsSquare.lottie"
+                src="/animations/lada_dark_purple.json"
                 loop
                 autoplay
                 className="w-full h-full object-contain"
@@ -122,7 +121,12 @@ export const UsefulLinkList = () => {
       <div className="absolute top-0 right-0">
         <div className="relative">
           <SquareWithS className="absolute top-0 md:top-0 right-0 md:right-0 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
-          <TitsWithNipples className="absolute top-0 md:top-0 right-12 md:right-24 h-12 md:h-24" colorMain1="fill-lightGreen" colorMain2="fill-darkPurple" colorBg="fill-orange" />
+          <DotLottieReact
+            src="/animations/TitsWithNipples.json"
+            autoplay
+            loop
+            className="absolute top-0 right-12 h-12 w-12 md:right-24 md:h-24 md:w-24"
+          />
           <SquareWithSemiArcs className="absolute top-12 md:top-24 right-0 md:right-0 h-12 md:h-24 -rotate-90" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
         </div>
       </div>
@@ -131,8 +135,20 @@ export const UsefulLinkList = () => {
       <div className="absolute bottom-0 left-0">
         <div className="relative">
           <AskewStrip className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24 -scale-y-100" colorMain="fill-darkPurple" colorBg="fill-orange" />
-          <DotsSquare className="absolute bottom-12 md:bottom-24 left-0 md:left-0 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-lightGreen" />
-          <SquareWithHalfCircles className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-orange" />
+          {/* <DotsSquare className="absolute bottom-12 md:bottom-24 left-0 md:left-0 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-lightGreen" /> */}
+          <DotLottieReact
+            src="/animations/DotsSquare-green-orange.json"
+            loop
+            autoplay
+            className="absolute bottom-12 md:bottom-24 left-0 md:left-0 h-12 md:h-24 aspect-square"
+          />
+          {/* <SquareWithHalfCircles className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-orange" /> */}
+          <DotLottieReact
+            src="/animations/RectWithCircles.json"
+            loop
+            autoplay
+            className="absolute -bottom-6 md:-bottom-12 left-12 md:left-24 h-24 md:h-48 aspect-square"
+          />
           <Arc className="absolute bottom-12 md:bottom-24 left-12 md:left-24 h-8 md:h-16" colorMain="fill-lightGreen" />
         </div>
       </div>
@@ -140,9 +156,33 @@ export const UsefulLinkList = () => {
       {/* BOTTOM RIGHT */}
       <div className="absolute bottom-0 right-0">
         <div className="relative">
-          <DoubleArrow className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-24 md:h-48 -scale-y-100" colorMain="fill-orange" colorBg="fill-darkPurple" />
-          <SunSquare className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24" colorMain="stroke-lightGreen" colorBg="fill-darkPurple" />
-          <SquaredSquare className="absolute bottom-0 md:bottom-0 right-24 md:right-48 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-lightGreen" />
+          <button
+            type="button"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            aria-label="Zpět na začátek stránky"
+            className="absolute bottom-0 right-0 h-24 w-12 md:h-48 md:w-24 z-10 cursor-pointer overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-orange"
+          >
+            <DotLottieReact
+              src="/animations/DoubleArrow-purple-orange.json"
+              autoplay
+              loop
+              className="absolute bottom-0 -right-6 h-24 w-24 -rotate-90 md:-right-12 md:h-48 md:w-48 pointer-events-none"
+            />
+          </button>
+          {/* <SunSquare className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24" colorMain="stroke-lightGreen" colorBg="fill-darkPurple" /> */}
+          <DotLottieReact
+            src="/animations/SunSquare-darkPurple.json"
+            loop
+            autoplay
+            className="absolute bottom-0 md:bottom-0 right-12 md:right-24 h-12 md:h-24 aspect-square"
+          />
+          {/* <SquaredSquare className="absolute bottom-0 md:bottom-0 right-24 md:right-48 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-lightGreen" /> */}
+          <DotLottieReact
+            src="/animations/SquaredSquare.json"
+            autoplay
+            loop
+            className="absolute bottom-0 md:bottom-0 right-24 md:right-48 h-12 md:h-24 aspect-square"
+          />
           <DotsTriangle className="absolute bottom-12 md:bottom-24 right-12 md:right-24 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-transparent" />
           <div className="absolute bottom-24 md:bottom-48 right-0 md:right-0 h-12 w-12 md:h-24 md:w-24 bg-lightGreen" />
           <Arc className="absolute bottom-28 md:bottom-56 right-0 md:right-0 h-8 md:h-16 rotate-180" colorMain="fill-orange" />

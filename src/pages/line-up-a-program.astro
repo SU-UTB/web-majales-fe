@@ -15,7 +15,7 @@ const metaTags = {
 
 <Layout {...metaTags}>
   <BandListSection client:load />
-  {CAN_SHOW_HARMONOGRAM && <HarmonogramSection />}
-  {CAN_SHOW_HARMONOGRAM && <MapSection />}
-  {CAN_SHOW_DOPROGRAM && <Doprogram />}
+  {CAN_SHOW_HARMONOGRAM && <HarmonogramSection client:load />}
+  {CAN_SHOW_HARMONOGRAM && <MapSection client:load />}
+  {CAN_SHOW_DOPROGRAM && <Doprogram client:load />}
 </Layout>

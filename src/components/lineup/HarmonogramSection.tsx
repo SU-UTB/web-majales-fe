@@ -1,9 +1,9 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { harmonogramAStage, harmonogramBStage } from '../../data/harmonogram';
 import { SectionContainer } from '../shared/SectionContainer';
 import { Arc } from '../svg/shapes/Arc';
 import { BublyCircles } from '../svg/shapes/BublyCircles';
 import { DotsTriangle } from '../svg/shapes/DotsTriangle';
-import { DoubleArrow } from '../svg/shapes/DoubleArrow';
 import { Keyboard } from '../svg/shapes/Keyboard';
 import { Rays } from '../svg/shapes/Rays';
 import { SquaredSquare } from '../svg/shapes/SquaredSquare';
@@ -39,7 +39,12 @@ export const HarmonogramSection = () => {
               Harmonogram
             </span>
           </div>
-          <DoubleArrow className="absolute top-0 md:top-0 left-0 md:left-0 h-24 md:h-48" colorMain="fill-orange" colorBg="fill-lightGreen" />
+          <DotLottieReact
+            src="/animations/DoubleArrowOrange.json"
+            autoplay
+            loop
+            className="absolute bottom-0 -left-6 h-24 w-24 origin-bottom-left rotate-90 md:-left-12 md:h-48 md:w-48"
+          />
           <Arc className="absolute top-12 md:top-24 left-12 md:left-24 h-8 md:h-16 rotate-90" colorMain="fill-darkPurple" />
         </div>
       </div>
@@ -55,7 +60,13 @@ export const HarmonogramSection = () => {
       {/* BOTTOM LEFT */}
       <div className="absolute bottom-0 left-0">
         <div className="relative">
-          <SquaredSquare className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-lightGreen" />
+          {/* <SquaredSquare className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-lightGreen" /> */}
+          <DotLottieReact
+            src="/animations/SquaredSquare.json"
+            loop
+            autoplay
+            className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24 aspect-square"
+          />
           <DotsTriangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 rotate-90" colorMain="fill-orange" colorBg="fill-transparent" />
         </div>
       </div>
@@ -64,7 +75,13 @@ export const HarmonogramSection = () => {
       <div className="absolute bottom-0 right-0">
         <div className="relative">
           <BublyCircles className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
-          <TitsWithNipples className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24" colorMain1="fill-lightGreen" colorMain2="fill-darkPurple" colorBg="fill-orange" />
+          {/* <TitsWithNipples className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24" colorMain1="fill-lightGreen" colorMain2="fill-darkPurple" colorBg="fill-orange" /> */}
+          <DotLottieReact
+            src="/animations/TitsWithNipples.json"
+            loop
+            autoplay
+            className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24 aspect-square"
+          />
         </div>
       </div>
     </SectionContainer>

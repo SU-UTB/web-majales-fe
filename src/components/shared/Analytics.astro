@@ -1,5 +1,4 @@
 ---
-import { trackPageview } from '../../analytics';
 const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
@@ -28,6 +27,10 @@ const GA_MEASUREMENT_ID = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
     transport_type: 'beacon',
     //debug_mode: true,
   });
+</script>
+
+<script>
+  import { trackPageview } from '../../analytics';
 
   // 3. Track pageviews on Astro's view transitions
   document.addEventListener('astro:page-load', () => {

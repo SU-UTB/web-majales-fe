@@ -40,7 +40,7 @@ export const Map = () => {
           <SquareWithSemiArcs className="absolute top-12 md:top-24 left-0 md:left-0 h-12 md:h-24 -rotate-90" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
           <Arc className="absolute top-12 md:top-24 left-12 md:left-24 h-8 md:h-16 rotate-90" colorMain="fill-orange" colorBg="fill-transparent" />
           {/* <DotLottieReact
-            src="/animations/DotsSquare.lottie"
+            src="/animations/DotsSquare.json"
             loop
             autoplay
             className="absolute top-12 md:top-24 left-0 md:left-0 h-12 md:h-24 aspect-square"
@@ -51,31 +51,43 @@ export const Map = () => {
       {/* TOP RIGHT */}
       <div className="absolute top-0 right-0">
         <div className="relative">
-          <TitsWithNipples className="absolute top-0 md:top-0 right-12 md:right-24 h-12 md:h-24" colorMain1="fill-orange" colorMain2="fill-darkPurple" colorBg="fill-lightGreen" />
-          <DotsSquare className="absolute top-0 md:top-0 right-24 md:right-48 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
+          {/* <TitsWithNipples className="absolute top-0 md:top-0 right-12 md:right-24 h-12 md:h-24" colorMain1="fill-orange" colorMain2="fill-darkPurple" colorBg="fill-lightGreen" /> */}
+          <DotLottieReact
+            src="/animations/TitsWithNipples-lightGreen.json"
+            loop
+            autoplay
+            className="absolute top-0 md:top-0 right-12 md:right-24 h-12 md:h-24 aspect-square"
+          />
+          {/* <DotsSquare className="absolute top-0 md:top-0 right-24 md:right-48 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" /> */}
+          <DotLottieReact
+            src="/animations/DotsSquare-purple.json"
+            loop
+            autoplay
+            className="absolute top-0 md:top-0 right-24 md:right-48 h-12 md:h-24 aspect-square"
+          />
           <AskewStrip className="absolute top-0 md:top-0 right-32 md:right-72 h-12 md:h-24" colorMain="fill-lightGreen" colorBg="fill-darkPurple" />
           <NarrowTriangles className="absolute top-0 md:top-0 right-0 md:right-0 h-12 md:h-24 rotate-90" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
           <DotsTriangle className="absolute top-12 md:top-24 right-12 md:right-24 h-12 md:h-24 -rotate-90" colorMain="fill-orange" colorBg="fill-transparent" />
-          {/* <DotLottieReact
-            src="/animations/SunSquare.lottie"
+          <DotLottieReact
+            src="/animations/SunSquare-darkPurple.json"
             loop
             autoplay
             className="absolute top-12 md:top-24 right-0 md:right-0 h-12 md:h-24 aspect-square"
-          /> */}
-          <SunSquare className="absolute top-12 md:top-24 right-0 md:right-0 h-12 md:h-24" colorMain="stroke-lightGreen" colorBg="fill-darkPurple" />
+          />
+          {/* <SunSquare className="absolute top-12 md:top-24 right-0 md:right-0 h-12 md:h-24" colorMain="stroke-lightGreen" colorBg="fill-darkPurple" /> */}
         </div>
       </div>
 
       {/* BOTTOM LEFT */}
       <div className="absolute bottom-0 left-0">
         <div className="relative">
-          <SunSquare className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24" colorMain="stroke-orange" colorBg="fill-lightGreen" />
-          {/* <DotLottieReact
-            src="/animations/SunSquare.lottie"
+          {/* <SunSquare className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24" colorMain="stroke-orange" colorBg="fill-lightGreen" /> */}
+          <DotLottieReact
+            src="/animations/SunSquare-lightGreen.json"
             loop
             autoplay
             className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24 aspect-square"
-          /> */}
+          />
           <div className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 w-12 md:h-24 md:w-24 bg-darkPurple" />
           <Arc className="absolute bottom-0 md:bottom-0 left-16 md:left-32 h-8 md:h-16 -rotate-90" colorMain="fill-lightGreen" />
           <div className="absolute bottom-0 md:bottom-0 left-24 md:left-48 h-12 w-12 md:h-24 md:w-24 bg-lightGreen" />

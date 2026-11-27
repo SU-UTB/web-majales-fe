@@ -21,11 +21,11 @@ export const Doprogram = () => {
     >
       {/* Hlavní obsah sekce */}
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-12 py-12 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 lg:gap-24">
-        {/* Levá část: kreslený obličej (dočasně nahrazen animací DotsSquare.lottie) */}
+        {/* Levá část: kreslený obličej (dočasně nahrazen animací DotsSquare.json) */}
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <div className="w-48 sm:w-64 md:w-80 aspect-square flex items-center justify-center">
             <DotLottieReact
-              src="/animations/DotsSquare.lottie"
+              src="/animations/lada_dark_purple.json"
               loop
               autoplay
               className="w-full h-full"
@@ -57,10 +57,11 @@ export const Doprogram = () => {
               Doprovodný program
             </span>
           </div>
-          <DoubleArrow
-            className="absolute top-0 md:top-0 left-0 md:left-0 h-24 md:h-48"
-            colorMain="fill-orange"
-            colorBg="fill-lightGreen"
+          <DotLottieReact
+            src="/animations/DoubleArrowOrange.json"
+            autoplay
+            loop
+            className="absolute bottom-0 -left-6 h-24 w-24 origin-bottom-left rotate-90 md:-left-12 md:h-48 md:w-48"
           />
           <Arc
             className="absolute top-12 md:top-24 left-12 md:left-24 h-8 md:h-16 rotate-90"
@@ -85,7 +86,12 @@ export const Doprogram = () => {
       <div className="absolute bottom-0 md:bottom-0 left-0 md:left-0">
         <div className="relative">
           <SquaredSquare className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24" colorMain="fill-orange" colorBg="fill-lightGreen" />
-          <DotsTriangle className="absolute bottom-0 md:bottom-0 left-12 md:left-24 h-12 md:h-24 rotate-90" colorMain="fill-orange" colorBg="fill-transparent" />
+          <DotLottieReact
+            src="/animations/SquaredSquare.json"
+            loop
+            autoplay
+            className="absolute bottom-0 md:bottom-0 left-0 md:left-0 h-12 md:h-24 aspect-square"
+          />
         </div>
       </div>
 
@@ -94,7 +100,12 @@ export const Doprogram = () => {
         <div className="relative">
           <BublyCircles className="absolute bottom-0 md:bottom-0 right-0 md:right-0 h-12 md:h-24" colorMain="fill-darkPurple" colorBg="fill-lightGreen" />
           <Arc className="absolute bottom-0 md:bottom-0 right-24 md:right-48 h-8 md:h-16 -rotate-90" colorMain="fill-darkPurple" />
-          <TitsWithNipples className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24" colorMain1="fill-lightGreen" colorMain2="fill-darkPurple" colorBg="fill-orange" />
+          <DotLottieReact
+            src="/animations/TitsWithNipples.json"
+            loop
+            autoplay
+            className="absolute bottom-12 md:bottom-24 right-0 md:right-0 h-12 md:h-24 aspect-square"
+          />
         </div>
       </div>
     </SectionContainer>
